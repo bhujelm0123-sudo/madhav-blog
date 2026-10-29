@@ -1087,7 +1087,6 @@
 
         image: "/education-access.png",
 imageAlt: "Illustration about access to education",
-
         youtubeId: "",
 
         content: `
@@ -1625,15 +1624,29 @@ imageAlt: "Illustration about access to education",
     }
 
     function artwork(post, extraClass = "") {
-      return `
-        <div class="art art-${escapeHTML(post.category)} ${extraClass}"
-             aria-hidden="true">
-          <span class="art-symbol">
-            ${escapeHTML(SYMBOLS[post.category] || "Aa.")}
-          </span>
-        </div>
-      `;
-    }
+  if (post.image) {
+    return `
+      <div class="art has-image ${escapeHTML(extraClass)}">
+        <img
+          src="${escapeHTML(post.image)}"
+          alt="${escapeHTML(post.imageAlt || post.title)}"
+          style="display:block;width:100%;height:auto;"
+        >
+      </div>
+    `;
+  }
+
+  return `
+    <div
+      class="art art-${escapeHTML(post.category)} ${escapeHTML(extraClass)}"
+      aria-hidden="true"
+    >
+      <span class="art-symbol">
+        ${escapeHTML(SYMBOLS[post.category] || "Aa.")}
+      </span>
+    </div>
+  `;
+}
 
     function cardHTML(post) {
       const url = articleURL(post);
