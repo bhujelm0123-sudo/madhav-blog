@@ -1,0 +1,2080 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#142a3b">
+
+  <title>हातमा AI, पहुँचमा ज्ञानको संसार: के हामी सिकाइको नयाँ युगका लागि तयार छौँ?</title>
+  <link rel="canonical" href="https://blog.madhavbhujel.com.np/ai-learning-new-era" id="canonical">
+  <meta name="description" content="AI लाई सामान्य Chatbot बाट व्यक्तिगत Learning Partner बनाउने सम्भावना—ज्ञानको पहुँच, सीप विकास र जीवनभर सिकिरहने अभ्यासबारे विचार।" id="page-description">
+  <meta property="og:type" content="article" id="og-type">
+  <meta property="og:site_name" content="Madhav Bhujel | Blog &amp; Ideas">
+  <meta property="og:title" content="हातमा AI, पहुँचमा ज्ञानको संसार: के हामी सिकाइको नयाँ युगका लागि तयार छौँ?" id="og-title">
+  <meta property="og:description" content="AI लाई सामान्य Chatbot बाट व्यक्तिगत Learning Partner बनाउने सम्भावना—ज्ञानको पहुँच, सीप विकास र जीवनभर सिकिरहने अभ्यासबारे विचार।" id="og-description">
+  <meta property="og:url" content="https://blog.madhavbhujel.com.np/ai-learning-new-era" id="og-url">
+  <meta property="og:image" content="https://blog.madhavbhujel.com.np/ai-learning-cover.png" id="og-image">
+  <meta property="og:image:alt" content="प्रविधि, सिकाइ र मानव क्षमता विकासको चित्रण" id="og-image-alt">
+  <meta property="og:locale" content="ne_NP">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="हातमा AI, पहुँचमा ज्ञानको संसार: के हामी सिकाइको नयाँ युगका लागि तयार छौँ?" id="twitter-title">
+  <meta name="twitter:description" content="AI लाई सामान्य Chatbot बाट व्यक्तिगत Learning Partner बनाउने सम्भावना—ज्ञानको पहुँच, सीप विकास र जीवनभर सिकिरहने अभ्यासबारे विचार।" id="twitter-description">
+  <meta name="twitter:image" content="https://blog.madhavbhujel.com.np/ai-learning-cover.png" id="twitter-image">
+
+  <script>
+    try {
+      const saved = localStorage.getItem("mb-blog-theme");
+      if (saved === "dark") {
+        document.documentElement.dataset.theme = "dark";
+      }
+    } catch (error) {}
+  </script>
+
+  <style>
+    /* COLORS */
+    :root {
+      --bg: #f8f7f3;
+      --surface: #ffffff;
+      --soft: #efeee8;
+      --ink: #142a3b;
+      --muted: #606d75;
+      --line: #dedfd9;
+      --accent: #94641e;
+      --accent-soft: #f5ead5;
+      --gold: #e0b970;
+      --header: rgba(248,247,243,.96);
+      --shadow: 0 18px 50px rgba(20,42,59,.08);
+    }
+
+    :root[data-theme="dark"] {
+      --bg: #101b25;
+      --surface: #182733;
+      --soft: #20323f;
+      --ink: #f0f3f5;
+      --muted: #b6c3cc;
+      --line: #354752;
+      --accent: #e0b970;
+      --accent-soft: #392f22;
+      --header: rgba(16,27,37,.96);
+      --shadow: 0 18px 50px rgba(0,0,0,.2);
+    }
+
+    /* BASE */
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 100px;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: "Segoe UI", Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3, p { margin-top: 0; }
+
+    h1, h2, h3 {
+      line-height: 1.18;
+      overflow-wrap: break-word;
+    }
+
+    h1, h2, h3, .serif {
+      font-family: Georgia, "Times New Roman", serif;
+      font-weight: 400;
+      letter-spacing: -.035em;
+    }
+
+    a { color: inherit; }
+    button, input, select { font: inherit; }
+    button { cursor: pointer; }
+    img { max-width: 100%; display: block; }
+    [hidden] { display: none !important; }
+
+    :focus-visible {
+      outline: 3px solid var(--accent);
+      outline-offset: 5px;
+    }
+
+    ::selection {
+      background: var(--gold);
+      color: #142a3b;
+    }
+
+    .container {
+      width: min(1160px, calc(100% - 48px));
+      margin-inline: auto;
+    }
+
+    .skip-link {
+      position: fixed;
+      top: -100px;
+      left: 16px;
+      z-index: 100;
+      background: var(--surface);
+      padding: 12px 18px;
+    }
+
+    .skip-link:focus { top: 12px; }
+
+    .eyebrow {
+      color: var(--accent);
+      font-size: 11px;
+      font-weight: 750;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+
+    .eyebrow::before {
+      content: "";
+      display: inline-block;
+      width: 28px;
+      height: 2px;
+      margin-right: 12px;
+      vertical-align: middle;
+      background: currentColor;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-height: 46px;
+      padding: 11px 20px;
+      border: 1px solid var(--line);
+      border-radius: 9px;
+      background: transparent;
+      color: var(--ink);
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 650;
+    }
+
+    .button-primary {
+      background: var(--ink);
+      color: var(--bg);
+      border-color: var(--ink);
+    }
+
+    .button:hover { opacity: .85; }
+
+    .muted { color: var(--muted); }
+
+    /* HEADER */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 30;
+      background: var(--header);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .header-inner {
+      min-height: 80px;
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      flex-shrink: 0;
+    }
+
+    .brand-mark {
+      width: 43px;
+      height: 43px;
+      display: grid;
+      place-items: center;
+      background: var(--ink);
+      color: var(--bg);
+      border-radius: 11px;
+      font-family: Georgia, serif;
+      font-size: 20px;
+    }
+
+    .brand-name {
+      display: block;
+      font-size: 15px;
+      font-weight: 750;
+      line-height: 1.4;
+    }
+
+    .brand-caption {
+      display: block;
+      color: var(--muted);
+      font-size: 9px;
+      text-transform: uppercase;
+      letter-spacing: .15em;
+    }
+
+    .nav {
+      display: flex;
+      gap: 25px;
+      align-items: center;
+      margin-left: auto;
+    }
+
+    .nav a {
+      font-size: 13px;
+      font-weight: 650;
+      text-decoration: none;
+      color: var(--muted);
+    }
+
+    .nav a:hover { color: var(--accent); }
+
+    .controls { display: flex; gap: 8px; }
+
+    .icon-button {
+      width: 40px;
+      height: 40px;
+      display: grid;
+      place-items: center;
+      border: 1px solid var(--line);
+      border-radius: 50%;
+      color: var(--ink);
+      background: transparent;
+      font-size: 20px;
+    }
+
+    .menu-button { display: none; }
+
+    /* HOME */
+    .hero { padding: 75px 0 48px; }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.35fr .65fr;
+      align-items: center;
+      gap: 65px;
+    }
+
+    .hero h1 {
+      font-size: clamp(48px, 6.4vw, 80px);
+      margin-bottom: 24px;
+    }
+
+    .hero h1 em { color: var(--accent); }
+
+    .hero-description {
+      max-width: 600px;
+      color: var(--muted);
+      font-size: 17px;
+      margin-bottom: 0;
+    }
+
+    .hero-note {
+      border-left: 1px solid var(--line);
+      padding-left: 30px;
+    }
+
+    .hero-note p {
+      font-family: Georgia, serif;
+      font-size: 24px;
+      line-height: 1.5;
+    }
+
+    .hero-note strong { font-size: 13px; }
+
+    .hero-note small {
+      display: block;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .topic-strip {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px 28px;
+      margin-top: 40px;
+      padding-top: 22px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+    }
+
+    /* POST NAVIGATION */
+    .posts-section { padding: 35px 0 75px; }
+
+    .section-heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      gap: 20px;
+      margin-bottom: 25px;
+    }
+
+    .section-heading h2 {
+      font-size: 42px;
+      margin-bottom: 0;
+    }
+
+    .section-heading p {
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 0;
+    }
+
+    .view-tabs {
+      display: flex;
+      gap: 25px;
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 25px;
+    }
+
+    .view-tabs a {
+      padding: 14px 0;
+      border-bottom: 3px solid transparent;
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .view-tabs a[aria-current="page"] {
+      color: var(--ink);
+      border-bottom-color: var(--accent);
+    }
+
+    .toolbar {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 210px;
+      gap: 15px;
+      margin-bottom: 15px;
+    }
+
+    .field label {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 11px;
+      font-weight: 650;
+      color: var(--muted);
+    }
+
+    .field input,
+    .field select {
+      width: 100%;
+      min-height: 46px;
+      padding: 10px 14px;
+      border: 1px solid var(--line);
+      border-radius: 9px;
+      background: var(--surface);
+      color: var(--ink);
+      font-size: 14px;
+    }
+
+    .field input::placeholder { color: var(--muted); }
+
+    .result-count {
+      font-size: 12px;
+      color: var(--muted);
+      min-height: 24px;
+      margin-bottom: 22px;
+    }
+
+    /* RECENT POST CARDS */
+    .post-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 24px;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      overflow: hidden;
+      transition: box-shadow .2s ease, transform .2s ease;
+    }
+
+    .card:hover {
+      box-shadow: var(--shadow);
+      transform: translateY(-3px);
+    }
+
+    .art {
+      position: relative;
+      display: grid;
+      place-items: center;
+      min-height: 190px;
+      overflow: hidden;
+      background: #e9e3d5;
+      color: #425249;
+    }
+
+    .art::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(20,42,59,.06) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(20,42,59,.06) 1px, transparent 1px);
+      background-size: 28px 28px;
+    }
+
+    .art-technology {
+      background: #dce7eb;
+      color: #25485b;
+    }
+
+    .art-videos {
+      background: #233c4e;
+      color: #e0b970;
+    }
+
+    .art-symbol {
+      position: relative;
+      font-family: Georgia, serif;
+      font-size: 75px;
+      line-height: 1;
+    }
+
+    .sample-badge {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      padding: 4px 8px;
+      background: #ffffff;
+      color: #142a3b;
+      border-radius: 4px;
+      font-size: 9px;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      font-weight: 700;
+    }
+
+    .card-content {
+      padding: 26px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px 14px;
+      color: var(--muted);
+      font-size: 11px;
+      margin-bottom: 14px;
+    }
+
+    .category-label {
+      color: var(--accent);
+      font-weight: 750;
+      text-transform: uppercase;
+      letter-spacing: .07em;
+    }
+
+    .card h3 {
+      font-size: 27px;
+      margin-bottom: 16px;
+    }
+
+    .card h3 a {
+      text-decoration: none;
+    }
+
+    .card h3 a:hover { color: var(--accent); }
+
+    .card p {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 24px;
+    }
+
+    .read-link {
+      display: block;
+      border-top: 1px solid var(--line);
+      padding-top: 15px;
+      margin-top: auto;
+      font-size: 13px;
+      font-weight: 750;
+      text-decoration: none;
+    }
+
+    .read-link:hover { color: var(--accent); }
+
+    /* ALL POSTS LIST */
+    .post-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      gap: 15px;
+    }
+
+    .list-link {
+      display: grid;
+      grid-template-columns: 105px minmax(0, 1fr) 30px;
+      align-items: center;
+      gap: 25px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 15px;
+      padding: 22px;
+      text-decoration: none;
+      transition: box-shadow .2s ease;
+    }
+
+    .list-link:hover {
+      box-shadow: var(--shadow);
+      border-color: var(--accent);
+    }
+
+    .list-art {
+      width: 105px;
+      min-height: 105px;
+      border-radius: 10px;
+    }
+
+    .list-art .art-symbol { font-size: 40px; }
+
+    .list-link h3 {
+      font-size: 26px;
+      margin-bottom: 9px;
+    }
+
+    .list-link p {
+      color: var(--muted);
+      font-size: 13px;
+      margin: 0;
+    }
+
+    .list-link .meta { margin-bottom: 8px; }
+
+    .list-arrow {
+      color: var(--accent);
+      font-size: 24px;
+    }
+
+    .below-posts {
+      display: flex;
+      justify-content: center;
+      padding-top: 30px;
+    }
+
+    .empty {
+      padding: 45px 20px;
+      border: 1px dashed var(--line);
+      border-radius: 16px;
+      text-align: center;
+      color: var(--muted);
+    }
+
+    .empty h3 { color: var(--ink); }
+
+    /* FULL ARTICLE PAGE */
+    .article-page { padding: 40px 0 75px; }
+
+    .article-wrap {
+      width: min(800px, calc(100% - 48px));
+      margin-inline: auto;
+    }
+
+    .breadcrumb {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      color: var(--muted);
+      font-size: 12px;
+      margin-bottom: 36px;
+    }
+
+    .breadcrumb a { text-underline-offset: 4px; }
+
+    .article-title {
+      font-size: clamp(36px, 5.6vw, 60px);
+      margin-bottom: 22px;
+    }
+
+    .article-description {
+      font-size: 19px;
+      color: var(--muted);
+      margin-bottom: 25px;
+    }
+
+    .article-author {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      padding: 20px 0;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 28px;
+    }
+
+    .avatar {
+      display: grid;
+      place-items: center;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-family: Georgia, serif;
+      flex-shrink: 0;
+    }
+
+    .article-author strong { display: block; font-size: 13px; }
+    .article-author small { color: var(--muted); font-size: 11px; }
+
+    .article-banner {
+      min-height: 240px;
+      border-radius: 18px;
+      margin-bottom: 28px;
+    }
+
+    .sample-notice {
+      padding: 15px 18px;
+      border-left: 3px solid var(--accent);
+      background: var(--accent-soft);
+      font-size: 13px;
+      margin-bottom: 30px;
+    }
+
+    .article-body {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 19px;
+      line-height: 1.9;
+      overflow-wrap: anywhere;
+    }
+
+    .article-body h2 {
+      font-size: 30px;
+      margin: 36px 0 16px;
+    }
+
+    .article-body h3 {
+      font-size: 25px;
+      margin: 28px 0 14px;
+    }
+
+    .article-body p { margin-bottom: 22px; }
+    .article-body li { margin-bottom: 10px; }
+    .article-body ul, .article-body ol { padding-left: 25px; }
+
+    .article-body blockquote {
+      margin: 30px 0;
+      border-left: 3px solid var(--accent);
+      padding: 10px 24px;
+      color: var(--accent);
+      font-size: 24px;
+      font-style: italic;
+    }
+
+    .video-box {
+      aspect-ratio: 16 / 9;
+      margin-bottom: 30px;
+      background: var(--soft);
+      border-radius: 15px;
+      overflow: hidden;
+    }
+
+    .video-box iframe {
+      display: block;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .article-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      border-top: 1px solid var(--line);
+      padding-top: 25px;
+      margin-top: 40px;
+    }
+
+    .copy-status {
+      color: var(--muted);
+      min-height: 24px;
+      font-size: 12px;
+      overflow-wrap: anywhere;
+    }
+
+    .related {
+      margin-top: 40px;
+      padding-top: 30px;
+      border-top: 1px solid var(--line);
+    }
+
+    .related h2 { font-size: 30px; }
+
+    .related a {
+      display: block;
+      padding: 14px 0;
+      border-bottom: 1px solid var(--line);
+      text-decoration: none;
+      font-size: 15px;
+    }
+
+    .related a:hover { color: var(--accent); }
+
+    /* ABOUT & FOOTER */
+    .about {
+      padding: 35px;
+      margin-bottom: 65px;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      background: var(--soft);
+      display: grid;
+      grid-template-columns: .7fr 1.3fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .about h2 { font-size: 35px; margin-bottom: 12px; }
+    .about p { color: var(--muted); font-size: 15px; }
+    .about p:last-child { margin-bottom: 0; }
+
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 26px 0;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 15px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .footer-links { display: flex; flex-wrap: wrap; gap: 20px; }
+    .footer-links a { text-decoration: none; }
+
+    /* RESPONSIVE */
+    @media (max-width: 950px) {
+      .post-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .hero-grid { gap: 30px; }
+      .nav { gap: 16px; }
+    }
+
+    @media (max-width: 760px) {
+      .header-inner { min-height: 72px; gap: 12px; }
+      .controls { margin-left: auto; }
+      .menu-button { display: grid; }
+
+      .nav {
+        display: none;
+        position: absolute;
+        top: 72px;
+        left: 0;
+        right: 0;
+        padding: 20px 24px;
+        background: var(--surface);
+        border-bottom: 1px solid var(--line);
+        box-shadow: var(--shadow);
+      }
+
+      .nav.open {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+      }
+
+      .nav a { padding: 12px 0; }
+      .hero { padding-top: 45px; }
+      .hero-grid { grid-template-columns: 1fr; }
+      .hero-note { padding-left: 20px; }
+      .hero-note p { font-size: 21px; margin-bottom: 12px; }
+      .section-heading { flex-direction: column; align-items: flex-start; }
+      .about { grid-template-columns: 1fr; gap: 15px; }
+      .article-description { font-size: 17px; }
+    }
+
+    @media (max-width: 540px) {
+      .container, .article-wrap { width: calc(100% - 32px); }
+      .brand-name { font-size: 13px; }
+      .brand-caption { font-size: 8px; }
+      .brand-mark { width: 36px; height: 36px; }
+      .icon-button { width: 36px; height: 36px; }
+      .hero h1 { font-size: 49px; }
+      .hero-description { font-size: 15px; }
+      .post-grid { grid-template-columns: 1fr; }
+      .toolbar { grid-template-columns: 1fr; }
+      .section-heading h2 { font-size: 35px; }
+      .view-tabs { gap: 24px; }
+      .list-link { grid-template-columns: 1fr 20px; gap: 12px; padding: 20px; }
+      .list-art { display: none; }
+      .list-link h3 { font-size: 24px; }
+      .article-body { font-size: 18px; }
+      .article-banner { min-height: 180px; }
+      .about { padding: 25px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition: none !important; }
+    }
+
+    @media print {
+      .site-header, footer, .article-actions, .related,
+      .copy-status, .breadcrumb { display: none !important; }
+
+      .article-wrap { width: 100%; }
+      .article-page { padding: 0; }
+
+      :root {
+        --bg: white;
+        --ink: black;
+        --muted: #444;
+      }
+    }
+
+    /* Nepali editorial typography: English uses Times New Roman;
+       Devanagari falls back to Kokila or an available Devanagari font. */
+    .nepali-page .article-title, .nepali-article,
+    .nepali-page .article-description, .nepali-page .article-author strong {
+      font-family: "Times New Roman", Kokila, "Noto Serif Devanagari", Mangal, serif;
+      letter-spacing: 0;
+    }
+    .nepali-page .article-title {font-size: clamp(32px, 4.3vw, 58px); line-height: 1.48; max-width: 960px;}
+    .nepali-page .article-description {font-size: 22px; line-height: 1.9; max-width: 800px;}
+    .nepali-article {font-size: 23px; line-height: 1.95;}
+    .nepali-article p {margin-bottom: 1.25em;}
+    .nepali-article h2 {font-family: inherit; font-size: 30px; line-height: 1.65; letter-spacing: 0; font-weight: 700; margin: 2em 0 .7em;}
+    .nepali-article blockquote {margin: 1.7em 0; padding: 22px 28px; border-left: 3px solid var(--gold); background: var(--accent-soft); font-size: 26px; line-height: 1.85; color: var(--ink); font-style: normal;}
+    .nepali-article .article-kicker {color:var(--accent);font-size:17px;font-weight:700;}
+    .nepali-page .article-banner {height:auto; aspect-ratio:auto; background:var(--soft);}
+    .nepali-page .article-banner img {position:static; width:100%; height:auto; max-height:720px; object-fit:contain;}
+    .post-card h3, .list-link {overflow-wrap:anywhere;}
+    @media(max-width:600px){
+      .nepali-article {font-size:21px;}
+      .nepali-article h2 {font-size:27px;}
+      .nepali-article blockquote {font-size:23px;padding:18px;}
+    }
+  </style>
+</head>
+
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="./">
+        <span class="brand-mark" aria-hidden="true">MB</span>
+        <span>
+          <span class="brand-name">Madhav Bhujel</span>
+          <span class="brand-caption">The blog · Ideas & perspectives</span>
+        </span>
+      </a>
+
+      <nav class="nav" id="navigation" aria-label="Main navigation">
+        <a href="./">Home</a>
+        <a href="/?view=all#posts">All Posts</a>
+        <a href="/?view=all&amp;category=videos#posts">Videos</a>
+        <a href="./#about">About</a>
+        <a href="https://madhavbhujel.com.np/">Portfolio ↗</a>
+      </nav>
+
+      <div class="controls">
+        <button
+          class="icon-button"
+          id="theme-button"
+          type="button"
+          aria-label="Switch to dark theme"
+          aria-pressed="false"
+        >☾</button>
+
+        <button
+          class="icon-button menu-button"
+          id="menu-button"
+          type="button"
+          aria-label="Open navigation"
+          aria-controls="navigation"
+          aria-expanded="false"
+        >☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HOME / ALL POSTS VIEW -->
+    <div id="listing-page" hidden>
+      <section class="hero">
+        <div class="container">
+          <div class="hero-grid">
+            <div>
+              <div class="eyebrow">Education · Technology · Everyday learning</div>
+              <h1>Ideas worth<br><em>thinking about.</em></h1>
+              <p class="hero-description">
+                Practical insights, thoughtful questions, and useful
+                discoveries in education, data, and digital tools.
+              </p>
+            </div>
+
+            <aside class="hero-note">
+              <p>
+                Learning becomes more valuable when we share
+                what we discover.
+              </p>
+              <strong>Madhav Bhujel</strong>
+              <small>Education professional · Kathmandu, Nepal</small>
+            </aside>
+          </div>
+
+          <div class="topic-strip">
+            <span>Academic operations</span>
+            <span>Digital tools</span>
+            <span>Data & reporting</span>
+            <span>Personal perspectives</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="posts-section" id="posts" aria-labelledby="posts-heading">
+        <div class="container">
+          <div class="section-heading">
+            <h2 id="posts-heading">Articles</h2>
+            <p id="posts-description">The latest articles and videos.</p>
+          </div>
+
+          <nav class="view-tabs" aria-label="Post views">
+            <a href="./#posts" id="recent-tab">Recent Post</a>
+            <a href="/?view=all#posts" id="all-tab">All Posts</a>
+          </nav>
+
+          <div class="toolbar">
+            <div class="field">
+              <label for="search">Search posts</label>
+              <input
+                type="search"
+                id="search"
+                placeholder="Search by title, topic, or content…"
+                autocomplete="off"
+              >
+            </div>
+
+            <div class="field">
+              <label for="category">Category</label>
+              <select id="category">
+                <option value="all">All categories</option>
+                <option value="education">Education</option>
+                <option value="technology">Technology</option>
+                <option value="videos">Videos</option>
+              </select>
+            </div>
+          </div>
+
+          <p class="result-count" id="result-count" role="status"></p>
+
+          <div class="post-grid" id="recent-grid"></div>
+          <ul class="post-list" id="all-list" hidden></ul>
+
+          <div class="empty" id="empty-state" hidden>
+            <h3>No matching posts</h3>
+            <p>Try another keyword or category.</p>
+            <button class="button" id="reset-button" type="button">
+              Clear filters
+            </button>
+          </div>
+
+          <div class="below-posts" id="view-all-area">
+            <a class="button button-primary" href="/?view=all#posts">
+              View all posts →
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="container" id="about" aria-labelledby="about-heading">
+        <div class="about">
+          <div>
+            <div class="eyebrow">Behind the writing</div>
+            <h2 id="about-heading">Hello, I’m Madhav.</h2>
+            <a class="button" href="https://madhavbhujel.com.np/">
+              My portfolio ↗
+            </a>
+          </div>
+
+          <div>
+            <p>
+              I am an education professional based in Kathmandu,
+              with experience in academic administration,
+              examination management, and educational systems.
+            </p>
+            <p>
+              This blog is a space for practical ideas, useful tools,
+              and lessons from everyday work.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- FULL ARTICLE VIEW -->
+    <div class="article-page" id="article-page" hidden>
+      <div class="article-wrap" id="article-container"></div>
+    </div>
+
+    <!-- INVALID ARTICLE LINK -->
+    <section class="container article-page" id="not-found" hidden>
+      <div class="empty">
+        <h1>Article not found</h1>
+        <p>This article may have been removed or its address changed.</p>
+        <a class="button button-primary" href="/?view=all#posts">
+          Browse all posts
+        </a>
+      </div>
+    </section>
+
+    <noscript>
+      <div class="container article-page">
+        <h1>Madhav Bhujel — Blog</h1>
+        <p>
+          Please enable JavaScript to view the articles in this
+          single-file website.
+        </p>
+        <a href="https://madhavbhujel.com.np/">Visit my portfolio</a>
+      </div>
+    </noscript>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <span>© <span id="year">2026</span> Madhav Bhujel.</span>
+      <div class="footer-links">
+        <a href="./">Blog home</a>
+        <a href="/?view=all#posts">All posts</a>
+        <a href="https://madhavbhujel.com.np/">Portfolio</a>
+        <a href="mailto:bhujelm0123@gmail.com">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    /* ==================================================
+       POSTS
+       Add or edit your posts in this array.
+
+       id: unique article address; do not use spaces.
+       date: YYYY-MM-DD; newest posts appear first.
+       category: education, technology, or videos.
+       sample: change to false after adding your own content.
+       youtubeId: optional YouTube video ID, not a full link.
+       content: the complete article written as HTML.
+
+       Only put your own trusted HTML in "content".
+       ================================================== */
+
+    const POSTS = [
+{
+      "id": "ai-learning-new-era",
+      "title": "हातमा AI, पहुँचमा ज्ञानको संसार: के हामी सिकाइको नयाँ युगका लागि तयार छौँ?",
+      "excerpt": "AI लाई सामान्य Chatbot बाट व्यक्तिगत Learning Partner बनाउने सम्भावना—ज्ञानको पहुँच, सीप विकास र जीवनभर सिकिरहने अभ्यासबारे विचार।",
+      "date": "2026-10-30",
+      "category": "technology",
+      "author": "माधव भुजेल",
+      "sample": false,
+      "image": "/ai-learning-cover.png",
+      "imageAlt": "प्रविधि, सिकाइ र मानव क्षमता विकासको चित्रण",
+      "youtubeId": "",
+      "language": "ne",
+      "content": "<div class=\"nepali-article\" lang=\"ne\">\n<p class=\"article-kicker\">विचार · Technology, Learning &amp; Future</p>\n<p>हामी AI लाई इमेल लेख्न, प्रश्नको उत्तर खोज्न, अनुवाद गर्न वा दैनिक काम छिटो सक्न प्रयोग गरिरहेका छौँ तर एकछिन सोचौँ—हामीले सामान्य Chatbot का रूपमा प्रयोग गरिरहेको यही प्रविधि हाम्रो व्यक्तिगत Learning Partner बन्न सक्दैन र ?</p>\n<p>हामीलाई कठिन विषय बुझाउने, नयाँ सीप सिक्न मार्गदर्शन गर्ने,  अभ्यास गराउने र हाम्रो काममा Feedback दिने साथी, जिज्ञासाअनुसार अध्ययनको बाटो खोलिदिने एउटा यस्तो माध्यम, जसको सम्भावना हामीले अझै पूर्ण रूपमा उपयोग गर्न बाँकी छ।</p>\n<blockquote>सायद हाम्रो हातमा विश्वविद्यालयजस्तै सिकाइको सम्भावना छ, तर हामी त्यसबाट छोटा उत्तर मात्रै मागिरहेका छौँ ।</blockquote>\n<p>यो तुलना सम्भावनाको हो । AI ले विश्वविद्यालयको प्रमाणित शिक्षा, अनुसन्धान, प्रयोगशाला, अनुभव र मानवीय सम्बन्धका सबै पक्ष प्रतिस्थापन गर्दैन तर यसले धेरै मानिसका लागि अध्ययन सुरु गर्ने र निरन्तर सिकिरहने अवसर विस्तार गर्न सक्छ ।</p>\n<h2>सूचनाबाट संवादतर्फ</h2>\n<p>पहिले कुनै विषय बुझ्न उपयुक्त पुस्तक, शिक्षक वा कक्षा खोज्नुपर्थ्यो पछि Internet ले सूचनासम्म पुग्न सहज बनायो र अब AI ले त्यही सूचनासँग संवाद गर्न सम्भव बनाइरहेको छ । हामी “यो अझ सरल भाषामा बुझाइदेऊ”, “मेरो कामसँग सम्बन्धित उदाहरण देऊ” वा “मैले बुझेँ कि बुझिनँ भनेर जाँच” भन्न सक्छौँ ।</p>\n<p>यसरी सिकाइ आफ्नो गति, आवश्यकता र बुझाइअनुसार अघि बढाउन सकिन्छ । यहीँ Personalized Learning को ठूलो सम्भावना छ ।</p>\n<p>अङ्ग्रेजी सिक्न चाहने व्यक्तिहरुले संवादको अभ्यास गर्न सक्छन् । Coding सिक्ने विद्यार्थीहरुले आफूले लेखेका प्रोग्राममा त्रुटि किन आयो भनेर बुझ्न सक्छन् । शिक्षकहरुले फरक क्षमता भएका विद्यार्थीका लागि शिक्षण गतिविधि तयार गर्न सहयोग लिन सक्छन् । व्यवसायीहरुले Excel, Data Analysis वा Digital Marketing का आधारभूत सीप सिक्न मार्गदर्शन लिन सक्छन् ।</p>\n<p>यस्ता अवसरले सिकाइलाई निश्चित उमेर, कक्षाकोठा वा पेसामा सीमित राख्दैनन् । नयाँ विषयमा प्रवेश गर्न चाहने व्यक्तिहरुका लागि पहिलो कदम चाल्न सजिलो बनाउन सक्छन् ।</p>\n<h2>ज्ञानको पहुँचबाट सीप विकाससम्म</h2>\n<blockquote>तर Access to Knowledge र वास्तविक Skill Development बीचको दूरी अभ्यासले मात्र पूरा गर्छ ।</blockquote>\n<p>AI ले राम्रो लेख तयार गरिदिँदैमा हाम्रो लेखन क्षमता बढ्दैन । Code लेखिदिँदैमा हामी Programmer हुँदैनौँ । कुनै अवधारणाको उत्तर पढ्दैमा त्यसलाई व्यवहारमा प्रयोग गर्न सकिन्छ भन्ने हुँदैन । सीप विकासका लागि आफैँ प्रयास गर्न, गल्ती पहिचान गर्न, सुधार गर्न र फेरि अभ्यास गर्नुपर्छ ।</p>\n<p>OECD को Digital Education Outlook 2026 ले पनि स्पष्ट शिक्षण उद्देश्यसहित प्रयोग गर्दा Generative AI ले सिकाइमा सहयोग गर्न सक्ने देखाएको छ । तर काम पूरै AI लाई जिम्मा दिँदा तत्काल राम्रो Output प्राप्त भए पनि वास्तविक सिकाइमा सुधार नहुन सक्छ । त्यसैले हाम्रो प्रयोग गर्ने तरिका बदलिनुपर्छ ।</p>\n<h2>AI सँग सिक्ने तरिका बदलौँ</h2>\n<p>“यो काम गरिदेऊ” सँगै “यो काम गर्न मलाई सिकाऊ” भन्नुपर्छ । “उत्तर देऊ” सँगै “मेरो सोचमा कहाँ कमजोरी छ?” भनेर सोध्नुपर्छ । “यो लेखिदेऊ” सँगै “मैले लेखेको सामग्रीमा सुधारका लागि Feedback देऊ” भन्नुपर्छ ।</p>\n<p>यही अभ्यासले AI लाई दैनिक सहायकसँगै हाम्रो क्षमता विकास गर्ने Learning Partner बनाउन सक्छ ।</p>\n<h2>परिवर्तनसँगै सिक्ने क्षमता</h2>\n<p>हामी ज्ञानको पहुँच र प्रयोग दुवै बदलिँदै गएको समयमा छौँ । नयाँ Digital Tools, अध्ययन सामग्री र काम गर्ने तरिका थपिँदै जाँदा अवसर पनि विस्तार हुन सक्छन् । यसको वृद्धिलाई हरेक महिना वा वर्ष निश्चित गुणाले बढ्छ भनेर दाबी गर्नुभन्दा त्यसले हाम्रो जीवन र काममा ल्याउने परिवर्तन बुझ्नु आवश्यक छ ।</p>\n<p>त्यो परिवर्तनसँग अघि बढ्न Learning Agility—नयाँ कुरा सिकेर आवश्यक अवस्थामा प्रयोग गर्न सक्ने क्षमता— महत्त्वपूर्ण हुन्छ ।</p>\n<p>यसको अर्थ बजारमा आएका सबै नयाँ Tools पछ्याउनु होइन । आफ्नो कामका लागि के उपयोगी छ भनेर छुट्याउनु, आवश्यक सीप सिक्नु र प्रमाणका आधारमा आफ्नो तरिका सुधार्नु हो । पटक-पटक, पहिलेका स्थापित बुझाइहरूलाई पुनः मूल्याङ्कन गर्न आवश्यक हुन्छ । कहिलेकाहीँ पुरानो सीपलाई नयाँ प्रविधिसँग जोड्नुपर्छ । यही प्रक्रियालाई Upskilling र Reskilling ले व्यावहारिक रूप दिन्छन् ।</p>\n<p>शिक्षण संस्थाले पनि विद्यार्थीलाई यसका लागि तयार गर्नुपर्छ । जानकारी सम्झन लगाउने अभ्याससँगै सही प्रश्न सोध्ने, स्रोत जाँच्ने, तर्क गर्ने र वास्तविक समस्या समाधान गर्ने अवसर दिनुपर्छ । AI को उत्तर पनि गलत हुन सक्ने भएकाले Critical Thinking र Digital Literacy सिकाइका आवश्यक आधार हुन् ।</p>\n<h2>नेपालका लागि अवसर र जिम्मेवारी</h2>\n<p>नेपालका लागि यो सम्भावना विशेष अर्थपूर्ण छ । भरपर्दो Internet, उपयुक्त उपकरण, भाषिक सहयोग र मार्गदर्शन उपलब्ध भएमा विद्यार्थी, शिक्षक र विभिन्न पेसामा रहेका व्यक्तिले आफ्नै ठाउँबाट अध्ययनका थप अवसर उपयोग गर्न सक्छन् । तर पहुँच समान बनाउन पूर्वाधारसँगै मानिसको सीप विकासमा पनि लगानी चाहिन्छ ।</p>\n<p>भविष्यका लागि हामीले विकास गर्नुपर्ने एउटा महत्त्वपूर्ण बानी हो—Lifelong Learning, अर्थात् जीवनभर सिकिरहने अभ्यास । औपचारिक अध्ययन पूरा भएपछि पनि जिज्ञासा, अभ्यास र आत्मसुधारको यात्रा जारी राख्नु आवश्यक हुन्छ ।</p>\n<h2>जीवनभर सिकिरहने अभ्यास</h2>\n<p>कृत्रिम प्रज्ञा (AI) ले नव-ज्ञानका अनगिन्ती मार्गहरू प्रशस्त गर्न सक्छन् । तर, ती मार्गहरूको अन्वेषण गर्ने, समय लगानी गर्ने र आत्मसात् गरिएको ज्ञानलाई कार्यरूपमा परिणत गर्ने अभिभारा पूर्णतः हाम्रै हो ।</p>\n<p>हाम्रो हातमा ज्ञानसँग संवाद गर्ने शक्तिशाली माध्यम छ । अब प्रश्न यत्ति हो—हामी त्यसबाट काम मात्रै गराउँछौँ, कि आफूलाई पनि अझ सक्षम बनाउँछौँ?</p>\n</div>"
+},
+            {
+        id: "273-million-out-of-school",
+
+        title: "273 Million Children and Young People Are Out of School. What Does This Say About the Future of Education?",
+
+        excerpt:
+          "As education embraces artificial intelligence and digital classrooms, millions of learners still lack access to school. A reflection on access, equity, and the everyday responsibility to help every learner participate and succeed.",
+
+        date: "2026-10-29",
+        category: "education",
+        author: "Madhav Bhujel",
+        sample: false,
+
+        image: "/education-access.png",
+imageAlt: "Illustration about access to education",
+        youtubeId: "",
+
+        content: `
+          <div style="
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 28px;
+            font-family: 'Segoe UI', Arial, sans-serif;
+          ">
+            <span style="
+              padding: 5px 12px;
+              border-radius: 30px;
+              background: var(--accent-soft);
+              color: var(--accent);
+              font-size: 11px;
+              font-weight: 700;
+              letter-spacing: 0.08em;
+              text-transform: uppercase;
+            ">Opinion</span>
+
+            <span style="
+              padding: 5px 12px;
+              border-radius: 30px;
+              border: 1px solid var(--line);
+              color: var(--muted);
+              font-size: 11px;
+              font-weight: 700;
+              letter-spacing: 0.08em;
+              text-transform: uppercase;
+            ">Education &amp; Equity</span>
+          </div>
+
+          <p style="
+            font-size: 1.15em;
+            line-height: 1.8;
+          ">
+            Discussions about the future of education often begin with
+            technology: artificial intelligence, digital classrooms,
+            personalised learning, and new ways of assessing students.
+            These developments deserve attention. But an equally urgent
+            question should guide the conversation:
+            <strong>Who still does not have the opportunity to attend school?</strong>
+          </p>
+
+          <aside aria-label="Key education statistic" style="
+            margin: 32px 0;
+            padding: clamp(22px, 5vw, 36px);
+            border: 1px solid var(--line);
+            border-left: 4px solid var(--accent);
+            border-radius: 14px;
+            background: var(--soft);
+          ">
+            <span style="
+              display: block;
+              margin-bottom: 12px;
+              color: var(--accent);
+              font-family: 'Segoe UI', Arial, sans-serif;
+              font-size: 11px;
+              font-weight: 750;
+              letter-spacing: 0.14em;
+              text-transform: uppercase;
+            ">The access challenge</span>
+
+            <strong style="
+              display: block;
+              margin-bottom: 12px;
+              color: var(--ink);
+              font-family: Georgia, serif;
+              font-size: clamp(38px, 8vw, 64px);
+              font-weight: 400;
+              line-height: 1.1;
+              letter-spacing: -0.04em;
+            ">273 million</strong>
+
+            <p style="
+              margin-bottom: 12px;
+              color: var(--ink);
+              font-size: 18px;
+              line-height: 1.6;
+            ">
+              Children, adolescents, and young people were out of
+              school in 2024—approximately one in six worldwide.
+            </p>
+
+            <p style="
+              margin: 0;
+              color: var(--muted);
+              font-family: 'Segoe UI', Arial, sans-serif;
+              font-size: 12px;
+              line-height: 1.6;
+            ">
+              Source: UNESCO, 2026 Global Education Monitoring Report.
+              Figures refer to 2024.
+            </p>
+          </aside>
+
+          <p>
+            UNESCO’s <em>2026 Global Education Monitoring Report:
+            Access and Equity—Countdown to 2030</em> also states that
+            the out-of-school population increased for the seventh
+            consecutive year, reaching a level
+            <strong>3% higher than in 2015</strong>.
+          </p>
+
+          <p>
+            For me, these figures raise a fundamental concern:
+            how should we define educational progress when so many
+            learners remain outside the classroom?
+          </p>
+
+          <h2>Progress Is Real, but It Is Uneven</h2>
+
+          <p>
+            The picture is not entirely discouraging. UNESCO reports
+            that global enrolment in primary and secondary education
+            reached <strong>1.4 billion students in 2024</strong>,
+            an increase of 327 million since 2000. This demonstrates
+            that education systems can expand access on a substantial scale.
+          </p>
+
+          <p>
+            However, growing enrolment and persistent exclusion can
+            exist at the same time. Celebrating the learners we reach
+            must be accompanied by serious attention to those we do not.
+          </p>
+
+          <p>
+            In my view, educational progress should be judged through
+            several questions:
+          </p>
+
+          <ul>
+            <li>Can learners enter school?</li>
+            <li>Can they attend consistently?</li>
+            <li>Do they receive the support they need?</li>
+            <li>Are they learning?</li>
+            <li>Can they complete their education?</li>
+          </ul>
+
+          <p>
+            Each question matters. An admission record alone cannot
+            answer all of them.
+          </p>
+
+          <h2>Attendance Records Should Lead to Support</h2>
+
+          <p>
+            For school leaders, the global challenge of educational
+            exclusion connects with a practical responsibility:
+            noticing when a learner begins to disengage.
+          </p>
+
+          <p>
+            Consider a student who misses several days of school.
+            Recording those absences is necessary, but the next step
+            matters just as much. Someone needs to understand what is
+            happening, communicate sensitively with the family, and
+            agree on appropriate support.
+          </p>
+
+          <blockquote>
+            An absence should prompt a question before it prompts
+            a judgement.
+          </blockquote>
+
+          <p>
+            I believe attendance monitoring is most useful when schools
+            connect it to a clear follow-up process. A designated staff
+            member should review concerns, coordinate support, and check
+            whether the student’s participation improves. Simply
+            generating an absent-student list does not complete that
+            responsibility.
+          </p>
+
+          <p>
+            Schools should also avoid assuming that every absence has
+            the same explanation. A learner facing transport difficulties
+            may need a different response from someone experiencing
+            illness, bullying, or difficulties with schoolwork.
+          </p>
+
+          <h2>Inclusion Must Be Visible in Everyday Decisions</h2>
+
+          <p>
+            Inclusive education becomes meaningful through the way
+            a school treats its learners.
+          </p>
+
+          <p>
+            Can a student ask for help without embarrassment?
+            Are learning materials accessible? Do teachers have support
+            to respond to different learning needs? Can families raise
+            concerns and expect a respectful response?
+          </p>
+
+          <p>
+            These are useful questions for institutional self-review.
+          </p>
+
+          <p>
+            My position is that fairness does not always mean providing
+            identical support to everyone. Some learners may need
+            additional teaching time, accessible resources, financial
+            assistance, or a carefully planned return after an extended
+            absence.
+          </p>
+
+          <p>
+            Schools cannot remove every barrier alone. Governments,
+            communities, and public services have essential responsibilities.
+            However, institutions can examine their own practices and
+            identify where greater flexibility or better coordination
+            could help a learner continue.
+          </p>
+
+          <h2>Technology Should Help Schools Respond</h2>
+
+          <p>
+            Digital systems can organise attendance, assessments,
+            communication, and student records. Their value, however,
+            should be assessed through what people do with that information.
+          </p>
+
+          <p>
+            A dashboard showing declining attendance should lead to
+            timely follow-up. Assessment results should help teachers
+            plan learning support. A recorded concern should reach
+            someone responsible for responding.
+          </p>
+
+          <p>
+            As an academic professional, I believe the most useful
+            question is:
+          </p>
+
+          <blockquote>
+            What changed for the learner because we collected
+            this information?
+          </blockquote>
+
+          <p>
+            That question keeps technology connected to educational purpose.
+          </p>
+
+          <h2>A Broader Definition of Success</h2>
+
+          <p>
+            Examination results and institutional achievements remain
+            important. Alongside them, schools should examine persistent
+            absence, withdrawal, completion, and whether interventions
+            help students return and participate.
+          </p>
+
+          <p>
+            They should also listen to learners and families.
+            A report may reveal a pattern; a conversation can help explain it.
+          </p>
+
+          <p>
+            The figure of 273 million should encourage us to broaden
+            our ambitions for education. Innovation matters, and so
+            does the everyday work of noticing a struggling learner,
+            understanding a barrier, and following through on support.
+          </p>
+
+          <p>
+            <strong>
+              The future of education should be measured both by what
+              learners can achieve inside our classrooms and by how
+              effectively we extend that opportunity to those still excluded.
+            </strong>
+          </p>
+
+          <p>
+            Opening school doors is a beginning. Our responsibility
+            is to help learners enter, remain, learn, and succeed.
+          </p>
+
+          <aside aria-label="A question for reflection" style="
+            margin: 34px 0;
+            padding: clamp(22px, 5vw, 32px);
+            background: var(--accent-soft);
+            border-radius: 14px;
+          ">
+            <span style="
+              display: block;
+              margin-bottom: 12px;
+              font-family: 'Segoe UI', Arial, sans-serif;
+              font-size: 11px;
+              font-weight: 750;
+              letter-spacing: 0.12em;
+              text-transform: uppercase;
+              color: var(--accent);
+            ">A question for reflection</span>
+
+            <p style="
+              margin: 0;
+              font-size: 21px;
+              line-height: 1.65;
+              color: var(--ink);
+            ">
+              What would change if every educational institution
+              made access, participation, and learner support as
+              visible as examination results?
+            </p>
+          </aside>
+
+          <aside aria-label="Source and author note" style="
+            margin-top: 38px;
+            padding: 24px;
+            border: 1px solid var(--line);
+            border-radius: 12px;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            font-size: 14px;
+            line-height: 1.75;
+          ">
+            <p style="
+              margin-bottom: 10px;
+              font-size: 11px;
+              font-weight: 750;
+              letter-spacing: 0.12em;
+              text-transform: uppercase;
+              color: var(--accent);
+            ">Source &amp; context</p>
+
+            <p style="margin-bottom: 14px;">
+              UNESCO,
+              <a
+                href="https://www.unesco.org/reports/gem-report/en/2026"
+                target="_blank"
+                rel="noopener noreferrer"
+                style="text-underline-offset: 4px;"
+              >
+                <em>Global Education Monitoring Report 2026:
+                Access and Equity—Countdown to 2030</em>
+              </a>.
+              Global figures cited refer to 2024.
+            </p>
+
+            <p style="
+              margin: 0;
+              padding-top: 14px;
+              border-top: 1px solid var(--line);
+              color: var(--muted);
+              font-size: 13px;
+            ">
+              This opinion article draws on UNESCO data.
+              The interpretations and recommendations reflect
+              the author’s perspective.
+            </p>
+          </aside>
+        `
+      },
+
+      {
+        id: "organise-before-automation",
+        title: "Before automating a spreadsheet, organise the information",
+        excerpt:
+          "Clear fields and consistent records provide a useful foundation for reports and digital workflows.",
+        date: "2026-10-28",
+        category: "technology",
+        author: "Madhav Bhujel",
+        sample: true,
+        youtubeId: "",
+        content: `
+          <p>
+            Automation is easier to maintain when the underlying
+            information is structured consistently. Start by
+            reviewing the spreadsheet before adding scripts.
+          </p>
+
+          <h2>A preparation checklist</h2>
+
+          <ul>
+            <li>Use one clear heading for each column.</li>
+            <li>Keep one record on each row.</li>
+            <li>Use consistent date formats.</li>
+            <li>Use stable identifiers when matching records.</li>
+            <li>Separate data entry from summary calculations.</li>
+          </ul>
+
+          <h2>Test with sample information</h2>
+
+          <p>
+            Try the workflow on a copy of your file. Include
+            incomplete entries and unusual cases so you can
+            check how the process responds.
+          </p>
+
+          <p>
+            Check what happens when a required field is missing,
+            a record appears twice, or a date is entered in an
+            unexpected format.
+          </p>
+
+          <h2>Document the workflow</h2>
+
+          <p>
+            Record what the automation does, what it depends on,
+            and who maintains it. Explain how someone can
+            recognise and report an error.
+          </p>
+
+          <p>
+            A useful system should remain understandable after
+            its original creator steps away.
+          </p>
+        `
+      },
+
+      {
+        id: "digital-workflow-video",
+        title: "A short walkthrough of a digital workflow",
+        excerpt:
+          "A video-post template for demonstrating a project, tool, or practical idea.",
+        date: "2026-10-27",
+        category: "videos",
+        author: "Madhav Bhujel",
+        sample: true,
+
+        // Paste your 11-character YouTube video ID here.
+        youtubeId: "",
+
+        content: `
+          <p>
+            This is a sample video article. Replace this introduction
+            with a description of your own demonstration.
+          </p>
+
+          <h2>What the video will cover</h2>
+
+          <ul>
+            <li>The problem the project addresses.</li>
+            <li>The main steps in the workflow.</li>
+            <li>What viewers can learn or try themselves.</li>
+          </ul>
+
+          <h2>Written summary</h2>
+
+          <p>
+            Add a written explanation of the main steps shown
+            in your video. This helps visitors who prefer reading
+            or cannot watch the video at that moment.
+          </p>
+
+          <h2>Resources</h2>
+
+          <p>
+            Add relevant links, sample files, or further reading here.
+            Use demonstration data when showing institutional systems.
+          </p>
+        `
+      }
+    ];
+
+    /* ==================================================
+       PAGE FUNCTIONS — NO EDITING REQUIRED BELOW
+       ================================================== */
+
+    const BASE_URL = "https://blog.madhavbhujel.com.np/";
+    const RECENT_LIMIT = 3;
+
+    const CATEGORY_NAMES = {
+      education: "Education",
+      technology: "Technology",
+      videos: "Videos"
+    };
+
+    const SYMBOLS = {
+      education: "Aa.",
+      technology: "{ }",
+      videos: "▶"
+    };
+
+    const params = new URLSearchParams(window.location.search);
+    // Cloudflare may serve the article with or without the .html suffix.
+    const pageName = window.location.pathname
+      .replace(/\/+$/, "")
+      .split("/").pop()
+      .replace(/\.html$/, "");
+    const articleFromPath = ["273-million-out-of-school", "ai-learning-new-era"].includes(pageName)
+      ? pageName : null;
+    const listingRequested = params.has("view") || params.has("q") || params.has("category");
+    const articleId = params.get("post") || (listingRequested ? null : articleFromPath);
+    const allView = params.get("view") === "all";
+
+    // ISO date strings sort chronologically.
+    const sortedPosts = [...POSTS].sort(
+      (a, b) => b.date.localeCompare(a.date)
+    );
+
+    function escapeHTML(value) {
+      return String(value).replace(/[&<>"']/g, (character) => ({
+        "&": "&amp;",
+        "<": "&lt;",
+        ">": "&gt;",
+        '"': "&quot;",
+        "'": "&#39;"
+      }[character]));
+    }
+
+    function articleURL(post) {
+      const articlePages = ["273-million-out-of-school", "ai-learning-new-era"];
+      const path = articlePages.includes(post.id)
+        ? post.id
+        : "?post=" + encodeURIComponent(post.id);
+      return new URL(path, BASE_URL).href;
+    }
+
+    function dateLabel(value) {
+      return new Intl.DateTimeFormat("en", {
+        day: "numeric",
+        month: "short",
+        year: "numeric",
+        timeZone: "UTC"
+      }).format(new Date(value + "T12:00:00Z"));
+    }
+
+    function textFromHTML(html) {
+      const template = document.createElement("template");
+      template.innerHTML = html;
+      return template.content.textContent || "";
+    }
+
+    function readingTime(post) {
+      const words = textFromHTML(post.content)
+        .trim()
+        .split(/\s+/)
+        .filter(Boolean).length;
+
+      return Math.max(1, Math.ceil(words / 200));
+    }
+
+    function metadata(post) {
+      return `
+        <div class="meta">
+          <span class="category-label">
+            ${escapeHTML(CATEGORY_NAMES[post.category] || post.category)}
+          </span>
+          <time datetime="${escapeHTML(post.date)}">
+            ${post.sample ? "Sample · " : ""}${escapeHTML(dateLabel(post.date))}
+          </time>
+          <span>${readingTime(post)} min read</span>
+        </div>
+      `;
+    }
+
+    function artwork(post, extraClass = "") {
+  if (post.image) {
+    return `
+      <div class="art has-image ${escapeHTML(extraClass)}">
+        <img
+          src="${escapeHTML(post.image)}"
+          alt="${escapeHTML(post.imageAlt || post.title)}"
+          style="display:block;width:100%;height:auto;"
+        >
+      </div>
+    `;
+  }
+
+  return `
+    <div
+      class="art art-${escapeHTML(post.category)} ${escapeHTML(extraClass)}"
+      aria-hidden="true"
+    >
+      <span class="art-symbol">
+        ${escapeHTML(SYMBOLS[post.category] || "Aa.")}
+      </span>
+    </div>
+  `;
+}
+
+    function cardHTML(post) {
+      const url = articleURL(post);
+
+      return `
+        <article class="card">
+          <div style="position:relative">
+            ${artwork(post)}
+            ${post.sample
+              ? '<span class="sample-badge">Sample post</span>'
+              : ""}
+          </div>
+
+          <div class="card-content">
+            ${metadata(post)}
+
+            <h3>
+              <a href="${url}">${escapeHTML(post.title)}</a>
+            </h3>
+
+            <p>${escapeHTML(post.excerpt)}</p>
+
+            <a class="read-link" href="${url}">
+              ${post.category === "videos"
+                ? "Open video article"
+                : "Read article"} →
+            </a>
+          </div>
+        </article>
+      `;
+    }
+
+    function listHTML(post) {
+      return `
+        <li>
+          <a class="list-link" href="${articleURL(post)}">
+            ${artwork(post, "list-art")}
+            <div>
+              ${metadata(post)}
+              <h3>${escapeHTML(post.title)}</h3>
+              <p>${escapeHTML(post.excerpt)}</p>
+            </div>
+            <span class="list-arrow" aria-hidden="true">↗</span>
+          </a>
+        </li>
+      `;
+    }
+
+    function setPageMetadata(title, description, url, type = "website", image = "/education-access.png", imageAlt = "Perspectives on education and learning") {
+      document.title = title;
+      document.getElementById("page-description").content = description;
+      document.getElementById("canonical").href = url;
+      document.getElementById("og-title").content = title;
+      document.getElementById("og-description").content = description;
+      document.getElementById("og-url").content = url;
+      document.getElementById("og-type").content = type;
+      const imageURL = new URL(image || "/education-access.png", BASE_URL).href;
+      document.getElementById("og-image").content = imageURL;
+      document.getElementById("og-image-alt").content = imageAlt;
+      document.getElementById("twitter-title").content = title;
+      document.getElementById("twitter-description").content = description;
+      document.getElementById("twitter-image").content = imageURL;
+    }
+
+    /* LISTING PAGE */
+    function renderListing() {
+      document.getElementById("listing-page").hidden = false;
+
+      const search = document.getElementById("search");
+      const category = document.getElementById("category");
+      const recentGrid = document.getElementById("recent-grid");
+      const allList = document.getElementById("all-list");
+      const status = document.getElementById("result-count");
+
+      const requestedCategory = params.get("category");
+      if (requestedCategory in CATEGORY_NAMES) {
+        category.value = requestedCategory;
+      }
+
+      search.value = params.get("q") || "";
+
+      document.getElementById(
+        allView ? "all-tab" : "recent-tab"
+      ).setAttribute("aria-current", "page");
+
+      document.getElementById("posts-heading").textContent =
+        allView ? "All posts." : "Articles";
+
+      document.getElementById("posts-description").textContent =
+        allView
+          ? "Browse every article and video, newest first."
+          : "The three newest articles and videos.";
+
+      recentGrid.hidden = allView;
+      allList.hidden = !allView;
+
+      document.getElementById("view-all-area").hidden = allView;
+
+      setPageMetadata(
+        allView
+          ? "All Posts | Madhav Bhujel"
+          : "Madhav Bhujel | Blog & Ideas",
+        "Articles and videos about education, data, and digital tools.",
+        BASE_URL + (allView ? "?view=all" : "")
+      );
+
+      function update() {
+        const query = search.value.trim().toLowerCase();
+
+        const matches = sortedPosts.filter((post) => {
+          const categoryMatch =
+            category.value === "all" ||
+            post.category === category.value;
+
+          const searchable = [
+            post.title,
+            post.excerpt,
+            CATEGORY_NAMES[post.category],
+            textFromHTML(post.content)
+          ].join(" ").toLowerCase();
+
+          return categoryMatch && searchable.includes(query);
+        });
+
+        const shown = allView
+          ? matches
+          : matches.slice(0, RECENT_LIMIT);
+
+        if (allView) {
+          allList.innerHTML = shown.map(listHTML).join("");
+        } else {
+          recentGrid.innerHTML = shown.map(cardHTML).join("");
+        }
+
+        status.textContent = allView
+          ? matches.length + (matches.length === 1 ? " post found" : " posts found")
+          : "Showing " + shown.length + " of " + matches.length +
+            " matching posts · newest first";
+
+        document.getElementById("empty-state").hidden =
+          shown.length !== 0;
+
+        const newParams = new URLSearchParams();
+
+        if (allView) newParams.set("view", "all");
+        if (category.value !== "all") {
+          newParams.set("category", category.value);
+        }
+        if (query) newParams.set("q", search.value.trim());
+
+        const queryString = newParams.toString();
+
+        history.replaceState(
+          null,
+          "",
+          location.pathname +
+            (queryString ? "?" + queryString : "") +
+            location.hash
+        );
+      }
+
+      search.addEventListener("input", update);
+      category.addEventListener("change", update);
+
+      document.getElementById("reset-button").addEventListener("click", () => {
+        search.value = "";
+        category.value = "all";
+        update();
+        search.focus();
+      });
+
+      update();
+    }
+
+    /* FULL ARTICLE PAGE */
+    function renderArticle(post) {
+      document.documentElement.lang = post.language || "en";
+      document.body.classList.toggle("nepali-page", post.language === "ne");
+      document.getElementById("article-page").hidden = false;
+
+      const validVideo =
+        /^[a-zA-Z0-9_-]{11}$/.test(post.youtubeId || "");
+
+      const otherPosts = sortedPosts
+        .filter((item) => item.id !== post.id)
+        .slice(0, 2);
+
+      document.getElementById("article-container").innerHTML = `
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="./">Blog home</a>
+          <span aria-hidden="true">/</span>
+          <a href="/?view=all#posts">All posts</a>
+          <span aria-hidden="true">/</span>
+          <span>${escapeHTML(CATEGORY_NAMES[post.category] || post.category)}</span>
+        </nav>
+
+        <article>
+          <div class="eyebrow">
+            ${escapeHTML(CATEGORY_NAMES[post.category] || post.category)}
+          </div>
+
+          <h1 class="article-title">${escapeHTML(post.title)}</h1>
+          <p class="article-description">${escapeHTML(post.excerpt)}</p>
+
+          <div class="article-author">
+            <span class="avatar" aria-hidden="true">MB</span>
+            <div>
+              <strong>${escapeHTML(post.author)}</strong>
+              <small>
+                ${post.sample ? "Sample date: " : ""}
+                ${escapeHTML(dateLabel(post.date))}
+                · ${readingTime(post)} min read
+              </small>
+            </div>
+          </div>
+
+          ${artwork(post, "article-banner")}
+
+          ${post.sample ? `
+            <div class="sample-notice">
+              This is sample content included with the website template.
+              Replace it with your own article before presenting it
+              as a published personal post.
+            </div>
+          ` : ""}
+
+          ${validVideo ? `
+            <div class="video-box">
+              <iframe
+                src="https://www.youtube-nocookie.com/embed/${escapeHTML(post.youtubeId)}"
+                title="${escapeHTML(post.title)}"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+                referrerpolicy="strict-origin-when-cross-origin">
+              </iframe>
+            </div>
+          ` : ""}
+
+          <div class="article-body">
+            ${post.content}
+          </div>
+
+          <div class="article-actions">
+            <a class="button button-primary" href="/?view=all#posts">
+              ← All posts
+            </a>
+            <button class="button" id="copy-link" type="button">
+              Copy article link
+            </button>
+          </div>
+
+          <p class="copy-status" id="copy-status" role="status"></p>
+        </article>
+
+        ${otherPosts.length ? `
+          <aside class="related" aria-label="More articles">
+            <h2>Keep reading.</h2>
+            ${otherPosts.map((item) => `
+              <a href="${articleURL(item)}">
+                ${escapeHTML(item.title)} →
+              </a>
+            `).join("")}
+          </aside>
+        ` : ""}
+      `;
+
+      const publicURL = articleURL(post);
+
+      setPageMetadata(
+        post.title + " | Madhav Bhujel",
+        post.excerpt,
+        publicURL,
+        "article",
+        post.image,
+        post.imageAlt || post.title
+      );
+
+      document.getElementById("copy-link").addEventListener("click", async () => {
+        const status = document.getElementById("copy-status");
+
+        try {
+          await navigator.clipboard.writeText(publicURL);
+          status.textContent = "Article link copied.";
+        } catch (error) {
+          status.textContent = "Copy this address: " + publicURL;
+        }
+      });
+    }
+
+    /* OPEN THE CORRECT PAGE */
+    if (articleId !== null) {
+      const post = POSTS.find((item) => item.id === articleId);
+
+      if (post) {
+        renderArticle(post);
+      } else {
+        document.getElementById("not-found").hidden = false;
+        document.title = "Article not found | Madhav Bhujel";
+      }
+    } else {
+      renderListing();
+    }
+
+    /* THEME */
+    const themeButton = document.getElementById("theme-button");
+
+    function updateThemeButton() {
+      const dark =
+        document.documentElement.dataset.theme === "dark";
+
+      themeButton.textContent = dark ? "☀" : "☾";
+      themeButton.setAttribute("aria-pressed", String(dark));
+      themeButton.setAttribute(
+        "aria-label",
+        dark ? "Switch to light theme" : "Switch to dark theme"
+      );
+    }
+
+    themeButton.addEventListener("click", () => {
+      const dark =
+        document.documentElement.dataset.theme !== "dark";
+
+      document.documentElement.dataset.theme = dark ? "dark" : "light";
+
+      try {
+        localStorage.setItem("mb-blog-theme", dark ? "dark" : "light");
+      } catch (error) {}
+
+      updateThemeButton();
+    });
+
+    updateThemeButton();
+
+    /* MOBILE MENU */
+    const menuButton = document.getElementById("menu-button");
+    const navigation = document.getElementById("navigation");
+
+    function closeMenu() {
+      navigation.classList.remove("open");
+      menuButton.setAttribute("aria-expanded", "false");
+      menuButton.setAttribute("aria-label", "Open navigation");
+      menuButton.textContent = "☰";
+    }
+
+    menuButton.addEventListener("click", () => {
+      const open = menuButton.getAttribute("aria-expanded") !== "true";
+
+      navigation.classList.toggle("open", open);
+      menuButton.setAttribute("aria-expanded", String(open));
+      menuButton.setAttribute(
+        "aria-label",
+        open ? "Close navigation" : "Open navigation"
+      );
+      menuButton.textContent = open ? "×" : "☰";
+    });
+
+    navigation.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", closeMenu);
+    });
+
+    document.addEventListener("click", (event) => {
+      if (
+        !navigation.contains(event.target) &&
+        !menuButton.contains(event.target)
+      ) {
+        closeMenu();
+      }
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (
+        event.key === "Escape" &&
+        menuButton.getAttribute("aria-expanded") === "true"
+      ) {
+        closeMenu();
+        menuButton.focus();
+      }
+    });
+
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > 760) closeMenu();
+    });
+
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+
+    // Scroll to sections after dynamic content has been rendered.
+    if (!articleId && location.hash) {
+      requestAnimationFrame(() => {
+        const target = document.getElementById(location.hash.slice(1));
+        if (target) target.scrollIntoView();
+      });
+    }
+  </script>
+</body>
+</html>
