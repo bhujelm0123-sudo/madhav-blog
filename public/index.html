@@ -8,18 +8,18 @@
 
   <title>Madhav Bhujel | Blog &amp; Ideas</title>
   <link rel="canonical" href="https://blog.madhavbhujel.com.np/" id="canonical">
-  <meta name="description" content="Articles and videos about education, academic operations, data, and digital tools." id="page-description">
+  <meta name="description" content="Articles about education, academic operations, data, and digital tools." id="page-description">
   <meta property="og:type" content="website" id="og-type">
   <meta property="og:site_name" content="Madhav Bhujel | Blog &amp; Ideas">
   <meta property="og:title" content="Madhav Bhujel | Blog &amp; Ideas" id="og-title">
-  <meta property="og:description" content="Articles and videos about education, academic operations, data, and digital tools." id="og-description">
+  <meta property="og:description" content="Articles about education, academic operations, data, and digital tools." id="og-description">
   <meta property="og:url" content="https://blog.madhavbhujel.com.np/" id="og-url">
   <meta property="og:image" content="https://blog.madhavbhujel.com.np/education-access.png" id="og-image">
   <meta property="og:image:alt" content="Perspectives on education and learning" id="og-image-alt">
   <meta property="og:locale" content="en_US">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Madhav Bhujel | Blog &amp; Ideas" id="twitter-title">
-  <meta name="twitter:description" content="Articles and videos about education, academic operations, data, and digital tools." id="twitter-description">
+  <meta name="twitter:description" content="Articles about education, academic operations, data, and digital tools." id="twitter-description">
   <meta name="twitter:image" content="https://blog.madhavbhujel.com.np/education-access.png" id="twitter-image">
 
   <script>
@@ -865,6 +865,8 @@
       .nepali-article h2 {font-size:27px;}
       .nepali-article blockquote {font-size:23px;padding:18px;}
     }
+    .card .art.has-image {aspect-ratio: 1.91 / 1; min-height:0; height:auto; background:var(--soft);}
+    .card .art.has-image img {width:100%; height:100% !important; object-fit:contain;}
   </style>
 </head>
 
@@ -884,7 +886,7 @@
       <nav class="nav" id="navigation" aria-label="Main navigation">
         <a href="./">Home</a>
         <a href="/?view=all#posts">All Posts</a>
-        <a href="/?view=all&amp;category=videos#posts">Videos</a>
+        <a href="/?view=all&amp;category=technology#posts">Technology</a>
         <a href="./#about">About</a>
         <a href="https://madhavbhujel.com.np/">Portfolio ↗</a>
       </nav>
@@ -948,11 +950,11 @@
         <div class="container">
           <div class="section-heading">
             <h2 id="posts-heading">Articles</h2>
-            <p id="posts-description">The latest articles and videos.</p>
+            <p id="posts-description">The latest articles.</p>
           </div>
 
           <nav class="view-tabs" aria-label="Post views">
-            <a href="./#posts" id="recent-tab">Recent Post</a>
+            <a href="./#posts" id="recent-tab">Recent Posts</a>
             <a href="/?view=all#posts" id="all-tab">All Posts</a>
           </nav>
 
@@ -962,7 +964,7 @@
               <input
                 type="search"
                 id="search"
-                placeholder="Search by title, topic, or content…"
+                placeholder="Search by title or topic…"
                 autocomplete="off"
               >
             </div>
@@ -973,7 +975,6 @@
                 <option value="all">All categories</option>
                 <option value="education">Education</option>
                 <option value="technology">Technology</option>
-                <option value="videos">Videos</option>
               </select>
             </div>
           </div>
@@ -1024,30 +1025,14 @@
       </section>
     </div>
 
-    <!-- FULL ARTICLE VIEW -->
-    <div class="article-page" id="article-page" hidden>
-      <div class="article-wrap" id="article-container"></div>
-    </div>
-
-    <!-- INVALID ARTICLE LINK -->
-    <section class="container article-page" id="not-found" hidden>
-      <div class="empty">
-        <h1>Article not found</h1>
-        <p>This article may have been removed or its address changed.</p>
-        <a class="button button-primary" href="/?view=all#posts">
-          Browse all posts
-        </a>
-      </div>
-    </section>
-
     <noscript>
       <div class="container article-page">
         <h1>Madhav Bhujel — Blog</h1>
         <p>
-          Please enable JavaScript to view the articles in this
-          single-file website.
+          Enable JavaScript to search and filter articles, or open one below.
         </p>
-        <a href="https://madhavbhujel.com.np/">Visit my portfolio</a>
+        <p><a href="/ai-learning-new-era">हातमा AI, पहुँचमा ज्ञानको संसार</a></p>
+        <p><a href="/273-million-out-of-school">273 Million Children and Young People Are Out of School</a></p>
       </div>
     </noscript>
   </main>
@@ -1065,480 +1050,62 @@
   </footer>
 
   <script>
-    /* ==================================================
-       POSTS
-       Add or edit your posts in this array.
+    /* ADD A NEW ARTICLE HERE
+       1. Upload its own HTML file and image beside index.html.
+       2. Add ONE entry to POSTS below (separate entries with commas).
+       3. Set category to "education" or "technology".
+       4. url must match the published article path.
+       No full article content belongs in this file.
 
-       id: unique article address; do not use spaces.
-       date: YYYY-MM-DD; newest posts appear first.
-       category: education, technology, or videos.
-       sample: change to false after adding your own content.
-       youtubeId: optional YouTube video ID, not a full link.
-       content: the complete article written as HTML.
-
-       Only put your own trusted HTML in "content".
-       ================================================== */
-
+       Example entry:
+       {
+         title: "Your article title",
+         excerpt: "A short introduction.",
+         date: "2026-10-30",
+         category: "technology",
+         image: "/your-image.png",
+         url: "/your-article-name"
+       },
+    */
     const POSTS = [
-{
-      "id": "ai-learning-new-era",
-      "title": "हातमा AI, पहुँचमा ज्ञानको संसार: के हामी सिकाइको नयाँ युगका लागि तयार छौँ?",
-      "excerpt": "AI लाई सामान्य Chatbot बाट व्यक्तिगत Learning Partner बनाउने सम्भावना—ज्ञानको पहुँच, सीप विकास र जीवनभर सिकिरहने अभ्यासबारे विचार।",
-      "date": "2026-10-30",
-      "category": "technology",
-      "author": "माधव भुजेल",
-      "sample": false,
-      "image": "/ai-learning-cover.png",
-      "imageAlt": "प्रविधि, सिकाइ र मानव क्षमता विकासको चित्रण",
-      "youtubeId": "",
-      "language": "ne",
-      "content": "<div class=\"nepali-article\" lang=\"ne\">\n<p class=\"article-kicker\">विचार · Technology, Learning &amp; Future</p>\n<p>हामी AI लाई इमेल लेख्न, प्रश्नको उत्तर खोज्न, अनुवाद गर्न वा दैनिक काम छिटो सक्न प्रयोग गरिरहेका छौँ तर एकछिन सोचौँ—हामीले सामान्य Chatbot का रूपमा प्रयोग गरिरहेको यही प्रविधि हाम्रो व्यक्तिगत Learning Partner बन्न सक्दैन र ?</p>\n<p>हामीलाई कठिन विषय बुझाउने, नयाँ सीप सिक्न मार्गदर्शन गर्ने,  अभ्यास गराउने र हाम्रो काममा Feedback दिने साथी, जिज्ञासाअनुसार अध्ययनको बाटो खोलिदिने एउटा यस्तो माध्यम, जसको सम्भावना हामीले अझै पूर्ण रूपमा उपयोग गर्न बाँकी छ।</p>\n<blockquote>सायद हाम्रो हातमा विश्वविद्यालयजस्तै सिकाइको सम्भावना छ, तर हामी त्यसबाट छोटा उत्तर मात्रै मागिरहेका छौँ ।</blockquote>\n<p>यो तुलना सम्भावनाको हो । AI ले विश्वविद्यालयको प्रमाणित शिक्षा, अनुसन्धान, प्रयोगशाला, अनुभव र मानवीय सम्बन्धका सबै पक्ष प्रतिस्थापन गर्दैन तर यसले धेरै मानिसका लागि अध्ययन सुरु गर्ने र निरन्तर सिकिरहने अवसर विस्तार गर्न सक्छ ।</p>\n<h2>सूचनाबाट संवादतर्फ</h2>\n<p>पहिले कुनै विषय बुझ्न उपयुक्त पुस्तक, शिक्षक वा कक्षा खोज्नुपर्थ्यो पछि Internet ले सूचनासम्म पुग्न सहज बनायो र अब AI ले त्यही सूचनासँग संवाद गर्न सम्भव बनाइरहेको छ । हामी “यो अझ सरल भाषामा बुझाइदेऊ”, “मेरो कामसँग सम्बन्धित उदाहरण देऊ” वा “मैले बुझेँ कि बुझिनँ भनेर जाँच” भन्न सक्छौँ ।</p>\n<p>यसरी सिकाइ आफ्नो गति, आवश्यकता र बुझाइअनुसार अघि बढाउन सकिन्छ । यहीँ Personalized Learning को ठूलो सम्भावना छ ।</p>\n<p>अङ्ग्रेजी सिक्न चाहने व्यक्तिहरुले संवादको अभ्यास गर्न सक्छन् । Coding सिक्ने विद्यार्थीहरुले आफूले लेखेका प्रोग्राममा त्रुटि किन आयो भनेर बुझ्न सक्छन् । शिक्षकहरुले फरक क्षमता भएका विद्यार्थीका लागि शिक्षण गतिविधि तयार गर्न सहयोग लिन सक्छन् । व्यवसायीहरुले Excel, Data Analysis वा Digital Marketing का आधारभूत सीप सिक्न मार्गदर्शन लिन सक्छन् ।</p>\n<p>यस्ता अवसरले सिकाइलाई निश्चित उमेर, कक्षाकोठा वा पेसामा सीमित राख्दैनन् । नयाँ विषयमा प्रवेश गर्न चाहने व्यक्तिहरुका लागि पहिलो कदम चाल्न सजिलो बनाउन सक्छन् ।</p>\n<h2>ज्ञानको पहुँचबाट सीप विकाससम्म</h2>\n<blockquote>तर Access to Knowledge र वास्तविक Skill Development बीचको दूरी अभ्यासले मात्र पूरा गर्छ ।</blockquote>\n<p>AI ले राम्रो लेख तयार गरिदिँदैमा हाम्रो लेखन क्षमता बढ्दैन । Code लेखिदिँदैमा हामी Programmer हुँदैनौँ । कुनै अवधारणाको उत्तर पढ्दैमा त्यसलाई व्यवहारमा प्रयोग गर्न सकिन्छ भन्ने हुँदैन । सीप विकासका लागि आफैँ प्रयास गर्न, गल्ती पहिचान गर्न, सुधार गर्न र फेरि अभ्यास गर्नुपर्छ ।</p>\n<p>OECD को Digital Education Outlook 2026 ले पनि स्पष्ट शिक्षण उद्देश्यसहित प्रयोग गर्दा Generative AI ले सिकाइमा सहयोग गर्न सक्ने देखाएको छ । तर काम पूरै AI लाई जिम्मा दिँदा तत्काल राम्रो Output प्राप्त भए पनि वास्तविक सिकाइमा सुधार नहुन सक्छ । त्यसैले हाम्रो प्रयोग गर्ने तरिका बदलिनुपर्छ ।</p>\n<h2>AI सँग सिक्ने तरिका बदलौँ</h2>\n<p>“यो काम गरिदेऊ” सँगै “यो काम गर्न मलाई सिकाऊ” भन्नुपर्छ । “उत्तर देऊ” सँगै “मेरो सोचमा कहाँ कमजोरी छ?” भनेर सोध्नुपर्छ । “यो लेखिदेऊ” सँगै “मैले लेखेको सामग्रीमा सुधारका लागि Feedback देऊ” भन्नुपर्छ ।</p>\n<p>यही अभ्यासले AI लाई दैनिक सहायकसँगै हाम्रो क्षमता विकास गर्ने Learning Partner बनाउन सक्छ ।</p>\n<h2>परिवर्तनसँगै सिक्ने क्षमता</h2>\n<p>हामी ज्ञानको पहुँच र प्रयोग दुवै बदलिँदै गएको समयमा छौँ । नयाँ Digital Tools, अध्ययन सामग्री र काम गर्ने तरिका थपिँदै जाँदा अवसर पनि विस्तार हुन सक्छन् । यसको वृद्धिलाई हरेक महिना वा वर्ष निश्चित गुणाले बढ्छ भनेर दाबी गर्नुभन्दा त्यसले हाम्रो जीवन र काममा ल्याउने परिवर्तन बुझ्नु आवश्यक छ ।</p>\n<p>त्यो परिवर्तनसँग अघि बढ्न Learning Agility—नयाँ कुरा सिकेर आवश्यक अवस्थामा प्रयोग गर्न सक्ने क्षमता— महत्त्वपूर्ण हुन्छ ।</p>\n<p>यसको अर्थ बजारमा आएका सबै नयाँ Tools पछ्याउनु होइन । आफ्नो कामका लागि के उपयोगी छ भनेर छुट्याउनु, आवश्यक सीप सिक्नु र प्रमाणका आधारमा आफ्नो तरिका सुधार्नु हो । पटक-पटक, पहिलेका स्थापित बुझाइहरूलाई पुनः मूल्याङ्कन गर्न आवश्यक हुन्छ । कहिलेकाहीँ पुरानो सीपलाई नयाँ प्रविधिसँग जोड्नुपर्छ । यही प्रक्रियालाई Upskilling र Reskilling ले व्यावहारिक रूप दिन्छन् ।</p>\n<p>शिक्षण संस्थाले पनि विद्यार्थीलाई यसका लागि तयार गर्नुपर्छ । जानकारी सम्झन लगाउने अभ्याससँगै सही प्रश्न सोध्ने, स्रोत जाँच्ने, तर्क गर्ने र वास्तविक समस्या समाधान गर्ने अवसर दिनुपर्छ । AI को उत्तर पनि गलत हुन सक्ने भएकाले Critical Thinking र Digital Literacy सिकाइका आवश्यक आधार हुन् ।</p>\n<h2>नेपालका लागि अवसर र जिम्मेवारी</h2>\n<p>नेपालका लागि यो सम्भावना विशेष अर्थपूर्ण छ । भरपर्दो Internet, उपयुक्त उपकरण, भाषिक सहयोग र मार्गदर्शन उपलब्ध भएमा विद्यार्थी, शिक्षक र विभिन्न पेसामा रहेका व्यक्तिले आफ्नै ठाउँबाट अध्ययनका थप अवसर उपयोग गर्न सक्छन् । तर पहुँच समान बनाउन पूर्वाधारसँगै मानिसको सीप विकासमा पनि लगानी चाहिन्छ ।</p>\n<p>भविष्यका लागि हामीले विकास गर्नुपर्ने एउटा महत्त्वपूर्ण बानी हो—Lifelong Learning, अर्थात् जीवनभर सिकिरहने अभ्यास । औपचारिक अध्ययन पूरा भएपछि पनि जिज्ञासा, अभ्यास र आत्मसुधारको यात्रा जारी राख्नु आवश्यक हुन्छ ।</p>\n<h2>जीवनभर सिकिरहने अभ्यास</h2>\n<p>कृत्रिम प्रज्ञा (AI) ले नव-ज्ञानका अनगिन्ती मार्गहरू प्रशस्त गर्न सक्छन् । तर, ती मार्गहरूको अन्वेषण गर्ने, समय लगानी गर्ने र आत्मसात् गरिएको ज्ञानलाई कार्यरूपमा परिणत गर्ने अभिभारा पूर्णतः हाम्रै हो ।</p>\n<p>हाम्रो हातमा ज्ञानसँग संवाद गर्ने शक्तिशाली माध्यम छ । अब प्रश्न यत्ति हो—हामी त्यसबाट काम मात्रै गराउँछौँ, कि आफूलाई पनि अझ सक्षम बनाउँछौँ?</p>\n</div>"
-},
-            {
-        id: "273-million-out-of-school",
-
-        title: "273 Million Children and Young People Are Out of School. What Does This Say About the Future of Education?",
-
-        excerpt:
-          "As education embraces artificial intelligence and digital classrooms, millions of learners still lack access to school. A reflection on access, equity, and the everyday responsibility to help every learner participate and succeed.",
-
-        date: "2026-10-29",
-        category: "education",
-        author: "Madhav Bhujel",
-        sample: false,
-
-        image: "/education-access.png",
-imageAlt: "Illustration about access to education",
-        youtubeId: "",
-
-        content: `
-          <div style="
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-            margin-bottom: 28px;
-            font-family: 'Segoe UI', Arial, sans-serif;
-          ">
-            <span style="
-              padding: 5px 12px;
-              border-radius: 30px;
-              background: var(--accent-soft);
-              color: var(--accent);
-              font-size: 11px;
-              font-weight: 700;
-              letter-spacing: 0.08em;
-              text-transform: uppercase;
-            ">Opinion</span>
-
-            <span style="
-              padding: 5px 12px;
-              border-radius: 30px;
-              border: 1px solid var(--line);
-              color: var(--muted);
-              font-size: 11px;
-              font-weight: 700;
-              letter-spacing: 0.08em;
-              text-transform: uppercase;
-            ">Education &amp; Equity</span>
-          </div>
-
-          <p style="
-            font-size: 1.15em;
-            line-height: 1.8;
-          ">
-            Discussions about the future of education often begin with
-            technology: artificial intelligence, digital classrooms,
-            personalised learning, and new ways of assessing students.
-            These developments deserve attention. But an equally urgent
-            question should guide the conversation:
-            <strong>Who still does not have the opportunity to attend school?</strong>
-          </p>
-
-          <aside aria-label="Key education statistic" style="
-            margin: 32px 0;
-            padding: clamp(22px, 5vw, 36px);
-            border: 1px solid var(--line);
-            border-left: 4px solid var(--accent);
-            border-radius: 14px;
-            background: var(--soft);
-          ">
-            <span style="
-              display: block;
-              margin-bottom: 12px;
-              color: var(--accent);
-              font-family: 'Segoe UI', Arial, sans-serif;
-              font-size: 11px;
-              font-weight: 750;
-              letter-spacing: 0.14em;
-              text-transform: uppercase;
-            ">The access challenge</span>
-
-            <strong style="
-              display: block;
-              margin-bottom: 12px;
-              color: var(--ink);
-              font-family: Georgia, serif;
-              font-size: clamp(38px, 8vw, 64px);
-              font-weight: 400;
-              line-height: 1.1;
-              letter-spacing: -0.04em;
-            ">273 million</strong>
-
-            <p style="
-              margin-bottom: 12px;
-              color: var(--ink);
-              font-size: 18px;
-              line-height: 1.6;
-            ">
-              Children, adolescents, and young people were out of
-              school in 2024—approximately one in six worldwide.
-            </p>
-
-            <p style="
-              margin: 0;
-              color: var(--muted);
-              font-family: 'Segoe UI', Arial, sans-serif;
-              font-size: 12px;
-              line-height: 1.6;
-            ">
-              Source: UNESCO, 2026 Global Education Monitoring Report.
-              Figures refer to 2024.
-            </p>
-          </aside>
-
-          <p>
-            UNESCO’s <em>2026 Global Education Monitoring Report:
-            Access and Equity—Countdown to 2030</em> also states that
-            the out-of-school population increased for the seventh
-            consecutive year, reaching a level
-            <strong>3% higher than in 2015</strong>.
-          </p>
-
-          <p>
-            For me, these figures raise a fundamental concern:
-            how should we define educational progress when so many
-            learners remain outside the classroom?
-          </p>
-
-          <h2>Progress Is Real, but It Is Uneven</h2>
-
-          <p>
-            The picture is not entirely discouraging. UNESCO reports
-            that global enrolment in primary and secondary education
-            reached <strong>1.4 billion students in 2024</strong>,
-            an increase of 327 million since 2000. This demonstrates
-            that education systems can expand access on a substantial scale.
-          </p>
-
-          <p>
-            However, growing enrolment and persistent exclusion can
-            exist at the same time. Celebrating the learners we reach
-            must be accompanied by serious attention to those we do not.
-          </p>
-
-          <p>
-            In my view, educational progress should be judged through
-            several questions:
-          </p>
-
-          <ul>
-            <li>Can learners enter school?</li>
-            <li>Can they attend consistently?</li>
-            <li>Do they receive the support they need?</li>
-            <li>Are they learning?</li>
-            <li>Can they complete their education?</li>
-          </ul>
-
-          <p>
-            Each question matters. An admission record alone cannot
-            answer all of them.
-          </p>
-
-          <h2>Attendance Records Should Lead to Support</h2>
-
-          <p>
-            For school leaders, the global challenge of educational
-            exclusion connects with a practical responsibility:
-            noticing when a learner begins to disengage.
-          </p>
-
-          <p>
-            Consider a student who misses several days of school.
-            Recording those absences is necessary, but the next step
-            matters just as much. Someone needs to understand what is
-            happening, communicate sensitively with the family, and
-            agree on appropriate support.
-          </p>
-
-          <blockquote>
-            An absence should prompt a question before it prompts
-            a judgement.
-          </blockquote>
-
-          <p>
-            I believe attendance monitoring is most useful when schools
-            connect it to a clear follow-up process. A designated staff
-            member should review concerns, coordinate support, and check
-            whether the student’s participation improves. Simply
-            generating an absent-student list does not complete that
-            responsibility.
-          </p>
-
-          <p>
-            Schools should also avoid assuming that every absence has
-            the same explanation. A learner facing transport difficulties
-            may need a different response from someone experiencing
-            illness, bullying, or difficulties with schoolwork.
-          </p>
-
-          <h2>Inclusion Must Be Visible in Everyday Decisions</h2>
-
-          <p>
-            Inclusive education becomes meaningful through the way
-            a school treats its learners.
-          </p>
-
-          <p>
-            Can a student ask for help without embarrassment?
-            Are learning materials accessible? Do teachers have support
-            to respond to different learning needs? Can families raise
-            concerns and expect a respectful response?
-          </p>
-
-          <p>
-            These are useful questions for institutional self-review.
-          </p>
-
-          <p>
-            My position is that fairness does not always mean providing
-            identical support to everyone. Some learners may need
-            additional teaching time, accessible resources, financial
-            assistance, or a carefully planned return after an extended
-            absence.
-          </p>
-
-          <p>
-            Schools cannot remove every barrier alone. Governments,
-            communities, and public services have essential responsibilities.
-            However, institutions can examine their own practices and
-            identify where greater flexibility or better coordination
-            could help a learner continue.
-          </p>
-
-          <h2>Technology Should Help Schools Respond</h2>
-
-          <p>
-            Digital systems can organise attendance, assessments,
-            communication, and student records. Their value, however,
-            should be assessed through what people do with that information.
-          </p>
-
-          <p>
-            A dashboard showing declining attendance should lead to
-            timely follow-up. Assessment results should help teachers
-            plan learning support. A recorded concern should reach
-            someone responsible for responding.
-          </p>
-
-          <p>
-            As an academic professional, I believe the most useful
-            question is:
-          </p>
-
-          <blockquote>
-            What changed for the learner because we collected
-            this information?
-          </blockquote>
-
-          <p>
-            That question keeps technology connected to educational purpose.
-          </p>
-
-          <h2>A Broader Definition of Success</h2>
-
-          <p>
-            Examination results and institutional achievements remain
-            important. Alongside them, schools should examine persistent
-            absence, withdrawal, completion, and whether interventions
-            help students return and participate.
-          </p>
-
-          <p>
-            They should also listen to learners and families.
-            A report may reveal a pattern; a conversation can help explain it.
-          </p>
-
-          <p>
-            The figure of 273 million should encourage us to broaden
-            our ambitions for education. Innovation matters, and so
-            does the everyday work of noticing a struggling learner,
-            understanding a barrier, and following through on support.
-          </p>
-
-          <p>
-            <strong>
-              The future of education should be measured both by what
-              learners can achieve inside our classrooms and by how
-              effectively we extend that opportunity to those still excluded.
-            </strong>
-          </p>
-
-          <p>
-            Opening school doors is a beginning. Our responsibility
-            is to help learners enter, remain, learn, and succeed.
-          </p>
-
-          <aside aria-label="A question for reflection" style="
-            margin: 34px 0;
-            padding: clamp(22px, 5vw, 32px);
-            background: var(--accent-soft);
-            border-radius: 14px;
-          ">
-            <span style="
-              display: block;
-              margin-bottom: 12px;
-              font-family: 'Segoe UI', Arial, sans-serif;
-              font-size: 11px;
-              font-weight: 750;
-              letter-spacing: 0.12em;
-              text-transform: uppercase;
-              color: var(--accent);
-            ">A question for reflection</span>
-
-            <p style="
-              margin: 0;
-              font-size: 21px;
-              line-height: 1.65;
-              color: var(--ink);
-            ">
-              What would change if every educational institution
-              made access, participation, and learner support as
-              visible as examination results?
-            </p>
-          </aside>
-
-          <aside aria-label="Source and author note" style="
-            margin-top: 38px;
-            padding: 24px;
-            border: 1px solid var(--line);
-            border-radius: 12px;
-            font-family: 'Segoe UI', Arial, sans-serif;
-            font-size: 14px;
-            line-height: 1.75;
-          ">
-            <p style="
-              margin-bottom: 10px;
-              font-size: 11px;
-              font-weight: 750;
-              letter-spacing: 0.12em;
-              text-transform: uppercase;
-              color: var(--accent);
-            ">Source &amp; context</p>
-
-            <p style="margin-bottom: 14px;">
-              UNESCO,
-              <a
-                href="https://www.unesco.org/reports/gem-report/en/2026"
-                target="_blank"
-                rel="noopener noreferrer"
-                style="text-underline-offset: 4px;"
-              >
-                <em>Global Education Monitoring Report 2026:
-                Access and Equity—Countdown to 2030</em>
-              </a>.
-              Global figures cited refer to 2024.
-            </p>
-
-            <p style="
-              margin: 0;
-              padding-top: 14px;
-              border-top: 1px solid var(--line);
-              color: var(--muted);
-              font-size: 13px;
-            ">
-              This opinion article draws on UNESCO data.
-              The interpretations and recommendations reflect
-              the author’s perspective.
-            </p>
-          </aside>
-        `
-      },
-
-      
       {
-        id: "digital-workflow-video",
-        title: "A short walkthrough of a digital workflow",
-        excerpt:
-          "A video-post template for demonstrating a project, tool, or practical idea.",
-        date: "2026-10-27",
-        category: "videos",
-        author: "Madhav Bhujel",
-        sample: true,
-
-        // Paste your 11-character YouTube video ID here.
-        youtubeId: "",
-
-        content: `
-          <p>
-            This is a sample video article. Replace this introduction
-            with a description of your own demonstration.
-          </p>
-
-          <h2>What the video will cover</h2>
-
-          <ul>
-            <li>The problem the project addresses.</li>
-            <li>The main steps in the workflow.</li>
-            <li>What viewers can learn or try themselves.</li>
-          </ul>
-
-          <h2>Written summary</h2>
-
-          <p>
-            Add a written explanation of the main steps shown
-            in your video. This helps visitors who prefer reading
-            or cannot watch the video at that moment.
-          </p>
-
-          <h2>Resources</h2>
-
-          <p>
-            Add relevant links, sample files, or further reading here.
-            Use demonstration data when showing institutional systems.
-          </p>
-        `
+            "title": "हातमा AI, पहुँचमा ज्ञानको संसार: के हामी सिकाइको नयाँ युगका लागि तयार छौँ?",
+            "excerpt": "AI लाई सामान्य Chatbot बाट व्यक्तिगत Learning Partner बनाउने सम्भावना—ज्ञानको पहुँच, सीप विकास र जीवनभर सिकिरहने अभ्यासबारे विचार।",
+            "date": "2026-10-30",
+            "category": "technology",
+            "image": "/ai-learning-cover.png",
+            "url": "/ai-learning-new-era"
+      },
+      {
+            "title": "273 Million Children and Young People Are Out of School. What Does This Say About the Future of Education?",
+            "excerpt": "As education embraces artificial intelligence and digital classrooms, millions of learners still lack access to school. A reflection on access, equity, and the everyday responsibility to help every learner participate and succeed.",
+            "date": "2026-10-29",
+            "category": "education",
+            "image": "/education-access.png",
+            "url": "/273-million-out-of-school"
       }
-    ];
-
-    /* ==================================================
-       PAGE FUNCTIONS — NO EDITING REQUIRED BELOW
-       ================================================== */
+];
 
     const BASE_URL = "https://blog.madhavbhujel.com.np/";
     const RECENT_LIMIT = 3;
 
     const CATEGORY_NAMES = {
       education: "Education",
-      technology: "Technology",
-      videos: "Videos"
+      technology: "Technology"
     };
 
     const SYMBOLS = {
       education: "Aa.",
-      technology: "{ }",
-      videos: "▶"
+      technology: "{ }"
     };
 
     const params = new URLSearchParams(window.location.search);
-    // Cloudflare may serve the article with or without the .html suffix.
-    const pageName = window.location.pathname
-      .replace(/\/+$/, "")
-      .split("/").pop()
-      .replace(/\.html$/, "");
-    const articleFromPath = ["273-million-out-of-school", "ai-learning-new-era"].includes(pageName)
-      ? pageName : null;
-    const listingRequested = params.has("view") || params.has("q") || params.has("category");
-    const articleId = params.get("post") || (listingRequested ? null : articleFromPath);
+    // Preserve old shared ?post= links for the real articles.
+    const legacyPost = params.get("post");
+    const legacyMatch = POSTS.find(post =>
+      post.url.replace(/\.html$/, "").split("/").pop() === legacyPost
+    );
+    if (legacyMatch) window.location.replace(new URL(legacyMatch.url, BASE_URL).href);
     const allView = params.get("view") === "all";
 
     // ISO date strings sort chronologically.
@@ -1557,11 +1124,7 @@ imageAlt: "Illustration about access to education",
     }
 
     function articleURL(post) {
-      const articlePages = ["273-million-out-of-school", "ai-learning-new-era"];
-      const path = articlePages.includes(post.id)
-        ? post.id
-        : "?post=" + encodeURIComponent(post.id);
-      return new URL(path, BASE_URL).href;
+      return escapeHTML(new URL(post.url, BASE_URL).href);
     }
 
     function dateLabel(value) {
@@ -1573,21 +1136,6 @@ imageAlt: "Illustration about access to education",
       }).format(new Date(value + "T12:00:00Z"));
     }
 
-    function textFromHTML(html) {
-      const template = document.createElement("template");
-      template.innerHTML = html;
-      return template.content.textContent || "";
-    }
-
-    function readingTime(post) {
-      const words = textFromHTML(post.content)
-        .trim()
-        .split(/\s+/)
-        .filter(Boolean).length;
-
-      return Math.max(1, Math.ceil(words / 200));
-    }
-
     function metadata(post) {
       return `
         <div class="meta">
@@ -1595,9 +1143,8 @@ imageAlt: "Illustration about access to education",
             ${escapeHTML(CATEGORY_NAMES[post.category] || post.category)}
           </span>
           <time datetime="${escapeHTML(post.date)}">
-            ${post.sample ? "Sample · " : ""}${escapeHTML(dateLabel(post.date))}
+            ${escapeHTML(dateLabel(post.date))}
           </time>
-          <span>${readingTime(post)} min read</span>
         </div>
       `;
     }
@@ -1634,9 +1181,7 @@ imageAlt: "Illustration about access to education",
         <article class="card">
           <div style="position:relative">
             ${artwork(post)}
-            ${post.sample
-              ? '<span class="sample-badge">Sample post</span>'
-              : ""}
+
           </div>
 
           <div class="card-content">
@@ -1649,9 +1194,7 @@ imageAlt: "Illustration about access to education",
             <p>${escapeHTML(post.excerpt)}</p>
 
             <a class="read-link" href="${url}">
-              ${post.category === "videos"
-                ? "Open video article"
-                : "Read article"} →
+              Read article →
             </a>
           </div>
         </article>
@@ -1716,19 +1259,19 @@ imageAlt: "Illustration about access to education",
 
       document.getElementById("posts-description").textContent =
         allView
-          ? "Browse every article and video, newest first."
-          : "The three newest articles and videos.";
+          ? "Browse every article, newest first."
+          : "The latest published articles.";
 
       recentGrid.hidden = allView;
       allList.hidden = !allView;
 
-      document.getElementById("view-all-area").hidden = allView;
+      document.getElementById("view-all-area").hidden = allView || sortedPosts.length <= RECENT_LIMIT;
 
       setPageMetadata(
         allView
           ? "All Posts | Madhav Bhujel"
           : "Madhav Bhujel | Blog & Ideas",
-        "Articles and videos about education, data, and digital tools.",
+        "Articles about education, data, and digital tools.",
         BASE_URL + (allView ? "?view=all" : "")
       );
 
@@ -1743,8 +1286,7 @@ imageAlt: "Illustration about access to education",
           const searchable = [
             post.title,
             post.excerpt,
-            CATEGORY_NAMES[post.category],
-            textFromHTML(post.content)
+            CATEGORY_NAMES[post.category]
           ].join(" ").toLowerCase();
 
           return categoryMatch && searchable.includes(query);
@@ -1800,135 +1342,7 @@ imageAlt: "Illustration about access to education",
       update();
     }
 
-    /* FULL ARTICLE PAGE */
-    function renderArticle(post) {
-      document.documentElement.lang = post.language || "en";
-      document.body.classList.toggle("nepali-page", post.language === "ne");
-      document.getElementById("article-page").hidden = false;
-
-      const validVideo =
-        /^[a-zA-Z0-9_-]{11}$/.test(post.youtubeId || "");
-
-      const otherPosts = sortedPosts
-        .filter((item) => item.id !== post.id)
-        .slice(0, 2);
-
-      document.getElementById("article-container").innerHTML = `
-        <nav class="breadcrumb" aria-label="Breadcrumb">
-          <a href="./">Blog home</a>
-          <span aria-hidden="true">/</span>
-          <a href="/?view=all#posts">All posts</a>
-          <span aria-hidden="true">/</span>
-          <span>${escapeHTML(CATEGORY_NAMES[post.category] || post.category)}</span>
-        </nav>
-
-        <article>
-          <div class="eyebrow">
-            ${escapeHTML(CATEGORY_NAMES[post.category] || post.category)}
-          </div>
-
-          <h1 class="article-title">${escapeHTML(post.title)}</h1>
-          <p class="article-description">${escapeHTML(post.excerpt)}</p>
-
-          <div class="article-author">
-            <span class="avatar" aria-hidden="true">MB</span>
-            <div>
-              <strong>${escapeHTML(post.author)}</strong>
-              <small>
-                ${post.sample ? "Sample date: " : ""}
-                ${escapeHTML(dateLabel(post.date))}
-                · ${readingTime(post)} min read
-              </small>
-            </div>
-          </div>
-
-          ${artwork(post, "article-banner")}
-
-          ${post.sample ? `
-            <div class="sample-notice">
-              This is sample content included with the website template.
-              Replace it with your own article before presenting it
-              as a published personal post.
-            </div>
-          ` : ""}
-
-          ${validVideo ? `
-            <div class="video-box">
-              <iframe
-                src="https://www.youtube-nocookie.com/embed/${escapeHTML(post.youtubeId)}"
-                title="${escapeHTML(post.title)}"
-                loading="lazy"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
-                referrerpolicy="strict-origin-when-cross-origin">
-              </iframe>
-            </div>
-          ` : ""}
-
-          <div class="article-body">
-            ${post.content}
-          </div>
-
-          <div class="article-actions">
-            <a class="button button-primary" href="/?view=all#posts">
-              ← All posts
-            </a>
-            <button class="button" id="copy-link" type="button">
-              Copy article link
-            </button>
-          </div>
-
-          <p class="copy-status" id="copy-status" role="status"></p>
-        </article>
-
-        ${otherPosts.length ? `
-          <aside class="related" aria-label="More articles">
-            <h2>Keep reading.</h2>
-            ${otherPosts.map((item) => `
-              <a href="${articleURL(item)}">
-                ${escapeHTML(item.title)} →
-              </a>
-            `).join("")}
-          </aside>
-        ` : ""}
-      `;
-
-      const publicURL = articleURL(post);
-
-      setPageMetadata(
-        post.title + " | Madhav Bhujel",
-        post.excerpt,
-        publicURL,
-        "article",
-        post.image,
-        post.imageAlt || post.title
-      );
-
-      document.getElementById("copy-link").addEventListener("click", async () => {
-        const status = document.getElementById("copy-status");
-
-        try {
-          await navigator.clipboard.writeText(publicURL);
-          status.textContent = "Article link copied.";
-        } catch (error) {
-          status.textContent = "Copy this address: " + publicURL;
-        }
-      });
-    }
-
-    /* OPEN THE CORRECT PAGE */
-    if (articleId !== null) {
-      const post = POSTS.find((item) => item.id === articleId);
-
-      if (post) {
-        renderArticle(post);
-      } else {
-        document.getElementById("not-found").hidden = false;
-        document.title = "Article not found | Madhav Bhujel";
-      }
-    } else {
-      renderListing();
-    }
+    renderListing();
 
     /* THEME */
     const themeButton = document.getElementById("theme-button");
@@ -2014,7 +1428,7 @@ imageAlt: "Illustration about access to education",
       new Date().getFullYear();
 
     // Scroll to sections after dynamic content has been rendered.
-    if (!articleId && location.hash) {
+    if (location.hash) {
       requestAnimationFrame(() => {
         const target = document.getElementById(location.hash.slice(1));
         if (target) target.scrollIntoView();
