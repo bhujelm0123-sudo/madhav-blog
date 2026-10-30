@@ -6,36 +6,20 @@
   <meta name="color-scheme" content="light dark">
   <meta name="theme-color" content="#142a3b">
 
-  <title>Madhav Bhujel | Blog & Ideas</title>
-
-  <meta
-    name="description"
-    content="Articles and videos about education, academic operations, data, and digital tools."
-    id="page-description"
-  >
-
-  <link
-    rel="canonical"
-    href="https://blog.madhavbhujel.com.np/"
-    id="canonical"
-  >
-
+  <title>Madhav Bhujel | Blog &amp; Ideas</title>
+  <meta name="description" content="Articles and videos about education, academic operations, data, and digital tools." id="page-description">
   <meta property="og:type" content="website" id="og-type">
-  <meta
-    property="og:title"
-    content="Madhav Bhujel | Blog & Ideas"
-    id="og-title"
-  >
-  <meta
-    property="og:description"
-    content="Perspectives on education, data, and everyday improvement."
-    id="og-description"
-  >
-  <meta
-    property="og:url"
-    content="https://blog.madhavbhujel.com.np/"
-    id="og-url"
-  >
+  <meta property="og:site_name" content="Madhav Bhujel | Blog &amp; Ideas">
+  <meta property="og:title" content="Madhav Bhujel | Blog &amp; Ideas" id="og-title">
+  <meta property="og:description" content="Articles and videos about education, academic operations, data, and digital tools." id="og-description">
+  <meta property="og:url" content="https://blog.madhavbhujel.com.np/" id="og-url">
+  <meta property="og:image" content="https://blog.madhavbhujel.com.np/education-access.png" id="og-image">
+  <meta property="og:image:alt" content="Illustration about access to education" id="og-image-alt">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Madhav Bhujel | Blog &amp; Ideas" id="twitter-title">
+  <meta name="twitter:description" content="Articles and videos about education, academic operations, data, and digital tools." id="twitter-description">
+  <meta name="twitter:image" content="https://blog.madhavbhujel.com.np/education-access.png" id="twitter-image">
+  <link rel="canonical" href="https://blog.madhavbhujel.com.np/" id="canonical">
 
   <script>
     try {
@@ -875,8 +859,8 @@
 
       <nav class="nav" id="navigation" aria-label="Main navigation">
         <a href="./">Home</a>
-        <a href="?view=all#posts">All Posts</a>
-        <a href="?view=all&amp;category=videos#posts">Videos</a>
+        <a href="/?view=all#posts">All Posts</a>
+        <a href="/?view=all&amp;category=videos#posts">Videos</a>
         <a href="./#about">About</a>
         <a href="https://madhavbhujel.com.np/">Portfolio ↗</a>
       </nav>
@@ -945,7 +929,7 @@
 
           <nav class="view-tabs" aria-label="Post views">
             <a href="./#posts" id="recent-tab">Recent Post</a>
-            <a href="?view=all#posts" id="all-tab">All Posts</a>
+            <a href="/?view=all#posts" id="all-tab">All Posts</a>
           </nav>
 
           <div class="toolbar">
@@ -984,7 +968,7 @@
           </div>
 
           <div class="below-posts" id="view-all-area">
-            <a class="button button-primary" href="?view=all#posts">
+            <a class="button button-primary" href="/?view=all#posts">
               View all posts →
             </a>
           </div>
@@ -1026,7 +1010,7 @@
       <div class="empty">
         <h1>Article not found</h1>
         <p>This article may have been removed or its address changed.</p>
-        <a class="button button-primary" href="?view=all#posts">
+        <a class="button button-primary" href="/?view=all#posts">
           Browse all posts
         </a>
       </div>
@@ -1049,7 +1033,7 @@
       <span>© <span id="year">2026</span> Madhav Bhujel.</span>
       <div class="footer-links">
         <a href="./">Blog home</a>
-        <a href="?view=all#posts">All posts</a>
+        <a href="/?view=all#posts">All posts</a>
         <a href="https://madhavbhujel.com.np/">Portfolio</a>
         <a href="mailto:bhujelm0123@gmail.com">Contact</a>
       </div>
@@ -1563,7 +1547,15 @@ imageAlt: "Illustration about access to education",
     };
 
     const params = new URLSearchParams(window.location.search);
-    const articleId = params.get("post");
+    // Cloudflare may serve the article with or without the .html suffix.
+    const pageName = window.location.pathname
+      .replace(/\/+$/, "")
+      .split("/").pop()
+      .replace(/\.html$/, "");
+    const articleFromPath = pageName === "273-million-out-of-school"
+      ? pageName : null;
+    const listingRequested = params.has("view") || params.has("q") || params.has("category");
+    const articleId = params.get("post") || (listingRequested ? null : articleFromPath);
     const allView = params.get("view") === "all";
 
     // ISO date strings sort chronologically.
@@ -1582,7 +1574,10 @@ imageAlt: "Illustration about access to education",
     }
 
     function articleURL(post) {
-      return "?post=" + encodeURIComponent(post.id);
+      const path = post.id === "273-million-out-of-school"
+        ? "273-million-out-of-school.html"
+        : "?post=" + encodeURIComponent(post.id);
+      return new URL(path, BASE_URL).href;
     }
 
     function dateLabel(value) {
@@ -1695,7 +1690,7 @@ imageAlt: "Illustration about access to education",
       `;
     }
 
-    function setPageMetadata(title, description, url, type = "website") {
+    function setPageMetadata(title, description, url, type = "website", image = "/education-access.png", imageAlt = "Perspectives on education and learning") {
       document.title = title;
       document.getElementById("page-description").content = description;
       document.getElementById("canonical").href = url;
@@ -1703,6 +1698,12 @@ imageAlt: "Illustration about access to education",
       document.getElementById("og-description").content = description;
       document.getElementById("og-url").content = url;
       document.getElementById("og-type").content = type;
+      const imageURL = new URL(image || "/education-access.png", BASE_URL).href;
+      document.getElementById("og-image").content = imageURL;
+      document.getElementById("og-image-alt").content = imageAlt;
+      document.getElementById("twitter-title").content = title;
+      document.getElementById("twitter-description").content = description;
+      document.getElementById("twitter-image").content = imageURL;
     }
 
     /* LISTING PAGE */
@@ -1830,7 +1831,7 @@ imageAlt: "Illustration about access to education",
         <nav class="breadcrumb" aria-label="Breadcrumb">
           <a href="./">Blog home</a>
           <span aria-hidden="true">/</span>
-          <a href="?view=all#posts">All posts</a>
+          <a href="/?view=all#posts">All posts</a>
           <span aria-hidden="true">/</span>
           <span>${escapeHTML(CATEGORY_NAMES[post.category] || post.category)}</span>
         </nav>
@@ -1883,7 +1884,7 @@ imageAlt: "Illustration about access to education",
           </div>
 
           <div class="article-actions">
-            <a class="button button-primary" href="?view=all#posts">
+            <a class="button button-primary" href="/?view=all#posts">
               ← All posts
             </a>
             <button class="button" id="copy-link" type="button">
@@ -1906,13 +1907,15 @@ imageAlt: "Illustration about access to education",
         ` : ""}
       `;
 
-      const publicURL = BASE_URL + articleURL(post);
+      const publicURL = articleURL(post);
 
       setPageMetadata(
         post.title + " | Madhav Bhujel",
         post.excerpt,
         publicURL,
-        "article"
+        "article",
+        post.image,
+        post.imageAlt || post.title
       );
 
       document.getElementById("copy-link").addEventListener("click", async () => {
