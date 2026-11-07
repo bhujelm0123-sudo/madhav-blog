@@ -1033,6 +1033,7 @@
         </p>
         <p><a href="/ai-learning-new-era">हातमा AI, पहुँचमा ज्ञानको संसार</a></p>
         <p><a href="/273-million-out-of-school">273 Million Children and Young People Are Out of School</a></p>
+        <p><a href="/शिक्षा-प्रणाली-कागजी-ग्रेड-कि-भविष्यको-जनशक्ति.html">शिक्षा प्रणाली: कागजी ग्रेडको खेती कि भविष्यको जनशक्ति?</a></p>
       </div>
     </noscript>
   </main>
@@ -1188,10 +1189,13 @@
 
       return `
         <article class="card">
-          <div style="position:relative">
-            ${artwork(post)}
-
-          </div>
+         <a
+  href="${url}"
+  aria-label="${escapeHTML(post.title)}"
+  style="display:block;position:relative"
+>
+  ${artwork(post)}
+</a>
 
           <div class="card-content">
             ${metadata(post)}
