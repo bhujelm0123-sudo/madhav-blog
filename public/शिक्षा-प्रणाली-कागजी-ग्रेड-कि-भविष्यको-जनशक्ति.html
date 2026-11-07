@@ -1,431 +1,749 @@
-<style>
-  .education-blog {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 24px 20px;
-    color: #202936;
-    background: #ffffff;
-    font-family: "Kokila", serif;
-    font-size: 24px;
-    line-height: 1;
-    overflow-wrap: break-word;
-  }
+फाइलको नाम **`शिक्षा-प्रणाली-कागजी-ग्रेड-कि-भविष्यको-जनशक्ति.html`** राख्नुहोस्। प्रकाशन मिति **५ नोभेम्बर २०२६** राखिएको छ। चित्र **`assets/education-system-cover.png`** मा राख्नुहोस्।
 
-  .education-blog *,
-  .education-blog *::before,
-  .education-blog *::after {
-    box-sizing: border-box;
-  }
+```html
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  .education-blog :lang(en) {
-    font-family: "Times New Roman", Times, serif;
-    font-size: 0.8em;
-    line-height: 1;
-  }
+  <title>शिक्षा प्रणाली: कागजी ग्रेडको खेती कि भविष्यको जनशक्ति? | Madhav Bhujel</title>
 
-  .education-blog .article-header {
-    margin-bottom: 28px;
-    padding-bottom: 20px;
-    border-bottom: 3px solid #147d92;
-  }
+  <meta
+    name="description"
+    content="नेपालको विद्यालय शिक्षा, शिक्षण पद्धति र मूल्याङ्कन प्रणालीको विश्लेषण। कागजी ग्रेडभन्दा माथि उठेर व्यावहारिक सीप, अनुसन्धान र सिर्जनशीलता विकास गर्ने शिक्षाको आवश्यकता।"
+  >
+  <meta name="author" content="Madhav Bhujel">
+  <meta name="robots" content="index, follow">
+  <meta name="color-scheme" content="light">
 
-  .education-blog h1 {
-    margin: 0 0 16px;
-    color: #12394b;
-    font-size: 42px;
-    font-weight: 700;
-    line-height: 1;
-  }
+  <link
+    rel="canonical"
+    href="https://blog.madhavbhujel.com.np/शिक्षा-प्रणाली-कागजी-ग्रेड-कि-भविष्यको-जनशक्ति.html"
+  >
 
-  .education-blog .article-subtitle {
-    margin: 0;
-    color: #536373;
-    font-size: 26px;
-    line-height: 1;
-  }
+  <!-- Facebook and other social media previews -->
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="ne_NP">
+  <meta property="og:site_name" content="Madhav Bhujel | Blog & Ideas">
+  <meta
+    property="og:title"
+    content="शिक्षा प्रणाली: कागजी ग्रेडको खेती कि भविष्यको जनशक्ति?"
+  >
+  <meta
+    property="og:description"
+    content="हामी राम्रो ग्रेड ल्याउने विद्यार्थी तयार गर्दै छौँ कि भविष्यका सक्षम नागरिक? नेपालको शिक्षण र मूल्याङ्कन प्रणालीमाथि एक विश्लेषण।"
+  >
+  <meta
+    property="og:url"
+    content="https://blog.madhavbhujel.com.np/शिक्षा-प्रणाली-कागजी-ग्रेड-कि-भविष्यको-जनशक्ति.html"
+  >
+  <meta
+    property="og:image"
+    content="https://blog.madhavbhujel.com.np/assets/education-system-cover.png"
+  >
+  <meta
+    property="og:image:alt"
+    content="नेपालको विद्यालय शिक्षामा परीक्षामुखी पढाइ र प्रयोगात्मक सिकाइको सांकेतिक चित्रण"
+  >
+  <meta property="article:published_time" content="2026-11-05">
+  <meta property="article:section" content="Education">
 
-  .education-blog h2 {
-    margin: 30px 0 14px;
-    padding-left: 12px;
-    border-left: 4px solid #147d92;
-    color: #12394b;
-    font-size: 32px;
-    line-height: 1;
-  }
+  <meta name="twitter:card" content="summary_large_image">
+  <meta
+    name="twitter:title"
+    content="शिक्षा प्रणाली: कागजी ग्रेडको खेती कि भविष्यको जनशक्ति?"
+  >
+  <meta
+    name="twitter:description"
+    content="कागजी ग्रेडदेखि वास्तविक जीवनका सीपसम्म—हाम्रो शिक्षाको दिशा कता?"
+  >
+  <meta
+    name="twitter:image"
+    content="https://blog.madhavbhujel.com.np/assets/education-system-cover.png"
+  >
 
-  .education-blog h3 {
-    margin: 22px 0 10px;
-    color: #194d60;
-    font-size: 27px;
-    line-height: 1;
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "शिक्षा प्रणाली: कागजी ग्रेडको खेती कि भविष्यको जनशक्ति?",
+    "description": "नेपालको विद्यालय शिक्षा, शिक्षण पद्धति र मूल्याङ्कन प्रणालीको विश्लेषण।",
+    "inLanguage": "ne",
+    "datePublished": "2026-11-05",
+    "author": {
+      "@type": "Person",
+      "name": "Madhav Bhujel",
+      "url": "https://madhavbhujel.com.np/"
+    },
+    "image": "https://blog.madhavbhujel.com.np/assets/education-system-cover.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://blog.madhavbhujel.com.np/शिक्षा-प्रणाली-कागजी-ग्रेड-कि-भविष्यको-जनशक्ति.html"
+    },
+    "articleSection": "Education"
   }
+  </script>
 
-  .education-blog p {
-    margin: 0 0 16px;
-    line-height: 1;
-    text-align: start;
-  }
+  <style>
+    /*
+      Nepali: Kokila
+      English: Times New Roman
+      Single line spacing: line-height: 1
 
-  .education-blog strong {
-    font-weight: 700;
-  }
+      Kokila must be installed on the reader's device.
+      To display Kokila on all devices, add a licensed
+      webfont through @font-face.
+    */
 
-  .education-blog ul {
-    margin: 14px 0 22px;
-    padding-left: 28px;
-  }
-
-  .education-blog li {
-    margin-bottom: 14px;
-    padding-left: 4px;
-    line-height: 1;
-  }
-
-  .education-blog li::marker {
-    color: #147d92;
-  }
-
-  .education-blog .source-reference {
-    color: #586575;
-  }
-
-  .education-blog .key-question {
-    margin: 22px 0;
-    padding: 18px 20px;
-    background: #f0f7f9;
-    border-left: 4px solid #147d92;
-  }
-
-  .education-blog .key-question p:last-child,
-  .education-blog .conclusion p:last-child {
-    margin-bottom: 0;
-  }
-
-  .education-blog .conclusion {
-    margin-top: 28px;
-    padding: 20px;
-    background: #f5f8fa;
-    border: 1px solid #dce6ec;
-    border-radius: 8px;
-  }
-
-  .education-blog .conclusion h2 {
-    margin-top: 0;
-  }
-
-  @media (max-width: 600px) {
-    .education-blog {
-      padding: 20px 16px;
-      font-size: 22px;
+    :root {
+      --page-bg: #f2f5f7;
+      --paper: #ffffff;
+      --text: #202936;
+      --heading: #12394b;
+      --muted: #536373;
+      --accent: #147d92;
+      --border: #dce6ec;
+      --soft-bg: #f0f7f9;
     }
 
-    .education-blog h1 {
-      font-size: 34px;
+    * {
+      box-sizing: border-box;
     }
 
-    .education-blog .article-subtitle {
+    body {
+      margin: 0;
+      background: var(--page-bg);
+      color: var(--text);
+      font-family: "Kokila", "Noto Serif Devanagari", serif;
       font-size: 24px;
+      line-height: 1;
+      -webkit-text-size-adjust: 100%;
     }
 
-    .education-blog h2 {
-      font-size: 28px;
+    [lang="en"] {
+      font-family: "Times New Roman", Times, serif;
     }
 
-    .education-blog h3 {
-      font-size: 25px;
+    .education-blog span[lang="en"] {
+      font-size: 0.8em;
     }
-  }
 
-  @media print {
+    a {
+      color: var(--accent);
+      text-underline-offset: 4px;
+    }
+
+    a:hover {
+      color: var(--heading);
+    }
+
+    a:focus-visible {
+      outline: 3px solid var(--accent);
+      outline-offset: 5px;
+    }
+
+    .page-shell {
+      width: min(100%, 1000px);
+      margin: 0 auto;
+      padding: 26px 20px 50px;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 18px;
+      font-size: 22px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
     .education-blog {
-      max-width: none;
-      padding: 0;
-      color: #000000;
-      background: #ffffff;
+      padding: 40px 44px;
+      overflow-wrap: break-word;
+      background: var(--paper);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      box-shadow: 0 12px 36px rgba(18, 57, 75, 0.06);
     }
 
-    .education-blog h1,
-    .education-blog h2,
-    .education-blog h3 {
-      break-after: avoid;
+    .article-header {
+      margin-bottom: 24px;
+      padding-bottom: 22px;
+      border-bottom: 3px solid var(--accent);
     }
 
-    .education-blog p,
-    .education-blog li {
-      orphans: 3;
-      widows: 3;
+    .category {
+      display: inline-block;
+      margin: 0 0 18px;
+      padding: 8px 12px;
+      color: var(--accent);
+      background: var(--soft-bg);
+      border-radius: 6px;
+      font-size: 21px;
+      font-weight: 700;
     }
-  }
-</style>
 
-<!--
-  Single line spacing is applied through line-height: 1.
-  Kokila must be installed on the reader's device to display correctly.
-  For consistent display across devices, host a licensed Kokila webfont
-  and load it using @font-face.
--->
+    h1 {
+      margin: 0 0 18px;
+      color: var(--heading);
+      font-size: 44px;
+      font-weight: 700;
+      line-height: 1;
+    }
 
-<article
-  class="education-blog"
-  lang="ne"
-  aria-labelledby="education-blog-title"
->
-  <header class="article-header">
-    <h1 id="education-blog-title">
-      शिक्षा प्रणाली: कागजी ग्रेडको खेती कि भविष्यको जनशक्ति?
-    </h1>
+    .article-subtitle {
+      margin: 0 0 20px;
+      color: var(--muted);
+      font-size: 27px;
+      line-height: 1;
+    }
 
-    <p class="article-subtitle">
-      वैश्विक परिवेश र नेपालको वर्तमान विद्यालय शिक्षाको एक वस्तुनिष्ठ विश्लेषण
-    </p>
-  </header>
+    .article-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px 24px;
+      color: var(--muted);
+      font-size: 21px;
+      line-height: 1;
+    }
 
-  <p>
-    आज विश्वका हरेक देश आफ्नो शिक्षा प्रणालीलाई समयसापेक्ष, गतिशील र
-    व्यावहारिक बनाउन लागिपरेका छन्। हरेक समाज र देशको आफ्नै भूभाग,
-    संस्कृति र आवश्यकता हुन्छ, जसलाई ध्यानमा राखेर विद्यालय शिक्षाको
-    पाठ्यक्रम <span lang="en">(Curriculum)</span> निर्माण गरिन्छ।
-    तर, के कागजमा लेखिएको पाठ्यक्रम वा विद्यालयको महँगो संरचनाले मात्र
-    भविष्यको मूल्यवान् जनशक्ति तयार गर्न सक्छ? वैश्विक सूचक र हाम्रो
-    आफ्नै धरातललाई हेर्दा, शिक्षाको असली मर्म पाठ्यक्रमको अक्षरमा भन्दा
-    पनि त्यसको शिक्षण प्रक्रिया <span lang="en">(Pedagogy)</span>
-    र मूल्याङ्कन पद्धतिमा आधारित हुन्छ।
-  </p>
+    .article-meta a {
+      color: var(--heading);
+      font-weight: 700;
+      text-decoration: none;
+    }
 
-  <section aria-labelledby="global-education">
-    <h2 id="global-education">
-      वैश्विक परिदृश्य: संसारका उत्कृष्ट र पछाडि परेका शिक्षा प्रणाली
-    </h2>
+    .article-cover {
+      margin: 0 0 26px;
+    }
 
-    <p>
-      विश्वमै उच्च विकसित शिक्षा प्रणाली भएका देशहरू, जस्तै
-      <strong>साउथ कोरिया</strong>, <strong>डेनमार्क</strong> र
-      <strong>फिनल्याण्ड</strong> ले सिकाइको उत्कृष्ट मापदण्ड तय
-      गरेका छन्
-      <span class="source-reference" lang="en">[World Top 20 Education Rankings, Best Countries for Education | U.S. News]</span>।
-      ओइसीडी <span lang="en">(OECD)</span> को रिपोर्टअनुसार
-      साउथ कोरियामा २४ देखि ३५ वर्ष उमेर समूहका ७०% भन्दा बढी
-      जनशक्ति उच्च शिक्षित छन्। फिनल्याण्ड जस्ता देशले परीक्षाको
-      अनावश्यक तनाव नदिई विद्यार्थीको व्यक्तिगत क्षमता
-      <span lang="en">(Individual Skills)</span> र समान पहुँचमा
-      ध्यान दिन्छन्।
-    </p>
+    .article-cover img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
 
-    <p>
-      हाम्रो छिमेकी देश <strong>चीन</strong> सँग विश्वकै सबैभन्दा
-      ठूलो राज्य-सञ्चालित शिक्षा प्रणाली छ, जहाँ १५ करोडभन्दा बढी
-      कलेज स्नातकहरू छन्। चीनका सांघाई जस्ता विकसित क्षेत्रका
-      विद्यार्थीहरू अन्तर्राष्ट्रिय पिसा
-      <span lang="en">(PISA)</span> टेस्टको गणित र विज्ञानमा
-      सधैँ शीर्ष स्थानमा आउँछन्, जसको मुख्य कारण कडा अनुशासन र
-      कडा मूल्याङ्कन प्रणाली हो।
-    </p>
+    .article-cover figcaption {
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 20px;
+      line-height: 1;
+    }
 
-    <p>
-      अर्कोतर्फ, गरिबी र गृहयुद्धले थला परेका देशहरू जस्तै
-      <strong>नाइजर</strong> (जहाँ वयस्कहरूको औसत विद्यालय अवधि
-      मात्र १.४ वर्ष छ) र <strong>दक्षिण सुडान</strong>
-      (जहाँ ७०% भन्दा बढी बालबालिका विद्यालयबाहिर छन्) मा साक्षरता
-      दर २६% देखि ३८% को हाराहारीमा मात्रै सीमित छ
-      <span class="source-reference" lang="en">[Education Rankings by Country 2026, Countries With The Worst Education Systems]</span>।
-      यी देशहरू मुख्य गरी स्रोत र साधनको चरम अभावले गर्दा पछाडि
-      परेका हुन्।
-    </p>
+    h2 {
+      margin: 30px 0 16px;
+      padding-left: 12px;
+      border-left: 4px solid var(--accent);
+      color: var(--heading);
+      font-size: 32px;
+      line-height: 1;
+    }
 
-    <aside class="key-question">
+    h3 {
+      margin: 24px 0 12px;
+      color: #194d60;
+      font-size: 27px;
+      line-height: 1;
+    }
+
+    p {
+      margin: 0 0 18px;
+      line-height: 1;
+      text-align: start;
+    }
+
+    strong {
+      font-weight: 700;
+    }
+
+    ul {
+      margin: 16px 0 24px;
+      padding-left: 28px;
+    }
+
+    li {
+      margin-bottom: 16px;
+      padding-left: 4px;
+      line-height: 1;
+    }
+
+    li::marker {
+      color: var(--accent);
+    }
+
+    .source-reference {
+      color: var(--muted);
+    }
+
+    .key-question {
+      margin: 24px 0;
+      padding: 20px;
+      background: var(--soft-bg);
+      border-left: 4px solid var(--accent);
+      border-radius: 0 8px 8px 0;
+    }
+
+    .key-question p:last-child,
+    .conclusion p:last-child {
+      margin-bottom: 0;
+    }
+
+    .conclusion {
+      margin-top: 30px;
+      padding: 22px;
+      background: #f5f8fa;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+    }
+
+    .conclusion h2 {
+      margin-top: 0;
+    }
+
+    .article-footer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      margin-top: 30px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 21px;
+    }
+
+    .article-footer p {
+      margin: 0;
+    }
+
+    .article-footer a {
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    @media (max-width: 640px) {
+      .page-shell {
+        padding: 18px 12px 30px;
+      }
+
+      .education-blog {
+        padding: 24px 18px;
+        border-radius: 12px;
+        font-size: 22px;
+      }
+
+      h1 {
+        font-size: 35px;
+      }
+
+      .article-subtitle {
+        font-size: 24px;
+      }
+
+      h2 {
+        font-size: 28px;
+      }
+
+      h3 {
+        font-size: 25px;
+      }
+
+      .article-meta {
+        font-size: 20px;
+      }
+
+      .key-question,
+      .conclusion {
+        padding: 17px;
+      }
+    }
+
+    @media print {
+      body {
+        background: #ffffff;
+        color: #000000;
+      }
+
+      .page-shell {
+        width: 100%;
+        padding: 0;
+      }
+
+      .education-blog {
+        padding: 0;
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+      }
+
+      .back-link,
+      .article-footer {
+        display: none;
+      }
+
+      h1,
+      h2,
+      h3 {
+        break-after: avoid;
+      }
+
+      figure {
+        break-inside: avoid;
+      }
+
+      p,
+      li {
+        orphans: 3;
+        widows: 3;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page-shell">
+    <nav aria-label="ब्लग नेभिगेसन">
+      <a class="back-link" href="./index.html">
+        ← सबै लेखहरू
+      </a>
+    </nav>
+
+    <article
+      class="education-blog"
+      aria-labelledby="article-title"
+    >
+      <header class="article-header">
+        <span class="category">शिक्षा · विचार तथा विश्लेषण</span>
+
+        <h1 id="article-title">
+          शिक्षा प्रणाली: कागजी ग्रेडको खेती कि भविष्यको जनशक्ति?
+        </h1>
+
+        <p class="article-subtitle">
+          वैश्विक परिवेश र नेपालको वर्तमान विद्यालय शिक्षाको
+          एक वस्तुनिष्ठ विश्लेषण
+        </p>
+
+        <div class="article-meta">
+          <span>
+            लेखक:
+            <a href="https://madhavbhujel.com.np/" rel="author">
+              माधव भुजेल
+            </a>
+          </span>
+
+          <span>
+            प्रकाशन मिति:
+            <time datetime="2026-11-05">५ नोभेम्बर २०२६</time>
+          </span>
+        </div>
+      </header>
+
+      <figure class="article-cover">
+        <img
+          src="./assets/education-system-cover.png"
+          alt="नेपालको विद्यालय शिक्षामा परीक्षामुखी पढाइसँगै प्रयोग, अनुसन्धान र सिर्जनशील सिकाइको चित्रण"
+          fetchpriority="high"
+          decoding="async"
+        >
+
+        <figcaption>
+          कागजी ग्रेडदेखि वास्तविक जीवनका सीपसम्म—हाम्रो शिक्षाको
+          दिशा कता? (एआईद्वारा निर्मित सांकेतिक चित्र)
+        </figcaption>
+      </figure>
+
       <p>
-        <strong>तसर्थ, नेपालको अवस्था के छ त?</strong>
-        हामीसँग नाइजर जस्तो स्रोतको चरम अभाव पनि छैन, तर हामी
-        फिनल्याण्ड वा कोरिया जस्तो व्यावहारिक र पद्धतिगत पनि
-        हुन सकिरहेका छैनौँ।
+        आज विश्वका हरेक देश आफ्नो शिक्षा प्रणालीलाई समयसापेक्ष,
+        गतिशील र व्यावहारिक बनाउन लागिपरेका छन्। हरेक समाज र
+        देशको आफ्नै भूभाग, संस्कृति र आवश्यकता हुन्छ, जसलाई
+        ध्यानमा राखेर विद्यालय शिक्षाको पाठ्यक्रम
+        <span lang="en">(Curriculum)</span> निर्माण गरिन्छ।
+        तर, के कागजमा लेखिएको पाठ्यक्रम वा विद्यालयको महँगो
+        संरचनाले मात्र भविष्यको मूल्यवान् जनशक्ति तयार गर्न सक्छ?
+        वैश्विक सूचक र हाम्रो आफ्नै धरातललाई हेर्दा, शिक्षाको
+        असली मर्म पाठ्यक्रमको अक्षरमा भन्दा पनि त्यसको शिक्षण
+        प्रक्रिया <span lang="en">(Pedagogy)</span> र
+        मूल्याङ्कन पद्धतिमा आधारित हुन्छ।
       </p>
-    </aside>
-  </section>
 
-  <section aria-labelledby="nepal-context">
-    <h2 id="nepal-context">
-      नेपालको सन्दर्भ: कमजोर शिक्षण प्रक्रिया र फितलो नियमन
-    </h2>
+      <section aria-labelledby="global-education">
+        <h2 id="global-education">
+          वैश्विक परिदृश्य: संसारका उत्कृष्ट र पछाडि परेका शिक्षा प्रणाली
+        </h2>
 
-    <p>
-      नेपालको वर्तमान शिक्षा संरचनाअनुसार प्रारम्भिक बालविकास
-      (पूर्व-प्राथमिक) देखि कक्षा १२ सम्मलाई विद्यालय शिक्षा
-      भनिन्छ। सरकारी तथा सामुदायिक विद्यालयहरूमा नेपाल सरकारको
-      आधिकारिक पाठ्यक्रम नै लागू भएको देखिन्छ। हाम्रो पाठ्यक्रममा
-      समय र परिवेशअनुरूप केही परिमार्जन आवश्यक भए तापनि समग्रमा
-      भन्नुपर्दा मुख्य समस्या यसको
-      <strong>
-        शिक्षण प्रक्रिया <span lang="en">(Teaching Methodology)</span>,
-        फितलो नियमन <span lang="en">(Regulation)</span> र
-        समयानुकूल शिक्षक तालिम <span lang="en">(Teacher Training)</span>
-      </strong>
-      को अभावमा छ। पाठ्यक्रमको भावना जतिसुकै राम्रो भए पनि
-      कक्षाकोठामा बुझाउने शैली परम्परागत हुँदा यसको वास्तविक
-      मर्म मर्दै गएको छ।
-    </p>
+        <p>
+          विश्वमै उच्च विकसित शिक्षा प्रणाली भएका देशहरू, जस्तै
+          <strong>साउथ कोरिया</strong>,
+          <strong>डेनमार्क</strong> र
+          <strong>फिनल्याण्ड</strong> ले सिकाइको उत्कृष्ट
+          मापदण्ड तय गरेका छन्
+          <span class="source-reference" lang="en">[World Top 20 Education Rankings, Best Countries for Education | U.S. News]</span>।
+          ओइसीडी <span lang="en">(OECD)</span> को
+          रिपोर्टअनुसार साउथ कोरियामा २४ देखि ३५ वर्ष उमेर
+          समूहका ७०% भन्दा बढी जनशक्ति उच्च शिक्षित छन्।
+          फिनल्याण्ड जस्ता देशले परीक्षाको अनावश्यक तनाव नदिई
+          विद्यार्थीको व्यक्तिगत क्षमता
+          <span lang="en">(Individual Skills)</span> र
+          समान पहुँचमा ध्यान दिन्छन्।
+        </p>
 
-    <h3>१. आफ्नो-आफ्नो बुझाइमा शिक्षण</h3>
+        <p>
+          हाम्रो छिमेकी देश <strong>चीन</strong> सँग
+          विश्वकै सबैभन्दा ठूलो राज्य-सञ्चालित शिक्षा प्रणाली छ,
+          जहाँ १५ करोडभन्दा बढी कलेज स्नातकहरू छन्। चीनका सांघाई
+          जस्ता विकसित क्षेत्रका विद्यार्थीहरू अन्तर्राष्ट्रिय
+          पिसा <span lang="en">(PISA)</span> टेस्टको गणित
+          र विज्ञानमा सधैँ शीर्ष स्थानमा आउँछन्, जसको मुख्य कारण
+          कडा अनुशासन र कडा मूल्याङ्कन प्रणाली हो।
+        </p>
 
-    <p>
-      अधिकांश सरकारी तथा सार्वजनिक विद्यालयहरूमा हरेक विद्यालय
-      र शिक्षकले पाठ्यक्रमको मर्मभन्दा पनि आफ्नो व्यक्तिगत
-      बुझाइअनुसार आफ्नै ढर्रामा पढाइरहेका छन्। देशभरिका शिक्षकहरूमा
-      एउटै विषयलाई हेर्ने र बुझाउने अवधारणा फरक-फरक छ। उदाहरणका
-      लागि, <em>सामाजिक अध्ययन <span lang="en">(Social Studies)</span></em>
-      लाई लिने हो भने, शिक्षकले पाठ्यक्रमको वास्तविक उद्देश्य
-      बुझ्नुको सट्टा आफ्नो व्यक्तिगत दृष्टिकोणको आधारमा मात्र
-      शिक्षण गरिरहेका छन्।
-    </p>
+        <p>
+          अर्कोतर्फ, गरिबी र गृहयुद्धले थला परेका देशहरू जस्तै
+          <strong>नाइजर</strong> (जहाँ वयस्कहरूको औसत
+          विद्यालय अवधि मात्र १.४ वर्ष छ) र
+          <strong>दक्षिण सुडान</strong> (जहाँ ७०% भन्दा
+          बढी बालबालिका विद्यालयबाहिर छन्) मा साक्षरता दर
+          २६% देखि ३८% को हाराहारीमा मात्रै सीमित छ
+          <span class="source-reference" lang="en">[Education Rankings by Country 2026, Countries With The Worst Education Systems]</span>।
+          यी देशहरू मुख्य गरी स्रोत र साधनको चरम अभावले गर्दा
+          पछाडि परेका हुन्।
+        </p>
 
-    <h3>२. पाठ्यपुस्तक र प्रश्न-उत्तरमा सीमित सिकाइ</h3>
+        <aside class="key-question">
+          <p>
+            <strong>तसर्थ, नेपालको अवस्था के छ त?</strong>
+            हामीसँग नाइजर जस्तो स्रोतको चरम अभाव पनि छैन,
+            तर हामी फिनल्याण्ड वा कोरिया जस्तो व्यावहारिक
+            र पद्धतिगत पनि हुन सकिरहेका छैनौँ।
+          </p>
+        </aside>
+      </section>
 
-    <p>
-      कुनै पनि पाठले विद्यार्थीमा के कस्तो सीप र ज्ञानको विकास
-      गर्छ? विद्यार्थीको उपलब्धिलाई कसरी पहिचान गरेर व्यक्तिगत
-      रूपमा उनीहरूको क्षमता विकास गर्ने? यी सब कुरा हेरेर
-      आवश्यक शैक्षिक सामग्री र स्रोतहरूको प्रयोग गर्नुको साटो,
-      शिक्षकहरू केवल पाठ्यपुस्तकका प्रश्न-उत्तर सार्न र घोकाउनमा
-      मात्र केन्द्रित छन्। फलस्वरूप, विद्यार्थीले आफ्नो कोणबाट
-      जसरी कुरालाई बुझ्छ, त्यही स्तरमा मात्र उसको मानसिक विकास
-      भइरहेको छ। शिक्षण पेसाप्रति पूर्ण वफादार र जवाफदेही भएर
-      लाग्ने परिपाटीको ठूलो कमी देखिन्छ।
-    </p>
-  </section>
+      <section aria-labelledby="nepal-context">
+        <h2 id="nepal-context">
+          नेपालको सन्दर्भ: कमजोर शिक्षण प्रक्रिया र फितलो नियमन
+        </h2>
 
-  <section aria-labelledby="private-schools">
-    <h2 id="private-schools">
-      अधिकांश निजी विद्यालय (बोर्डिङ) को भ्रम: कोर्सको भार र ग्रेडको व्यापार
-    </h2>
+        <p>
+          नेपालको वर्तमान शिक्षा संरचनाअनुसार प्रारम्भिक
+          बालविकास (पूर्व-प्राथमिक) देखि कक्षा १२ सम्मलाई
+          विद्यालय शिक्षा भनिन्छ। सरकारी तथा सामुदायिक
+          विद्यालयहरूमा नेपाल सरकारको आधिकारिक पाठ्यक्रम नै
+          लागू भएको देखिन्छ। हाम्रो पाठ्यक्रममा समय र
+          परिवेशअनुरूप केही परिमार्जन आवश्यक भए तापनि समग्रमा
+          भन्नुपर्दा मुख्य समस्या यसको
+          <strong>
+            शिक्षण प्रक्रिया
+            <span lang="en">(Teaching Methodology)</span>,
+            फितलो नियमन
+            <span lang="en">(Regulation)</span> र
+            समयानुकूल शिक्षक तालिम
+            <span lang="en">(Teacher Training)</span>
+          </strong>
+          को अभावमा छ। पाठ्यक्रमको भावना जतिसुकै राम्रो भए
+          पनि कक्षाकोठामा बुझाउने शैली परम्परागत हुँदा यसको
+          वास्तविक मर्म मर्दै गएको छ।
+        </p>
 
-    <p>
-      हाम्रो समाजमा निजी बोर्डिङ स्कुल र केही सरकारी
-      ‘नमुना विद्यालय’ <span lang="en">(Model Schools)</span>
-      ले आफूलाई अब्बल साबित गर्ने होडबाजी चलाएका छन्।
-      तर तिनीहरूको त्यो उत्कृष्टताको मापदण्ड के हो?
-    </p>
+        <h3>१. आफ्नो-आफ्नो बुझाइमा शिक्षण</h3>
 
-    <ul>
-      <li>
-        <strong>
-          कोर्स <span lang="en">Completion</span> र
-          <span lang="en">Repetition</span> को चक्रव्यूह:
-        </strong>
-        निजी विद्यालयहरूमा ६ महिनामै हतार-हतार कोर्स सिध्याउने
-        र बाँकी समय त्यही कुरा बारम्बार दोहोर्‍याएर घोकाउने
-        (<span lang="en">Repeat</span> गर्ने) विकृति छ।
-      </li>
+        <p>
+          अधिकांश सरकारी तथा सार्वजनिक विद्यालयहरूमा हरेक
+          विद्यालय र शिक्षकले पाठ्यक्रमको मर्मभन्दा पनि आफ्नो
+          व्यक्तिगत बुझाइअनुसार आफ्नै ढर्रामा पढाइरहेका छन्।
+          देशभरिका शिक्षकहरूमा एउटै विषयलाई हेर्ने र बुझाउने
+          अवधारणा फरक-फरक छ। उदाहरणका लागि,
+          <em>
+            सामाजिक अध्ययन
+            <span lang="en">(Social Studies)</span>
+          </em>
+          लाई लिने हो भने, शिक्षकले पाठ्यक्रमको वास्तविक
+          उद्देश्य बुझ्नुको सट्टा आफ्नो व्यक्तिगत दृष्टिकोणको
+          आधारमा मात्र शिक्षण गरिरहेका छन्।
+        </p>
 
-      <li>
-        <strong>थप पुस्तकको अनावश्यक भार:</strong>
-        पाठ्यक्रमले तोकेको भन्दा बाहिरका थप पाठ्यपुस्तकहरू
-        <span lang="en">(Extra Reference Books)</span> र
-        कोर्सहरू जबर्जस्ती भिडाएर बालबालिकाहरूमाथि मानसिक र
-        शारीरिक भार थपिएको छ।
-      </li>
+        <h3>२. पाठ्यपुस्तक र प्रश्न-उत्तरमा सीमित सिकाइ</h3>
 
-      <li>
-        <strong>कागजी ग्रेड नै अन्तिम लक्ष्य:</strong>
-        यति धेरै लोड र दबाब दिनुको पछाडि विद्यार्थीको वास्तविक
-        ज्ञान बढाउनु होइन, बरु ‘पेपर-पेन्सिल टेस्ट’ मा कसरी
-        बढीभन्दा बढी <span lang="en">A+</span> वा राम्रो
-        ग्रेड ल्याउने र त्यसलाई विज्ञापन गरेर व्यापार बढाउने
-        भन्ने मात्रै देखिन्छ।
-      </li>
-    </ul>
+        <p>
+          कुनै पनि पाठले विद्यार्थीमा के कस्तो सीप र ज्ञानको
+          विकास गर्छ? विद्यार्थीको उपलब्धिलाई कसरी पहिचान
+          गरेर व्यक्तिगत रूपमा उनीहरूको क्षमता विकास गर्ने?
+          यी सब कुरा हेरेर आवश्यक शैक्षिक सामग्री र स्रोतहरूको
+          प्रयोग गर्नुको साटो, शिक्षकहरू केवल पाठ्यपुस्तकका
+          प्रश्न-उत्तर सार्न र घोकाउनमा मात्र केन्द्रित छन्।
+          फलस्वरूप, विद्यार्थीले आफ्नो कोणबाट जसरी कुरालाई
+          बुझ्छ, त्यही स्तरमा मात्र उसको मानसिक विकास भइरहेको
+          छ। शिक्षण पेसाप्रति पूर्ण वफादार र जवाफदेही भएर
+          लाग्ने परिपाटीको ठूलो कमी देखिन्छ।
+        </p>
+      </section>
 
-    <p>
-      सामान्यतया, यी नमुना भनिने विद्यालयहरूमा समेत समग्र विकास
-      र सीपलाई छाडेर केवल लिखित परीक्षाको नतिजालाई नै प्रमुख
-      प्राथमिकता दिएको पाइन्छ।
-    </p>
-  </section>
+      <section aria-labelledby="private-schools">
+        <h2 id="private-schools">
+          अधिकांश निजी विद्यालय (बोर्डिङ) को भ्रम:
+          कोर्सको भार र ग्रेडको व्यापार
+        </h2>
 
-  <section aria-labelledby="commercialization">
-    <h2 id="commercialization">
-      शिक्षाको व्यापारीकरण र राष्ट्रिय पहिचानको क्षयीकरण
-    </h2>
+        <p>
+          हाम्रो समाजमा निजी बोर्डिङ स्कुल र केही सरकारी
+          ‘नमुना विद्यालय’
+          <span lang="en">(Model Schools)</span> ले
+          आफूलाई अब्बल साबित गर्ने होडबाजी चलाएका छन्।
+          तर तिनीहरूको त्यो उत्कृष्टताको मापदण्ड के हो?
+        </p>
 
-    <p>
-      हामी सधैँ व्यावहारिक ज्ञान र सीपको कुरा त गर्छौँ, तर शिक्षाले
-      विश्वस्तरको ज्ञान दिने मात्र होइन, आफ्नो देश, समाज र
-      परिवेशलाई पनि जोगाएर राख्न सक्नुपर्छ। तर आजभोलि निजी
-      प्रकाशनका व्यापारिक स्वार्थ र हरेक विद्यालयले आफ्नै
-      फरक-फरक पुस्तक र फरक अवधारणा लागू गर्नाले विद्यार्थीहरूको
-      मानसपटलमा हाम्रो आफ्नै
-      <strong>मौलिकता र राष्ट्रियता <span lang="en">(Nationality)</span></strong>
-      माथि नै असर पर्ने खालका फरक भ्रमहरू पैदा भइरहेका छन्।
-    </p>
-  </section>
+        <ul>
+          <li>
+            <strong>
+              कोर्स <span lang="en">Completion</span> र
+              <span lang="en">Repetition</span> को चक्रव्यूह:
+            </strong>
+            निजी विद्यालयहरूमा ६ महिनामै हतार-हतार कोर्स
+            सिध्याउने र बाँकी समय त्यही कुरा बारम्बार दोहोर्‍याएर
+            घोकाउने (<span lang="en">Repeat</span> गर्ने)
+            विकृति छ।
+          </li>
 
-  <section aria-labelledby="future-crisis">
-    <h2 id="future-crisis">
-      भविष्यको सङ्कट: मौलिक सोचको अन्त्य र अदक्ष जनशक्तिको उत्पादन
-    </h2>
+          <li>
+            <strong>थप पुस्तकको अनावश्यक भार:</strong>
+            पाठ्यक्रमले तोकेको भन्दा बाहिरका थप पाठ्यपुस्तकहरू
+            <span lang="en">(Extra Reference Books)</span>
+            र कोर्सहरू जबर्जस्ती भिडाएर बालबालिकाहरूमाथि
+            मानसिक र शारीरिक भार थपिएको छ।
+          </li>
 
-    <p>
-      नयाँ र परिमार्जित शिक्षा प्रणालीले विद्यार्थीको ज्ञान र
-      सीपको स्तरलाई क्रमिक रूपमा विकास गर्दै लैजानुपर्ने हो।
-      जबसम्म हामी पाठ्यक्रममा आवश्यक परिमार्जन गर्दै
-      ‘पेपर-पेन्सिल टेस्ट’ को सट्टा
-      <strong>
-        कक्षाकोठाबाहिरको सिकाइ
-        <span lang="en">(Experiential &amp; Outdoor Learning)</span>
-      </strong>
-      लाई विद्यार्थीको शैक्षिक उपलब्धिसँग जोड्न सक्दैनौँ,
-      तबसम्म हाम्रो शिक्षाले समाज बदल्न सक्दैन।
-    </p>
+          <li>
+            <strong>कागजी ग्रेड नै अन्तिम लक्ष्य:</strong>
+            यति धेरै लोड र दबाब दिनुको पछाडि विद्यार्थीको
+            वास्तविक ज्ञान बढाउनु होइन, बरु ‘पेपर-पेन्सिल टेस्ट’
+            मा कसरी बढीभन्दा बढी <span lang="en">A+</span>
+            वा राम्रो ग्रेड ल्याउने र त्यसलाई विज्ञापन गरेर
+            व्यापार बढाउने भन्ने मात्रै देखिन्छ।
+          </li>
+        </ul>
 
-    <p>
-      अहिलेको यो केवल पाठ्यपुस्तकमा सीमित र घोकन्ते प्रश्नोत्तर
-      मार्फत ग्रेडिङ गर्ने प्रणालीले हामी भविष्यका लागि:
-    </p>
+        <p>
+          सामान्यतया, यी नमुना भनिने विद्यालयहरूमा समेत समग्र
+          विकास र सीपलाई छाडेर केवल लिखित परीक्षाको नतिजालाई
+          नै प्रमुख प्राथमिकता दिएको पाइन्छ।
+        </p>
+      </section>
 
-    <ul>
-      <li>
-        <strong>आलोचनात्मक सोच</strong>
-        <span lang="en">(Critical Thinking)</span>
-      </li>
-      <li>
-        <strong>विश्लेषणात्मक क्षमता</strong>
-        <span lang="en">(Analytical Skills)</span>
-      </li>
-      <li>
-        <strong>अनुसन्धान र नवप्रवर्तन</strong>
-        <span lang="en">(Research &amp; Innovation)</span>
-      </li>
-    </ul>
+      <section aria-labelledby="commercialization">
+        <h2 id="commercialization">
+          शिक्षाको व्यापारीकरण र राष्ट्रिय पहिचानको क्षयीकरण
+        </h2>
 
-    <p>
-      भएका सक्षम नागरिक होइन,
-      <strong>
-        केवल बजारका लागि ‘परम्परागत कामदार’
-        <span lang="en">(Labor Force)</span> मात्र उत्पादन
-      </strong>
-      गरिरहेका छौँ। यही स्थिति कायम रहने हो भने, भविष्यमा
-      ठूला-ठूला विश्लेषणात्मक कार्य, वैज्ञानिक अनुसन्धान र
-      प्रविधिको विकासका लागि हामीले दक्ष जनशक्ति विदेशबाट आयात
-      <span lang="en">(Import)</span> गर्नुपर्ने स्थिति
-      नआउला भन्न सकिन्न।
-    </p>
-  </section>
+        <p>
+          हामी सधैँ व्यावहारिक ज्ञान र सीपको कुरा त गर्छौँ,
+          तर शिक्षाले विश्वस्तरको ज्ञान दिने मात्र होइन,
+          आफ्नो देश, समाज र परिवेशलाई पनि जोगाएर राख्न
+          सक्नुपर्छ। तर आजभोलि निजी प्रकाशनका व्यापारिक
+          स्वार्थ र हरेक विद्यालयले आफ्नै फरक-फरक पुस्तक र
+          फरक अवधारणा लागू गर्नाले विद्यार्थीहरूको मानसपटलमा
+          हाम्रो आफ्नै
+          <strong>
+            मौलिकता र राष्ट्रियता
+            <span lang="en">(Nationality)</span>
+          </strong>
+          माथि नै असर पर्ने खालका फरक भ्रमहरू पैदा भइरहेका छन्।
+        </p>
+      </section>
 
-  <section class="conclusion" aria-labelledby="education-conclusion">
-    <h2 id="education-conclusion">
-      निष्कर्ष: शिक्षण र मूल्याङ्कन प्रणालीमा परिमार्जनको टड्कारो आवश्यकता
-    </h2>
+      <section aria-labelledby="future-crisis">
+        <h2 id="future-crisis">
+          भविष्यको सङ्कट: मौलिक सोचको अन्त्य र अदक्ष जनशक्तिको उत्पादन
+        </h2>
 
-    <p>
-      नेपालको पाठ्यक्रममा केही सामयिक सुधार आवश्यक छ, तर
-      त्योभन्दा ठूलो सुधार हाम्रो
-      <strong>शिक्षण पद्धति र मूल्याङ्कन प्रणाली</strong>
-      मा हुनुपर्छ। हामीलाई ग्रेडशिटमा
-      ‘<span lang="en">A+</span>’ प्रस्तुत गर्ने यन्त्र
-      <span lang="en">(Robot)</span> होइन, वास्तविक संसारका
-      समस्याहरू समाधान गर्न सक्ने तार्किक र सिर्जनशील मानव
-      चाहिएको हो। शिक्षा प्रणालीलाई कागजी परीक्षा र घोकाइको
-      घेराबाट माथि उठाएर व्यावहारिक प्रयोग, शिक्षक जवाफदेहिता
-      र कक्षाबाहिरको बृहत् सिकाइसँग जोड्ने गरी नियमन र
-      परिमार्जन नगरेसम्म हामीले देशको भविष्य बदल्न सक्ने छैनौँ।
-    </p>
-  </section>
-</article>
+        <p>
+          नयाँ र परिमार्जित शिक्षा प्रणालीले विद्यार्थीको ज्ञान
+          र सीपको स्तरलाई क्रमिक रूपमा विकास गर्दै लैजानुपर्ने
+          हो। जबसम्म हामी पाठ्यक्रममा आवश्यक परिमार्जन गर्दै
+          ‘पेपर-पेन्सिल टेस्ट’ को सट्टा
+          <strong>
+            कक्षाकोठाबाहिरको सिकाइ
+            <span lang="en">(Experiential &amp; Outdoor Learning)</span>
+          </strong>
+          लाई विद्यार्थीको शैक्षिक उपलब्धिसँग जोड्न सक्दैनौँ,
+          तबसम्म हाम्रो शिक्षाले समाज बदल्न सक्दैन।
+        </p>
+
+        <p>
+          अहिलेको यो केवल पाठ्यपुस्तकमा सीमित र घोकन्ते प्रश्नोत्तर
+          मार्फत ग्रेडिङ गर्ने प्रणालीले हामी भविष्यका लागि:
+        </p>
+
+        <ul>
+          <li>
+            <strong>आलोचनात्मक सोच</strong>
+            <span lang="en">(Critical Thinking)</span>
+          </li>
+
+          <li>
+            <strong>विश्लेषणात्मक क्षमता</strong>
+            <span lang="en">(Analytical Skills)</span>
+          </li>
+
+          <li>
+            <strong>अनुसन्धान र नवप्रवर्तन</strong>
+            <span lang="en">(Research &amp; Innovation)</span>
+          </li>
+        </ul>
+
+        <p>
+          भएका सक्षम नागरिक होइन,
+          <strong>
+            केवल बजारका लागि ‘परम्परागत कामदार’
+            <span lang="en">(Labor Force)</span> मात्र उत्पादन
+          </strong>
+          गरिरहेका छौँ। यही स्थिति कायम रहने हो भने, भविष्यमा
+          ठूला-ठूला विश्लेषणात्मक कार्य, वैज्ञानिक अनुसन्धान र
+          प्रविधिको विकासका लागि हामीले दक्ष जनशक्ति विदेशबाट
+          आयात <span lang="en">(Import)</span> गर्नुपर्ने
+          स्थिति नआउला भन्न सकिन्न।
+        </p>
+      </section>
+
+      <section
+        class="conclusion"
+        aria-labelledby="education-conclusion"
+      >
+        <h2 id="education-conclusion">
+          निष्कर्ष: शिक्षण र मूल्याङ्कन प्रणालीमा परिमार्जनको
+          टड्कारो आवश्यकता
+        </h2>
+
+        <p>
+          नेपालको पाठ्यक्रममा केही सामयिक सुधार आवश्यक छ,
+          तर त्योभन्दा ठूलो सुधार हाम्रो
+          <strong>शिक्षण पद्धति र मूल्याङ्कन प्रणाली</strong>
+          मा हुनुपर्छ। हामीलाई ग्रेडशिटमा
+          ‘<span lang="en">A+</span>’ प्रस्तुत गर्ने यन्त्र
+          <span lang="en">(Robot)</span> होइन, वास्तविक
+          संसारका समस्याहरू समाधान गर्न सक्ने तार्किक र
+          सिर्जनशील मानव चाहिएको हो। शिक्षा प्रणालीलाई कागजी
+          परीक्षा र घोकाइको घेराबाट माथि उठाएर व्यावहारिक
+          प्रयोग, शिक्षक जवाफदेहिता र कक्षाबाहिरको बृहत्
+          सिकाइसँग जोड्ने गरी नियमन र परिमार्जन नगरेसम्म हामीले
+          देशको भविष्य बदल्न सक्ने छैनौँ।
+        </p>
+      </section>
+
+      <footer class="article-footer">
+        <p>
+          लेखक:
+          <a href="https://madhavbhujel.com.np/" rel="author">
+            माधव भुजेल
+          </a>
+        </p>
+
+        <a href="./index.html">← अन्य लेखहरू पढ्नुहोस्</a>
+      </footer>
+    </article>
+  </main>
+</body>
+</html>
+```
