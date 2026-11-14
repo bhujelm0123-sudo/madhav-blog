@@ -1,0 +1,962 @@
+<!DOCTYPE html><html lang="ne"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light dark"><meta name="theme-color" content="#142a3b">
+<title>AI केवल ChatGPT होइन: पढाइ, शिक्षण, सिर्जना र व्यवसायका लागि कुन Tool छान्ने? | Madhav Bhujel</title><link rel="canonical" href="https://blog.madhavbhujel.com.np/ai-tools-practical-guide-nepali"><meta name="description" content="३४ उपयोगी AI तथा Automation Tools—कसका लागि, कुन काममा र कसरी प्रयोग गर्ने? विद्यार्थी, शिक्षक, अनुसन्धानकर्ता र व्यवसायीका लागि उदाहरण र आधिकारिक लिंकसहितको नेपाली गाइड।">
+<meta property="og:type" content="article"><meta property="og:site_name" content="Madhav Bhujel | Blog &amp; Ideas"><meta property="og:title" content="AI केवल ChatGPT होइन: पढाइ, शिक्षण, सिर्जना र व्यवसायका लागि कुन Tool छान्ने?"><meta property="og:description" content="३४ उपयोगी AI तथा Automation Tools—कसका लागि, कुन काममा र कसरी प्रयोग गर्ने? विद्यार्थी, शिक्षक, अनुसन्धानकर्ता र व्यवसायीका लागि उदाहरण र आधिकारिक लिंकसहितको नेपाली गाइड।"><meta property="og:url" content="https://blog.madhavbhujel.com.np/ai-tools-practical-guide-nepali"><meta property="og:image" content="https://blog.madhavbhujel.com.np/ai-tools-cover.png"><meta property="og:image:alt" content="सिकाइ, अनुसन्धान, सिर्जना र व्यवसायलाई जोड्ने AI प्रविधिको चित्रण"><meta property="og:locale" content="ne_NP">
+<meta property="article:published_time" content="2026-11-06T09:00:00+05:45"><meta property="article:modified_time" content="2026-11-14T16:05:00+05:45"><meta name="author" content="Madhav Bhujel">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="AI केवल ChatGPT होइन: पढाइ, शिक्षण, सिर्जना र व्यवसायका लागि कुन Tool छान्ने?"><meta name="twitter:description" content="३४ उपयोगी AI तथा Automation Tools—कसका लागि, कुन काममा र कसरी प्रयोग गर्ने? विद्यार्थी, शिक्षक, अनुसन्धानकर्ता र व्यवसायीका लागि उदाहरण र आधिकारिक लिंकसहितको नेपाली गाइड।"><meta name="twitter:image" content="https://blog.madhavbhujel.com.np/ai-tools-cover.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+<script>try{if(localStorage.getItem('mb-blog-theme')==='dark')document.documentElement.dataset.theme='dark'}catch(e){}</script>
+<style>
+    /* COLORS */
+    :root {
+      --bg: #f8f7f3;
+      --surface: #ffffff;
+      --soft: #efeee8;
+      --ink: #142a3b;
+      --muted: #606d75;
+      --line: #dedfd9;
+      --accent: #94641e;
+      --accent-soft: #f5ead5;
+      --gold: #e0b970;
+      --header: rgba(248,247,243,.96);
+      --shadow: 0 18px 50px rgba(20,42,59,.08);
+    }
+
+    :root[data-theme="dark"] {
+      --bg: #101b25;
+      --surface: #182733;
+      --soft: #20323f;
+      --ink: #f0f3f5;
+      --muted: #b6c3cc;
+      --line: #354752;
+      --accent: #e0b970;
+      --accent-soft: #392f22;
+      --header: rgba(16,27,37,.96);
+      --shadow: 0 18px 50px rgba(0,0,0,.2);
+    }
+
+    /* BASE */
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 100px;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: "Segoe UI", Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3, p { margin-top: 0; }
+
+    h1, h2, h3 {
+      line-height: 1.18;
+      overflow-wrap: break-word;
+    }
+
+    h1, h2, h3, .serif {
+      font-family: Georgia, "Times New Roman", serif;
+      font-weight: 400;
+      letter-spacing: -.035em;
+    }
+
+    a { color: inherit; }
+    button, input, select { font: inherit; }
+    button { cursor: pointer; }
+    img { max-width: 100%; display: block; }
+    [hidden] { display: none !important; }
+
+    :focus-visible {
+      outline: 3px solid var(--accent);
+      outline-offset: 5px;
+    }
+
+    ::selection {
+      background: var(--gold);
+      color: #142a3b;
+    }
+
+    .container {
+      width: min(1160px, calc(100% - 48px));
+      margin-inline: auto;
+    }
+
+    .skip-link {
+      position: fixed;
+      top: -100px;
+      left: 16px;
+      z-index: 100;
+      background: var(--surface);
+      padding: 12px 18px;
+    }
+
+    .skip-link:focus { top: 12px; }
+
+    .eyebrow {
+      color: var(--accent);
+      font-size: 11px;
+      font-weight: 750;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+
+    .eyebrow::before {
+      content: "";
+      display: inline-block;
+      width: 28px;
+      height: 2px;
+      margin-right: 12px;
+      vertical-align: middle;
+      background: currentColor;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-height: 46px;
+      padding: 11px 20px;
+      border: 1px solid var(--line);
+      border-radius: 9px;
+      background: transparent;
+      color: var(--ink);
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 650;
+    }
+
+    .button-primary {
+      background: var(--ink);
+      color: var(--bg);
+      border-color: var(--ink);
+    }
+
+    .button:hover { opacity: .85; }
+
+    .muted { color: var(--muted); }
+
+    /* HEADER */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 30;
+      background: var(--header);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .header-inner {
+      min-height: 80px;
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      flex-shrink: 0;
+    }
+
+    .brand-mark {
+      width: 43px;
+      height: 43px;
+      display: grid;
+      place-items: center;
+      background: var(--ink);
+      color: var(--bg);
+      border-radius: 11px;
+      font-family: Georgia, serif;
+      font-size: 20px;
+    }
+
+    .brand-name {
+      display: block;
+      font-size: 15px;
+      font-weight: 750;
+      line-height: 1.4;
+    }
+
+    .brand-caption {
+      display: block;
+      color: var(--muted);
+      font-size: 9px;
+      text-transform: uppercase;
+      letter-spacing: .15em;
+    }
+
+    .nav {
+      display: flex;
+      gap: 25px;
+      align-items: center;
+      margin-left: auto;
+    }
+
+    .nav a {
+      font-size: 13px;
+      font-weight: 650;
+      text-decoration: none;
+      color: var(--muted);
+    }
+
+    .nav a:hover { color: var(--accent); }
+
+    .controls { display: flex; gap: 8px; }
+
+    .icon-button {
+      width: 40px;
+      height: 40px;
+      display: grid;
+      place-items: center;
+      border: 1px solid var(--line);
+      border-radius: 50%;
+      color: var(--ink);
+      background: transparent;
+      font-size: 20px;
+    }
+
+    .menu-button { display: none; }
+
+    /* HOME */
+    .hero { padding: 75px 0 48px; }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.35fr .65fr;
+      align-items: center;
+      gap: 65px;
+    }
+
+    .hero h1 {
+      font-size: clamp(48px, 6.4vw, 80px);
+      margin-bottom: 24px;
+    }
+
+    .hero h1 em { color: var(--accent); }
+
+    .hero-description {
+      max-width: 600px;
+      color: var(--muted);
+      font-size: 17px;
+      margin-bottom: 0;
+    }
+
+    .hero-note {
+      border-left: 1px solid var(--line);
+      padding-left: 30px;
+    }
+
+    .hero-note p {
+      font-family: Georgia, serif;
+      font-size: 24px;
+      line-height: 1.5;
+    }
+
+    .hero-note strong { font-size: 13px; }
+
+    .hero-note small {
+      display: block;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .topic-strip {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px 28px;
+      margin-top: 40px;
+      padding-top: 22px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+    }
+
+    /* POST NAVIGATION */
+    .posts-section { padding: 35px 0 75px; }
+
+    .section-heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      gap: 20px;
+      margin-bottom: 25px;
+    }
+
+    .section-heading h2 {
+      font-size: 42px;
+      margin-bottom: 0;
+    }
+
+    .section-heading p {
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 0;
+    }
+
+    .view-tabs {
+      display: flex;
+      gap: 25px;
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 25px;
+    }
+
+    .view-tabs a {
+      padding: 14px 0;
+      border-bottom: 3px solid transparent;
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .view-tabs a[aria-current="page"] {
+      color: var(--ink);
+      border-bottom-color: var(--accent);
+    }
+
+    .toolbar {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 210px;
+      gap: 15px;
+      margin-bottom: 15px;
+    }
+
+    .field label {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 11px;
+      font-weight: 650;
+      color: var(--muted);
+    }
+
+    .field input,
+    .field select {
+      width: 100%;
+      min-height: 46px;
+      padding: 10px 14px;
+      border: 1px solid var(--line);
+      border-radius: 9px;
+      background: var(--surface);
+      color: var(--ink);
+      font-size: 14px;
+    }
+
+    .field input::placeholder { color: var(--muted); }
+
+    .result-count {
+      font-size: 12px;
+      color: var(--muted);
+      min-height: 24px;
+      margin-bottom: 22px;
+    }
+
+    /* RECENT POST CARDS */
+    .post-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 24px;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      overflow: hidden;
+      transition: box-shadow .2s ease, transform .2s ease;
+    }
+
+    .card:hover {
+      box-shadow: var(--shadow);
+      transform: translateY(-3px);
+    }
+
+    .art {
+      position: relative;
+      display: grid;
+      place-items: center;
+      min-height: 190px;
+      overflow: hidden;
+      background: #e9e3d5;
+      color: #425249;
+    }
+
+    .art::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(20,42,59,.06) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(20,42,59,.06) 1px, transparent 1px);
+      background-size: 28px 28px;
+    }
+
+    .art-technology {
+      background: #dce7eb;
+      color: #25485b;
+    }
+
+    .art-videos {
+      background: #233c4e;
+      color: #e0b970;
+    }
+
+    .art-symbol {
+      position: relative;
+      font-family: Georgia, serif;
+      font-size: 75px;
+      line-height: 1;
+    }
+
+    .sample-badge {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      padding: 4px 8px;
+      background: #ffffff;
+      color: #142a3b;
+      border-radius: 4px;
+      font-size: 9px;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      font-weight: 700;
+    }
+
+    .card-content {
+      padding: 26px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px 14px;
+      color: var(--muted);
+      font-size: 11px;
+      margin-bottom: 14px;
+    }
+
+    .category-label {
+      color: var(--accent);
+      font-weight: 750;
+      text-transform: uppercase;
+      letter-spacing: .07em;
+    }
+
+    .card h3 {
+      font-size: 27px;
+      margin-bottom: 16px;
+    }
+
+    .card h3 a {
+      text-decoration: none;
+    }
+
+    .card h3 a:hover { color: var(--accent); }
+
+    .card p {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 24px;
+    }
+
+    .read-link {
+      display: block;
+      border-top: 1px solid var(--line);
+      padding-top: 15px;
+      margin-top: auto;
+      font-size: 13px;
+      font-weight: 750;
+      text-decoration: none;
+    }
+
+    .read-link:hover { color: var(--accent); }
+
+    /* ALL POSTS LIST */
+    .post-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      gap: 15px;
+    }
+
+    .list-link {
+      display: grid;
+      grid-template-columns: 105px minmax(0, 1fr) 30px;
+      align-items: center;
+      gap: 25px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 15px;
+      padding: 22px;
+      text-decoration: none;
+      transition: box-shadow .2s ease;
+    }
+
+    .list-link:hover {
+      box-shadow: var(--shadow);
+      border-color: var(--accent);
+    }
+
+    .list-art {
+      width: 105px;
+      min-height: 105px;
+      border-radius: 10px;
+    }
+
+    .list-art .art-symbol { font-size: 40px; }
+
+    .list-link h3 {
+      font-size: 26px;
+      margin-bottom: 9px;
+    }
+
+    .list-link p {
+      color: var(--muted);
+      font-size: 13px;
+      margin: 0;
+    }
+
+    .list-link .meta { margin-bottom: 8px; }
+
+    .list-arrow {
+      color: var(--accent);
+      font-size: 24px;
+    }
+
+    .below-posts {
+      display: flex;
+      justify-content: center;
+      padding-top: 30px;
+    }
+
+    .empty {
+      padding: 45px 20px;
+      border: 1px dashed var(--line);
+      border-radius: 16px;
+      text-align: center;
+      color: var(--muted);
+    }
+
+    .empty h3 { color: var(--ink); }
+
+    /* FULL ARTICLE PAGE */
+    .article-page { padding: 40px 0 75px; }
+
+    .article-wrap {
+      width: min(800px, calc(100% - 48px));
+      margin-inline: auto;
+    }
+
+    .breadcrumb {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      color: var(--muted);
+      font-size: 12px;
+      margin-bottom: 36px;
+    }
+
+    .breadcrumb a { text-underline-offset: 4px; }
+
+    .article-title {
+      font-size: clamp(36px, 5.6vw, 60px);
+      margin-bottom: 22px;
+    }
+
+    .article-description {
+      font-size: 19px;
+      color: var(--muted);
+      margin-bottom: 25px;
+    }
+
+    .article-author {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      padding: 20px 0;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 28px;
+    }
+
+    .avatar {
+      display: grid;
+      place-items: center;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-family: Georgia, serif;
+      flex-shrink: 0;
+    }
+
+    .article-author strong { display: block; font-size: 13px; }
+    .article-author small { color: var(--muted); font-size: 11px; }
+
+    .article-banner {
+      min-height: 240px;
+      border-radius: 18px;
+      margin-bottom: 28px;
+    }
+
+    .sample-notice {
+      padding: 15px 18px;
+      border-left: 3px solid var(--accent);
+      background: var(--accent-soft);
+      font-size: 13px;
+      margin-bottom: 30px;
+    }
+
+    .article-body {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 19px;
+      line-height: 1.9;
+      overflow-wrap: anywhere;
+    }
+
+    .article-body h2 {
+      font-size: 30px;
+      margin: 36px 0 16px;
+    }
+
+    .article-body h3 {
+      font-size: 25px;
+      margin: 28px 0 14px;
+    }
+
+    .article-body p { margin-bottom: 22px; }
+    .article-body li { margin-bottom: 10px; }
+    .article-body ul, .article-body ol { padding-left: 25px; }
+
+    .article-body blockquote {
+      margin: 30px 0;
+      border-left: 3px solid var(--accent);
+      padding: 10px 24px;
+      color: var(--accent);
+      font-size: 24px;
+      font-style: italic;
+    }
+
+    .video-box {
+      aspect-ratio: 16 / 9;
+      margin-bottom: 30px;
+      background: var(--soft);
+      border-radius: 15px;
+      overflow: hidden;
+    }
+
+    .video-box iframe {
+      display: block;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .article-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      border-top: 1px solid var(--line);
+      padding-top: 25px;
+      margin-top: 40px;
+    }
+
+    .copy-status {
+      color: var(--muted);
+      min-height: 24px;
+      font-size: 12px;
+      overflow-wrap: anywhere;
+    }
+
+    .related {
+      margin-top: 40px;
+      padding-top: 30px;
+      border-top: 1px solid var(--line);
+    }
+
+    .related h2 { font-size: 30px; }
+
+    .related a {
+      display: block;
+      padding: 14px 0;
+      border-bottom: 1px solid var(--line);
+      text-decoration: none;
+      font-size: 15px;
+    }
+
+    .related a:hover { color: var(--accent); }
+
+    /* ABOUT & FOOTER */
+    .about {
+      padding: 35px;
+      margin-bottom: 65px;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      background: var(--soft);
+      display: grid;
+      grid-template-columns: .7fr 1.3fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .about h2 { font-size: 35px; margin-bottom: 12px; }
+    .about p { color: var(--muted); font-size: 15px; }
+    .about p:last-child { margin-bottom: 0; }
+
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 26px 0;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 15px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .footer-links { display: flex; flex-wrap: wrap; gap: 20px; }
+    .footer-links a { text-decoration: none; }
+
+    /* RESPONSIVE */
+    @media (max-width: 950px) {
+      .post-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .hero-grid { gap: 30px; }
+      .nav { gap: 16px; }
+    }
+
+    @media (max-width: 760px) {
+      .header-inner { min-height: 72px; gap: 12px; }
+      .controls { margin-left: auto; }
+      .menu-button { display: grid; }
+
+      .nav {
+        display: none;
+        position: absolute;
+        top: 72px;
+        left: 0;
+        right: 0;
+        padding: 20px 24px;
+        background: var(--surface);
+        border-bottom: 1px solid var(--line);
+        box-shadow: var(--shadow);
+      }
+
+      .nav.open {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+      }
+
+      .nav a { padding: 12px 0; }
+      .hero { padding-top: 45px; }
+      .hero-grid { grid-template-columns: 1fr; }
+      .hero-note { padding-left: 20px; }
+      .hero-note p { font-size: 21px; margin-bottom: 12px; }
+      .section-heading { flex-direction: column; align-items: flex-start; }
+      .about { grid-template-columns: 1fr; gap: 15px; }
+      .article-description { font-size: 17px; }
+    }
+
+    @media (max-width: 540px) {
+      .container, .article-wrap { width: calc(100% - 32px); }
+      .brand-name { font-size: 13px; }
+      .brand-caption { font-size: 8px; }
+      .brand-mark { width: 36px; height: 36px; }
+      .icon-button { width: 36px; height: 36px; }
+      .hero h1 { font-size: 49px; }
+      .hero-description { font-size: 15px; }
+      .post-grid { grid-template-columns: 1fr; }
+      .toolbar { grid-template-columns: 1fr; }
+      .section-heading h2 { font-size: 35px; }
+      .view-tabs { gap: 24px; }
+      .list-link { grid-template-columns: 1fr 20px; gap: 12px; padding: 20px; }
+      .list-art { display: none; }
+      .list-link h3 { font-size: 24px; }
+      .article-body { font-size: 18px; }
+      .article-banner { min-height: 180px; }
+      .about { padding: 25px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition: none !important; }
+    }
+
+    @media print {
+      .site-header, footer, .article-actions, .related,
+      .copy-status, .breadcrumb { display: none !important; }
+
+      .article-wrap { width: 100%; }
+      .article-page { padding: 0; }
+
+      :root {
+        --bg: white;
+        --ink: black;
+        --muted: #444;
+      }
+    }
+
+    /* Nepali editorial typography: English uses Times New Roman;
+       Devanagari falls back to Kokila or an available Devanagari font. */
+    .nepali-page .article-title, .nepali-article,
+    .nepali-page .article-description, .nepali-page .article-author strong {
+      font-family: "Times New Roman", Kokila, "Noto Serif Devanagari", Mangal, serif;
+      letter-spacing: 0;
+    }
+    .nepali-page .article-title {font-size: clamp(32px, 4.3vw, 58px); line-height: 1; max-width: 960px;}
+    .nepali-page .article-description {font-size: 22px; line-height: 1; max-width: 800px;}
+    .nepali-article {font-size: 23px; line-height: 1;}
+    .nepali-article p {margin-bottom: 1.25em;}
+    .nepali-article h2 {font-family: inherit; font-size: 30px; line-height: 1; letter-spacing: 0; font-weight: 700; margin: 2em 0 .7em;}
+    .nepali-article blockquote {margin: 1.7em 0; padding: 22px 28px; border-left: 3px solid var(--gold); background: var(--accent-soft); font-size: 26px; line-height: 1; color: var(--ink); font-style: normal;}
+    .nepali-article .article-kicker {color:var(--accent);font-size:17px;font-weight:700;}
+    .nepali-page .article-banner {height:auto; aspect-ratio:auto; background:var(--soft);}
+    .nepali-page .article-banner img {position:static; width:100%; height:auto; max-height:720px; object-fit:contain;}
+    .post-card h3, .list-link {overflow-wrap:anywhere;}
+    @media(max-width:600px){
+      .nepali-article {font-size:21px;}
+      .nepali-article h2 {font-size:27px;}
+      .nepali-article blockquote {font-size:23px;padding:18px;}
+    }
+  
+
+/* Unicode typography: locally installed Kokila for Devanagari only. */
+@font-face{font-family:"Blog Kokila";src:local("Kokila");font-weight:400;unicode-range:U+0900-097F,U+1CD0-1CFF,U+A8E0-A8FF,U+200C-200D}
+@font-face{font-family:"Blog Kokila";src:local("Kokila Bold");font-weight:700;unicode-range:U+0900-097F,U+1CD0-1CFF,U+A8E0-A8FF,U+200C-200D}
+body,h1,h2,h3,.serif,.brand-mark,.avatar,button,input,select{font-family:"Times New Roman","Blog Kokila","Noto Serif Devanagari",Mangal,serif;letter-spacing:0}
+.nepali-page .article-title,.nepali-page .article-description,.nepali-page .article-author strong,.nepali-article{font-family:"Blog Kokila","Noto Serif Devanagari",Kokila,Mangal,serif;letter-spacing:0}
+.latin,[lang="en"]{font-family:"Times New Roman",Times,serif!important;letter-spacing:0}
+.nepali-page .article-title{font-size:clamp(35px,4.3vw,56px);line-height:1.35}
+.nepali-page .article-description{font-size:24px;line-height:1.55}
+.nepali-article{font-size:24px;line-height:1.7}
+.nepali-article h2{line-height:1.45;font-size:32px;border-top:1px solid var(--line);padding-top:28px}
+.nepali-article h3{font-family:inherit;font-size:28px;line-height:1.4;letter-spacing:0;font-weight:700}
+.nepali-article blockquote{line-height:1.65;font-size:26px}
+.article-author strong{font-size:22px!important}.article-author small{font-size:14px}
+.cover-figure{margin:0 0 32px}.cover-figure img{width:100%;height:auto;border-radius:18px}
+figcaption{font-size:16px;color:var(--muted);margin-top:10px}
+.guide-note,.guide-toc{padding:24px;background:var(--soft);border:1px solid var(--line);border-radius:14px;margin:28px 0}
+.guide-toc ol{columns:2;column-gap:32px;margin-bottom:0}.guide-toc li{break-inside:avoid}
+.guide-toc a{text-decoration:none}.guide-toc a:hover{text-decoration:underline}
+.tool-entry{padding:0 0 14px;border-bottom:1px solid var(--line)}
+.tool-number{color:var(--accent);font-family:"Times New Roman",serif;font-size:22px;margin-right:8px}
+.tool-subtitle{display:block;font-size:24px;font-weight:400;color:var(--muted);margin-top:8px}
+.example{padding:18px 22px;background:var(--accent-soft);border-left:3px solid var(--gold);border-radius:0 8px 8px 0}
+.official-link{font-size:21px}.official-link a{color:var(--accent);text-underline-offset:4px}
+.table-scroll{overflow-x:auto;border:1px solid var(--line);border-radius:12px;margin:25px 0}
+table{width:100%;border-collapse:collapse;min-width:600px;font-size:21px}th,td{padding:15px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}th{background:var(--soft)}
+.article-actions .button{font-family:"Times New Roman",serif}
+@media(max-width:600px){.nepali-article{font-size:22px}.nepali-article h2{font-size:29px}.nepali-article h3{font-size:26px}.guide-toc ol{columns:1}.guide-note,.guide-toc{padding:18px}.example{padding:15px}.nepali-page .article-description{font-size:22px}}
+@media print{.guide-toc{display:none}.table-scroll{overflow:visible}table{min-width:0}.tool-entry{break-inside:avoid}}
+</style><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "AI केवल ChatGPT होइन: पढाइ, शिक्षण, सिर्जना र व्यवसायका लागि कुन Tool छान्ने?", "description": "३४ उपयोगी AI तथा Automation Tools—कसका लागि, कुन काममा र कसरी प्रयोग गर्ने? विद्यार्थी, शिक्षक, अनुसन्धानकर्ता र व्यवसायीका लागि उदाहरण र आधिकारिक लिंकसहितको नेपाली गाइड।", "image": "https://blog.madhavbhujel.com.np/ai-tools-cover.png", "datePublished": "2026-11-06T09:00:00+05:45", "dateModified": "2026-11-14T16:05:00+05:45", "inLanguage": "ne-NP", "author": {"@type": "Person", "name": "Madhav Bhujel", "url": "https://madhavbhujel.com.np/"}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://blog.madhavbhujel.com.np/ai-tools-practical-guide-nepali"}}</script></head>
+<body class="nepali-page"><a href="#main" class="skip-link">Skip to content</a><header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="./">
+        <span class="brand-mark" aria-hidden="true">MB</span>
+        <span>
+          <span class="brand-name">Madhav Bhujel</span>
+          <span class="brand-caption">The blog · Ideas & perspectives</span>
+        </span>
+      </a>
+
+      <nav class="nav" id="navigation" aria-label="Main navigation">
+        <a href="./">Home</a>
+        <a href="/?view=all#posts">All Posts</a>
+        <a href="/?view=all&amp;category=videos#posts">Videos</a>
+        <a href="./#about">About</a>
+        <a href="https://madhavbhujel.com.np/">Portfolio ↗</a>
+      </nav>
+
+      <div class="controls">
+        <button
+          class="icon-button"
+          id="theme-button"
+          type="button"
+          aria-label="Switch to dark theme"
+          aria-pressed="false"
+        >☾</button>
+
+        <button
+          class="icon-button menu-button"
+          id="menu-button"
+          type="button"
+          aria-label="Open navigation"
+          aria-controls="navigation"
+          aria-expanded="false"
+        >☰</button>
+      </div>
+    </div>
+  </header>
+<main id="main" class="article-page"><article class="article-wrap">
+<nav class="breadcrumb" aria-label="Breadcrumb"><a href="./">Blog home</a><span>/</span><a href="/?view=all#posts">Articles</a><span>/</span><span>Technology</span></nav>
+<div class="eyebrow" lang="en">Practical Guide · Technology</div>
+<h1 class="article-title"><span class="latin" lang="en">AI</span> केवल <span class="latin" lang="en">ChatGPT</span> होइन: पढाइ, शिक्षण, सिर्जना र व्यवसायका लागि कुन <span class="latin" lang="en">Tool</span> छान्ने?</h1><p class="article-description">३४ उपयोगी <span class="latin" lang="en">AI</span> तथा <span class="latin" lang="en">Automation Tools</span>—कसका लागि, कुन काममा र कसरी प्रयोग गर्ने? विद्यार्थी, शिक्षक, अनुसन्धानकर्ता र व्यवसायीका लागि उदाहरण र आधिकारिक लिंकसहितको नेपाली गाइड।</p>
+<div class="article-author"><span class="avatar" aria-hidden="true">MB</span><div><strong>माधव भुजेल</strong><small lang="en">Published: <time datetime="2026-11-06">6 November, 2026</time> · Updated: <time datetime="2026-11-14">14 November, 2026</time></small></div></div>
+<figure class="cover-figure"><img src="ai-tools-cover.png" width="1672" height="941" fetchpriority="high" alt="नेपाली परिवेशमा पुस्तक, laptop, microphone र सिर्जनात्मक सामग्रीलाई जोड्ने AI प्रविधिको चित्रण"><figcaption>सिकाइ, सिर्जना र दैनिक कामका लागि प्रविधि। <span class="latin" lang="en">AI-generated illustration</span>.</figcaption></figure>
+<div class="article-body nepali-article" lang="ne"><p class="article-kicker">व्यावहारिक गाइड · <span class="latin" lang="en">AI, Learning &amp; Everyday Work</span></p>
+<p>एउटा विद्यार्थीलाई लामो पाठ बुझ्न सहयोग चाहिएको छ। शिक्षकलाई फरक सिकाइ स्तरका विद्यार्थीका लागि सामग्री तयार गर्नुपर्नेछ। व्यवसायीलाई आफ्नो उत्पादनको प्रचार गर्नुछ। कार्यालय कर्मचारीलाई बैठकका निर्णय र बाँकी काम व्यवस्थित गर्नुछ।</p>
+<p>यी सबैका आवश्यकता फरक छन्। त्यसैले सबै कामका लागि एउटै <span class="latin" lang="en">AI tool</span> उपयुक्त हुन्छ भन्ने हुँदैन।</p>
+<p>आज <span class="latin" lang="en">AI</span> को प्रयोग प्रश्न सोधेर उत्तर पाउने कामभन्दा धेरै अगाडि पुगेको छ। अध्ययन सामग्री बुझ्ने, अनुसन्धानपत्र खोज्ने, लेखन सुधार्ने, <span class="latin" lang="en">presentation</span> तयार गर्ने, आवाज र भिडियो बनाउनेदेखि विभिन्न <span class="latin" lang="en">applications</span> जोडेर काम स्वचालित गर्नेसम्म विकल्प उपलब्ध छन्।</p>
+<blockquote>आफूले बारम्बार गर्ने काम पहिचान गर्नु र त्यसका लागि मिल्ने <span class="latin" lang="en">tool</span> छान्नु नै उपयोगी सुरुवात हो।</blockquote>
+<p>यस लेखमा <span class="latin" lang="en">tools</span> लाई कामअनुसार समूहमा राखिएको छ। प्रत्येकको उपयोगसँगै सम्भावित प्रयोगको उदाहरण र आधिकारिक लिंक दिइएको छ। उदाहरणहरू बुझाउनका लागि तयार गरिएका हुन्; परीक्षणबाट मापन गरिएको नतिजा वा निश्चित सफलताको दाबी होइनन्।</p>
+<aside class="guide-note"><strong>प्रयोगअघि बुझौँ:</strong> <span class="latin" lang="en">Free plan, credits, export, watermark, commercial-use</span> अधिकार र उपलब्ध सुविधाहरू समयसँगै बदलिन सक्छन्। यहाँ निश्चित मूल्य वा दैनिक निःशुल्क प्रयोगको संख्या राखिएको छैन। प्रयोग सुरु गर्दा सम्बन्धित वेबसाइटको <span class="latin" lang="en">Pricing</span> र <span class="latin" lang="en">Terms</span> हेर्नुहोस्।</aside><nav aria-label="लेखको विषयसूची" class="guide-toc"><strong>आफ्नो कामअनुसार पढ्नुहोस्</strong><ol><li><a href="#daily">दैनिक काम, लेखन र विचार विकास</a></li><li><a href="#research">विद्यार्थी, अनुसन्धानकर्ता र पत्रकार</a></li><li><a href="#teaching">शिक्षक र शैक्षिक संस्था</a></li><li><a href="#design">डिजाइन, <span class="latin" lang="en">Presentation</span> र प्रचार सामग्री</a></li><li><a href="#video">भिडियो, आवाज र सामाजिक सञ्जाल</a></li><li><a href="#office">कार्यालय, संस्था र जागिरको तयारी</a></li><li><a href="#automation">व्यवसाय र दोहोरिने कामको <span class="latin" lang="en">Automation</span></a></li><li><a href="#coding"><span class="latin" lang="en">Coding, Website</span> र <span class="latin" lang="en">App</span> निर्माण</a></li><li><a href="#simple"><span class="latin" lang="en">AI</span> नचाहिने सरल <span class="latin" lang="en">Automation</span></a></li><li><a href="#start">कुनबाट सुरु गर्ने?</a></li></ol></nav><section aria-labelledby="daily"><h2 id="daily">दैनिक काम, लेखन र विचार विकास</h2><section aria-labelledby="tool-1" class="tool-entry"><h3 id="tool-1"><span class="tool-number"><span class="latin" lang="en">01</span></span> <span class="latin" lang="en">ChatGPT</span> <span class="tool-subtitle">विचारदेखि कामको मस्यौदासम्म</span></h3><p><span class="latin" lang="en">ChatGPT</span> ले विषय बुझाउन, विचार विकास गर्न, लेखन सुधार्न, सामग्रीको मस्यौदा तयार गर्न तथा उपलब्ध सुविधाअनुसार <span class="latin" lang="en">documents, spreadsheets</span> र अन्य सामग्रीसँग काम गर्न सहयोग गर्छ। विद्यार्थी, शिक्षक, लेखक, कार्यालय कर्मचारी र साना व्यवसायीका लागि यो बहुउपयोगी सहायक हुन सक्छ।</p><p class="example"><strong>उदाहरण:</strong> शिक्षकले यस्तो निर्देशन दिन सक्छन्: “कक्षा ८ का विद्यार्थीका लागि जलचक्र बुझाउने ४० मिनेटको <span class="latin" lang="en">lesson plan</span> बनाऊ। स्थानीय उदाहरण, समूहगत गतिविधि र अन्त्यमा पाँचवटा प्रश्न समावेश गर।” कार्यालय कर्मचारीले बैठकका <span class="latin" lang="en">notes</span> दिएर “निर्णय, जिम्मेवार व्यक्ति र समयसीमा छुट्याऊ; नदिइएको विवरण अनुमान नगर” भन्न सक्छन्।</p><p class="official-link"><strong>आधिकारिक लिंक:</strong> <a href="https://chatgpt.com/" rel="noopener noreferrer" target="_blank"><span class="latin" lang="en">ChatGPT</span> ↗</a></p></section><section aria-labelledby="tool-2" class="tool-entry"><h3 id="tool-2"><span class="tool-number"><span class="latin" lang="en">02</span></span> <span class="latin" lang="en">Claude</span> <span class="tool-subtitle">लेख, प्रस्ताव र दस्तावेजमा काम गर्ने सहायक</span></h3><p><span class="latin" lang="en">Claude</span> लेखन, विश्लेषण र कामसँग सम्बन्धित सामग्री तयार गर्न प्रयोग गर्न सकिने <span class="latin" lang="en">AI assistant</span> हो। लेखक, व्यवस्थापक, अनुसन्धानकर्ता र विस्तृत मस्यौदामा काम गर्ने व्यक्तिले यसबाट सहयोग लिन सक्छन्।</p><p class="example"><strong>उदाहरण:</strong> संस्थाको प्रस्तावको मस्यौदा दिएर “उद्देश्य स्पष्ट छ कि छैन हेर, दोहोरिएका कुरा हटाऊ र कार्यान्वयनका चरण छुट्याऊ” भन्न सकिन्छ।</p><p>संस्थाको वास्तविक नीति र निर्णय भने जिम्मेवार व्यक्तिले जाँच्नुपर्छ।</p><p class="official-link"><strong>आधिकारिक लिंक:</strong> <a href="https://claude.ai/" rel="noopener noreferrer" target="_blank"><span class="latin" lang="en">Claude</span> ↗</a></p></section><section aria-labelledby="tool-3" class="tool-entry"><h3 id="tool-3"><span class="tool-number"><span class="latin" lang="en">03</span></span> <span class="latin" lang="en">Gemini</span> <span class="tool-subtitle">अध्ययन, अनुसन्धान र सिर्जनात्मक तयारी</span></h3><p><span class="latin" lang="en">Gemini</span> मा सामान्य <span class="latin" lang="en">AI</span> सहायता, <span class="latin" lang="en">Deep Research</span> तथा <span class="latin" lang="en">image</span> र अन्य सिर्जनात्मक सुविधाहरू उपलब्ध छन्। विद्यार्थी, कर्मचारी र विभिन्न प्रकारका काम एउटै <span class="latin" lang="en">AI</span> सहायकबाट सुरु गर्न चाहने व्यक्तिका लागि यो उपयोगी विकल्प हो।</p><p class="example"><strong>उदाहरण:</strong> “प्लास्टिक प्रदूषणबारे विद्यालयमा बोल्न पाँच मिनेटको <span class="latin" lang="en">presentation outline</span> तयार गर। कारण, स्थानीय उदाहरण र विद्यार्थीले गर्न सक्ने काम छुट्याऊ” भनेर सामग्रीको तयारी गर्न सकिन्छ।</p><p>अनुसन्धानबाट आएका तथ्यलाई मूल स्रोतसँग मिलाएर प्रयोग गर्नुपर्छ।</p><p class="official-link"><strong>आधिकारिक लिंक:</strong> <a href="https://gemini.google.com/" rel="noopener noreferrer" target="_blank"><span class="latin" lang="en">Gemini</span> ↗</a></p></section><section aria-labelledby="tool-4" class="tool-entry"><h3 id="tool-4"><span class="tool-number"><span class="latin" lang="en">04</span></span> <span class="latin" lang="en">Grammarly</span> <span class="tool-subtitle">अंग्रेजी लेखन स्पष्ट र व्यवस्थित बनाउन</span></h3><p><span class="latin" lang="en">Grammarly</span> अंग्रेजी लेखनमा <span class="latin" lang="en">grammar, spelling</span> र अभिव्यक्ति सुधार गर्न उपयोगी छ। <span class="latin" lang="en">Assignment, email, report</span> र व्यावसायिक सन्देश लेख्ने विद्यार्थी तथा कर्मचारीलाई यसले सहयोग गर्न सक्छ।</p><p class="example"><strong>उदाहरण:</strong> शिक्षकलाई पठाउन तयार गरेको अंग्रेजी <span class="latin" lang="en">email</span> जाँचेर अस्पष्ट वाक्य सुधार्न सकिन्छ।</p><p><span class="latin" lang="en">Tool</span> ले सुझाएको परिवर्तनले आफ्नो आशय वा सम्बन्धअनुसारको <span class="latin" lang="en">tone</span> बदल्छ कि बदल्दैन भनेर पढ्नुपर्छ।</p><p class="official-link"><strong>आधिकारिक लिंक:</strong> <a href="https://www.grammarly.com/" rel="noopener noreferrer" target="_blank"><span class="latin" lang="en">Grammarly</span> ↗</a></p></section><section aria-labelledby="tool-5" class="tool-entry"><h3 id="tool-5"><span class="tool-number"><span class="latin" lang="en">05</span></span> <span class="latin" lang="en">QuillBot</span> <span class="tool-subtitle">वाक्य सुधार, <span class="latin" lang="en">Paraphrasing</span> र सारांश</span></h3><p><span class="latin" lang="en">QuillBot</span> मा <span class="latin" lang="en">paraphrasing, grammar checking</span> र <span class="latin" lang="en">summarizing</span> जस्ता सुविधाहरू छन्। विद्यार्थी, लेखक तथा अंग्रेजीमा आफ्ना विचार अझ स्पष्ट व्यक्त गर्न चाहने व्यक्तिका लागि यो उपयोगी हुन सक्छ।</p><p class="example"><strong>उदाहरण:</strong> आफैँले लेखेको लामो <span class="latin" lang="en">paragraph</span> लाई छोटो र स्पष्ट बनाउन सकिन्छ।</p><p>अर्को लेखकको विचार <span class="latin" lang="en">paraphrase</span> गर्दा पनि मूल स्रोत उल्लेख गर्नुपर्छ; शब्द परिवर्तन हुँदैमा विचार आफ्नो हुँदैन।</p><p class="official-link"><strong>आधिकारिक लिंक:</strong> <a href="https://quillbot.com/" rel="noopener noreferrer" target="_blank"><span class="latin" lang="en">QuillBot</span> ↗</a></p></section></section><section aria-labelledby="research"><h2 id="research">विद्यार्थी, अनुसन्धानकर्ता र पत्रकार</h2><section aria-labelledby="tool-6" class="tool-entry"><h3 id="tool-6"><span class="tool-number"><span class="latin" lang="en">06</span></span> <span class="latin" lang="en">Gemini Notebook / NotebookLM</span> <span class="tool-subtitle">आफ्ना स्रोतमा आधारित अध्ययन साथी</span></h3><p><span class="latin" lang="en">NotebookLM</span> नामले परिचित <span class="latin" lang="en">Google</span> को यो सेवा हाल आधिकारिक पृष्ठमा <span class="latin" lang="en">Gemini Notebook</span> का रूपमा देखिन्छ। यसले आफूले थपेका <span class="latin" lang="en">PDF, documents, websites</span> र अन्य समर्थित स्रोतका आधारमा प्रश्नको उत्तर, सारांश र अध्ययन सामग्री तयार गर्न सहयोग गर्छ। धेरै अध्ययन सामग्री पढ्नुपर्ने विद्यार्थी, शिक्षक, अनुसन्धानकर्ता र कर्मचारीका लागि उपयोगी छ।</p><p class="example"><strong>उदाहरण:</strong> तीनवटा अध्यायका <span class="latin" lang="en">PDF</span> थपेर “यी स्रोतका मुख्य अवधारणा, आपसमा मिल्ने कुरा र परीक्षाको तयारीका लागि अभ्यास प्रश्न तयार गर” भन्न सकिन्छ। <span class="latin" lang="en">Audio Overview</span> प्रयोग गरेर स्रोतको सारांश सुन्न पनि सकिन्छ।</p><p class="official-link"><strong>आधिकारिक लिंक:</strong> <a href="https://notebook.google/" rel="noopener noreferrer" target="_blank"><span class="latin" lang="en">Gemini Notebook / NotebookLM</span> ↗</a></p></section><section aria-labelledby="tool-7" class="tool-entry"><h3 id="tool-7"><span class="tool-number"><span class="latin" lang="en">07</span></span> <span class="latin" lang="en">Elicit</span> <span class="tool-subtitle">अनुसन्धानपत्र खोज्ने र तुलना गर्ने सहायक</span></h3><p><span class="latin" lang="en">Elicit</span> ले अनुसन्धानसँग सम्बन्धित प्रश्नका आधारमा <span class="latin" lang="en">papers</span> खोज्न, जानकारी निकाल्न र <span class="latin" lang="en">evidence</span> व्यवस्थित गर्न सहयोग गर्छ। <span class="latin" lang="en">Thesis, literature review</span> र अनुसन्धान प्रस्ताव तयार गर्ने विद्यार्थी तथा अनुसन्धानकर्ताका लागि यो विशेष उपयोगी हुन्छ।</p><p class="example"><strong>उदाहरण:</strong> “विद्यालयमा विद्यार्थीको <span class="latin" lang="en">attendance</span> र <span class="latin" lang="en">academic achievement</span> बीच कस्तो सम्बन्ध देखिएको छ?” भन्ने प्रश्नबाट सम्बन्धित अध्ययन खोज्न सकिन्छ। त्यसपछि अध्ययनको देश, सहभागीको संख्या, विधि र मुख्य निष्कर्ष छुट्याएर तुलना गर्न सकिन्छ।</p><p><span class="latin" lang="en">AI</span> ले निकालेका विवरणलाई मूल <span class="latin" lang="en">paper</span> सँग मिलाउनु अनुसन्धानकर्ताकै जिम्मेवारी हुन्छ।</p><p class="official-link"><strong>आधिकारिक लिंक:</strong> <a href="https://elicit.com/" rel="noopener noreferrer" target="_blank"><span class="latin" lang="en">Elicit</span> ↗</a></p></section><section aria-labelledby="tool-8" class="tool-entry"><h3 id="tool-8"><span class="tool-number"><span class="latin" lang="en">08</span></span> <span class="latin" lang="en">Consensus</span> <span class="tool-subtitle">कुनै विषयमा अनुसन्धानले के भन्छ?</span></h3><p><span class="latin" lang="en">Consensus academic research</span> खोज्ने र सम्बन्धित अध्ययनका निष्कर्ष बुझ्न सहयोग गर्ने <span class="latin" lang="en">AI search tool</span> हो। प्रमाणमा आधारित लेख, प्रस्तुति वा निर्णयको तयारी गर्ने व्यक्तिका लागि उपयोगी हुन्छ।</p><p class="example"><strong>उदाहरण:</strong> “के नियमित <span class="latin" lang="en">feedback</span> ले विद्यार्थीको सिकाइ सुधार्छ?” भनेर अध्ययन खोज्न सकिन्छ।</p><p>आएका निष्कर्ष पढ्दा कुन उमेर समूह, कुन विषय र कस्तो <span class="latin" lang="en">feedback</span> मा अध्ययन गरिएको थियो भन्ने सन्दर्भ पनि हेर्नुपर्छ।</p><p class="official-link"><strong>आधिकारिक लिंक:</strong> <a href="https://consensus.app/" rel="noopener noreferrer" target="_blank"><span class="latin" lang="en">Consensus</span> ↗</a></p></section><section aria-labelledby="tool-9" class="tool-entry"><h3 id="tool-9"><span class="tool-number"><span class="latin" lang="en">09</span></span> <span class="latin" lang="en">Perplexity</span> <span class="tool-subtitle">स्रोतका लिंकसहित विषयको खोज</span></h3><p><span class="latin" lang="en">Perplexity</span> ले वेबमा जानकारी खोजेर स्रोतका <span class="latin" lang="en">citations</span> सहित उत्तर तयार गर्न सहयोग गर्छ। पत्रकार, ब्लगर, विद्यार्थी र कुनै विषयमा प्रारम्भिक जानकारी जुटाउने व्यक्तिका लागि उपयोगी छ।</p><p class="example"><strong>उदाहरण:</strong> “नेपालमा डिजिटल शिक्षासम्बन्धी सार्वजनिक प्रतिवेदनहरू खोज र तिनका मुख्य विषय तुलना गर” भनेर खोज सुरु गर्न सकिन्छ।</p><p>लेखमा तथ्य राख्नुअघि <span class="latin" lang="en">citation</span> खोलेर स्रोतको मिति र वास्तविक भनाइ जाँच्नुपर्छ।</p><p class="official-link"><strong>आधिकारिक लिंक:</strong> <a href="https://www.perplexity.ai/" rel="noopener noreferrer" target="_blank"><span class="latin" lang="en">Perplexity</span> ↗</a></p></section><section aria-labelledby="tool-10" class="tool-entry"><h3 id="tool-10"><span class="tool-number"><span class="latin" lang="en">10</span></span> <span class="latin" lang="en">Google Pinpoint</span> <span class="tool-subtitle">ठूलो दस्तावेज संग्रहभित्र जानकारी खोज्न</span></h3><p><span class="latin" lang="en">Pinpoint</span> ले <span class="latin" lang="en">Google</span> को <span class="latin" lang="en">Search</span> र <span class="latin" lang="en">AI</span> प्रविधि प्रयोग गरेर ठूलो <span class="latin" lang="en">document collection</span> खोज्न र विश्लेषण गर्न सहयोग गर्छ। पत्रकार, अनुसन्धानकर्ता र धेरै अभिलेखसँग काम गर्ने व्यक्तिका लागि यो उपयोगी छ।</p><p class="example"><strong>उदाहरण:</strong> वर्षौँका सार्वजनिक प्रतिवेदनमा कुनै परियोजना, संस्था वा विषय कहाँ-कहाँ उल्लेख भएको छ भनेर खोज्न सकिन्छ।</p><p>यसले दस्तावेज भेट्टाउने काम सहज बनाउँछ; भेटिएको अंशको सन्दर्भ बुझ्न मूल दस्तावेज पढ्नुपर्छ।</p><p class="official-link"><strong>आधिकारिक लिंक:</strong> <a href="https://journaliststudio.google.com/pinpoint/about/" rel="noopener noreferrer" target="_blank"><span class="latin" lang="en">Google Pinpoint</span> ↗</a></p></section></section><section aria-labelledby="teaching"><h2 id="teaching">शिक्षक र शैक्षिक संस्था</h2><section aria-labelledby="tool-11" class="tool-entry"><h3 id="tool-11"><span class="tool-number"><span class="latin" lang="en">11</span></span> <span class="latin" lang="en">MagicSchool</span> <span class="tool-subtitle">शिक्षण तयारीका धेरै काम एउटै ठाउँमा</span></h3><p><span class="latin" lang="en">MagicSchool</span> मा <span class="latin" lang="en">lesson plan, worksheet, quiz, rubric</span> र अन्य शैक्षिक सामग्री तयार गर्ने <span class="latin" lang="en">tools</span> उपलब्ध छन्। शिक्षक, विषय संयोजक र शैक्षिक नेतृत्वका लागि यो उपयोगी विकल्प हो।</p><p class="example"><strong>उदाहरण:</strong> “कक्षा ७ को समूहगत <span class="latin" lang="en">presentation</span> मूल्यांकन गर्न <span class="latin" lang="en">content accuracy, teamwork, communication</span> र <span class="latin" lang="en">creativity</span> समेटिएको चार तहको <span class="latin" lang="en">rubric</span> बनाऊ” भनेर प्रारम्भिक <span class="latin" lang="en">rubric</span> तयार गर्न सकिन्छ।</p><p>त्यसलाई विद्यालयको पाठ्यक्रम, विद्यार्थीको स्तर र मूल्यांकन नीतिअनुसार शिक्षकले मिलाउनुपर्छ।</p><p class="official-link"><strong>आधिकारिक लिंक:</strong> <a href="https://www.magicschool.ai/" rel="noopener noreferrer" target="_blank"><span class="latin" lang="en">MagicSchool</span> ↗</a></p></section><section aria-labelledby="tool-12" class="tool-entry"><h3 id="tool-12"><span class="tool-number"><span class="latin" lang="en">12</span></span> <span class="latin" lang="en">Diffit</span> <span class="tool-subtitle">एउटै पाठलाई फरक <span class="latin" lang="en">Reading Level</span> मा अनुकूल बनाउन</span></h3><p><span class="latin" lang="en">Diffit</span> ले <span class="latin" lang="en">reading material</span> को स्तर अनुकूल बनाउन सहयोग गर्छ। एउटै कक्षामा फरक पढाइ क्षमता भएका विद्यार्थीलाई सहयोग गर्न चाहने शिक्षकका लागि यसको प्रयोग उपयोगी हुन सक्छ।</p><p class="example"><strong>उदाहरण:</strong> वातावरणसम्बन्धी एउटै लेखलाई सरल र थप चुनौतीपूर्ण <span class="latin" lang="en">reading level</span> मा तयार गर्न सकिन्छ। त्यसपछि सबै विद्यार्थीलाई एउटै मुख्य विषयमा छलफल गराउन सकिन्छ।</p><p>सरल बनाउँदा मूल अर्थ र वैज्ञानिक तथ्य जोगिएको छ कि छैन भनेर जाँच्नुपर्छ।</p><p class="official-link"><strong>आधिकारिक लिंक:</strong> <a href="https://app.diffit.me/" rel="noopener noreferrer" target="_blank"><span class="latin" lang="en">Diffit</span> ↗</a></p></section><section aria-labelledby="tool-13" class="tool-entry"><h3 id="tool-13"><span class="tool-number"><span class="latin" lang="en">13</span></span> <span class="latin" lang="en">Brisk Teaching</span> <span class="tool-subtitle">सामग्रीबाट <span class="latin" lang="en">Lesson, Feedback</span> र <span class="latin" lang="en">Practice</span></span></h3><p><span class="latin" lang="en">Brisk</span> ले <span class="latin" lang="en">browser</span> मा प्रयोग गरिरहेका <span class="latin" lang="en">documents, websites, PDFs</span> र <span class="latin" lang="en">videos</span> जस्ता सामग्रीबाट <span class="latin" lang="en">lesson, assessment</span> र विद्यार्थी अभ्यास तयार गर्न सहयोग गर्छ। यसमा <span class="latin" lang="en">feedback</span> तथा <span class="latin" lang="en">reading-level</span> परिवर्तनका सुविधा पनि छन्। डिजिटल सामग्रीबाट पढाउने शिक्षकका लागि उपयोगी छ।</p><p class="example"><strong>उदाहरण:</strong> विश्वासिलो <span class="latin" lang="en">science article</span> खोलेर त्यसबाट <span class="latin" lang="en">comprehension questions</span> तयार गर्न सकिन्छ।</p><p>विद्यार्थीको <span class="latin" lang="en">essay</span> मा <span class="latin" lang="en">feedback</span> बनाउँदा शिक्षकले हरेक सुझाव पढेर आवश्यक सुधारपछि मात्र दिनुपर्छ।</p><p class="official-link"><strong>आधिकारिक लिंक:</strong> <a href="https://www.briskteaching.com/" rel="noopener noreferrer" target="_blank"><span class="latin" lang="en">Brisk Teaching</span> ↗</a></p></section><section aria-labelledby="tool-14" class="tool-entry"><h3 id="tool-14"><span class="tool-number"><span class="latin" lang="en">14</span></span> <span class="latin" lang="en">Curipod</span> <span class="tool-subtitle">पढ्ने, लेख्ने र छलफल गर्ने कक्षा</span></h3><p><span class="latin" lang="en">Curipod</span> शिक्षकको नेतृत्वमा विद्यार्थीलाई <span class="latin" lang="en">reading, writing</span> र <span class="latin" lang="en">discussion</span> गतिविधिमा सहभागी गराउने <span class="latin" lang="en">platform</span> हो। लेखन अभ्यास र कक्षागत सहभागिता बढाउन चाहने शिक्षकका लागि उपयोगी छ।</p><p class="example"><strong>उदाहरण:</strong> “विद्यालयमा मोबाइल प्रयोग गर्न दिनुपर्छ कि पर्दैन?” भन्ने विषयमा विद्यार्थीलाई कारणसहित विचार लेख्न लगाउने, साथीका तर्क सुन्न दिने र आफ्नो <span class="latin" lang="en">paragraph</span> सुधार्न लगाउने गतिविधि सञ्चालन गर्न सकिन्छ।</p><p class="official-link"><strong>आधिकारिक लिंक:</strong> <a href="https://curipod.com/" rel="noopener noreferrer" target="_blank"><span class="latin" lang="en">Curipod</span> ↗</a></p></section></section><section aria-labelledby="design"><h2 id="design">डिजाइन, <span class="latin" lang="en">Presentation</span> र प्रचार सामग्री</h2><section aria-labelledby="tool-15" class="tool-entry"><h3 id="tool-15"><span class="tool-number"><span class="latin" lang="en">15</span></span> <span class="latin" lang="en">Canva AI</span> <span class="tool-subtitle"><span class="latin" lang="en">Poster</span> देखि <span class="latin" lang="en">Presentation</span> सम्म</span></h3><p><span class="latin" lang="en">Canva</span> मा <span class="latin" lang="en">AI</span>-सहायता प्राप्त <span class="latin" lang="en">design, writing, image</span> तथा <span class="latin" lang="en">video</span> सम्बन्धी सुविधाहरू उपलब्ध छन्। शिक्षक, साना व्यवसायी, सामाजिक सञ्जाल व्यवस्थापक र आधारभूत डिजाइन तयार गर्न चाहने व्यक्तिका लागि यो उपयोगी छ।</p><p class="example"><strong>उदाहरण:</strong> विद्यालयको <span class="latin" lang="en">Science Exhibition</span> का लागि <span class="latin" lang="en">poster</span> तयार गर्दा कार्यक्रमको नाम, मिति, स्थान र सम्पर्क विवरण दिएर डिजाइनको मस्यौदा बनाउन सकिन्छ।</p><p>प्रकाशनअघि मिति, <span class="latin" lang="en">logo, spelling</span> र सम्पर्क नम्बर आफैँ जाँच्नुपर्छ।</p><p class="official-link"><strong>आधिकारिक लिंक:</strong> <a href="https://www.canva.com/canva-ai/" rel="noopener noreferrer" target="_blank"><span class="latin" lang="en">Canva AI</span> ↗</a></p></section><section aria-labelledby="tool-16" class="tool-entry"><h3 id="tool-16"><span class="tool-number"><span class="latin" lang="en">16</span></span> <span class="latin" lang="en">Gamma</span> <span class="tool-subtitle"><span class="latin" lang="en">Outline</span> वा <span class="latin" lang="en">Document</span> बाट <span class="latin" lang="en">Presentation</span></span></h3><p><span class="latin" lang="en">Gamma</span> ले विषय, <span class="latin" lang="en">outline</span> वा विद्यमान सामग्रीबाट <span class="latin" lang="en">presentation</span> तयार गर्न सहयोग गर्छ। विद्यार्थी, प्रशिक्षक, व्यवस्थापक र छोटो समयमा प्रस्तुति तयार गर्नुपर्ने व्यक्तिका लागि उपयोगी छ।</p><p class="example"><strong>उदाहरण:</strong> “आठ मिनेटको प्रस्तुति, सात <span class="latin" lang="en">slides</span>, प्रत्येक <span class="latin" lang="en">slide</span> मा एउटा मुख्य विचार र उपयुक्त <span class="latin" lang="en">visual suggestion</span>” भन्ने निर्देशनसहित आफ्नो लेख दिन सकिन्छ।</p><p>तयार भएपछि <span class="latin" lang="en">slide</span> को तथ्य, क्रम, <span class="latin" lang="en">text</span> को मात्रा र बोल्ने समयअनुसार सामग्री मिलाउनुपर्छ।</p><p class="official-link"><strong>आधिकारिक लिंक:</strong> <a href="https://gamma.app/" rel="noopener noreferrer" target="_blank"><span class="latin" lang="en">Gamma</span> ↗</a></p></section><section aria-labelledby="tool-17" class="tool-entry"><h3 id="tool-17"><span class="tool-number"><span class="latin" lang="en">17</span></span> <span class="latin" lang="en">Leonardo.Ai</span> <span class="tool-subtitle">सिर्जनात्मक तस्बिर र <span class="latin" lang="en">Concept Visuals</span></span></h3><p><span class="latin" lang="en">Leonardo.Ai image, art</span> र <span class="latin" lang="en">video generation</span> का लागि प्रयोग गर्न सकिने <span class="latin" lang="en">platform</span> हो। कलाकार, डिजाइनर, सामग्री निर्माता र <span class="latin" lang="en">visual concept</span> तयार गर्ने व्यक्तिका लागि उपयोगी छ।</p><p class="example"><strong>उदाहरण:</strong> शिक्षासम्बन्धी <span class="latin" lang="en">blog</span> का लागि “परीक्षाको ग्रेड र वास्तविक सीपबीचको अन्तर देखाउने नेपाली परिवेशको चित्र” तयार गर्न सकिन्छ।</p><p>उत्पादनका विज्ञापनमा <span class="latin" lang="en">AI</span> ले वास्तविक वस्तुको आकार वा विशेषता बदल्न सक्छ। <span class="latin" lang="en">Concept image</span> र वास्तविक <span class="latin" lang="en">product photograph</span> छुट्याउनुहोस्। <span class="latin" lang="en">3D</span> शैलीको तस्बिरलाई प्रयोग गर्न मिल्ने वास्तविक <span class="latin" lang="en">3D model</span> ठान्नु हुँदैन।</p><p class="official-link"><strong>आधिकारिक लिंक:</strong> <a href="https://leonardo.ai/" rel="noopener noreferrer" target="_blank"><span class="latin" lang="en">Leonardo.Ai</span> ↗</a></p></section><section aria-labelledby="tool-18" class="tool-entry"><h3 id="tool-18"><span class="tool-number"><span class="latin" lang="en">18</span></span> <span class="latin" lang="en">Adobe Firefly</span> <span class="tool-subtitle"><span class="latin" lang="en">Image</span> र <span class="latin" lang="en">Video</span> सिर्जना तथा सम्पादन</span></h3><p><span class="latin" lang="en">Adobe Firefly</span> मा <span class="latin" lang="en">AI image/video generation</span> र <span class="latin" lang="en">photo editing</span> सम्बन्धी सुविधाहरू छन्। डिजाइनर, विज्ञापन टोली र सिर्जनात्मक सामग्री तयार गर्ने व्यक्तिका लागि उपयोगी विकल्प हो।</p><p class="example"><strong>उदाहरण:</strong> पुस्तकको प्रचारका लागि पृष्ठभूमिका विभिन्न दृश्य तयार गर्न सकिन्छ।</p><p>आफ्नै <span class="latin" lang="en">product photo</span> सम्पादन गर्दा वस्तुको वास्तविक विवरण नबदलिएको सुनिश्चित गर्नुपर्छ।</p><p class="official-link"><strong>आधिकारिक लिंक:</strong> <a href="https://www.adobe.com/products/firefly.html" rel="noopener noreferrer" target="_blank"><span class="latin" lang="en">Adobe Firefly</span> ↗</a></p></section></section><section aria-labelledby="video"><h2 id="video">भिडियो, आवाज र सामाजिक सञ्जाल</h2><section aria-labelledby="tool-19" class="tool-entry"><h3 id="tool-19"><span class="tool-number"><span class="latin" lang="en">19</span></span> <span class="latin" lang="en">Hedra</span> <span class="tool-subtitle">फोटो र अडियोबाट बोल्ने <span class="latin" lang="en">Character</span></span></h3><p><span class="latin" lang="en">Hedra</span> को <span class="latin" lang="en">Character 3</span> ले स्थिर <span class="latin" lang="en">portrait</span> र <span class="latin" lang="en">audio</span> प्रयोग गरेर बोलिरहेको <span class="latin" lang="en">avatar</span> तथा <span class="latin" lang="en">lip-sync animation</span> बनाउन सहयोग गर्छ। शिक्षक, <span class="latin" lang="en">storyteller</span> र सामाजिक सञ्जालका सामग्री निर्माताका लागि उपयोगी हुन सक्छ।</p><p class="example"><strong>उदाहरण:</strong> आफैँले बनाएको काल्पनिक पात्रको तस्बिर र सफा आवाजको <span class="latin" lang="en">recording</span> प्रयोग गरेर वातावरण संरक्षणबारे छोटो सन्देश तयार गर्न सकिन्छ।</p><p>वास्तविक व्यक्तिको अनुहार वा आवाज प्रयोग गर्दा अनुमति लिनुपर्छ। इतिहास वा समाचारका लागि बनाइएको काल्पनिक दृश्यलाई वास्तविक <span class="latin" lang="en">recording</span> जस्तो प्रस्तुत गर्नु हुँदैन।</p><p class="official-link"><strong>आधिकारिक लिंक:</strong> <a href="https://www.hedra.com/video-models/hedra-character-3/avatar" rel="noopener noreferrer" target="_blank"><span class="latin" lang="en">Hedra</span> ↗</a></p></section><section aria-labelledby="tool-20" class="tool-entry"><h3 id="tool-20"><span class="tool-number"><span class="latin" lang="en">20</span></span> <span class="latin" lang="en">HeyGen</span> <span class="tool-subtitle"><span class="latin" lang="en">Avatar</span> सहित <span class="latin" lang="en">Presenter Video</span></span></h3><p><span class="latin" lang="en">HeyGen avatar</span>-आधारित भिडियो तयार गर्न प्रयोग गर्न सकिने <span class="latin" lang="en">platform</span> हो। प्रशिक्षक, <span class="latin" lang="en">marketing team</span> र <span class="latin" lang="en">presenter</span> सहित सामग्री बनाउन चाहने व्यक्तिका लागि उपयोगी हुन्छ।</p><p class="example"><strong>उदाहरण:</strong> कर्मचारी <span class="latin" lang="en">orientation</span> का लागि संस्थाको परिचय, कार्यालय समय र सहायता सम्पर्क समेटिएको <span class="latin" lang="en">script</span> बाट <span class="latin" lang="en">presenter video</span> तयार गर्न सकिन्छ।</p><p>व्यक्तिको नाम, संस्थाको उच्चारण र नेपाली भाषाको प्रस्तुति नमुना बनाएर जाँच्नु उचित हुन्छ।</p><p class="official-link"><strong>आधिकारिक लिंक:</strong> <a href="https://www.heygen.com/" rel="noopener noreferrer" target="_blank"><span class="latin" lang="en">HeyGen</span> ↗</a></p></section><section aria-labelledby="tool-21" class="tool-entry"><h3 id="tool-21"><span class="tool-number"><span class="latin" lang="en">21</span></span> <span class="latin" lang="en">Runway</span> <span class="tool-subtitle">सिर्जनात्मक <span class="latin" lang="en">Video Visuals</span></span></h3><p><span class="latin" lang="en">Runway</span> सिर्जनात्मक भिडियो सामग्री र <span class="latin" lang="en">visual production</span> का लागि प्रयोग हुने <span class="latin" lang="en">AI platform</span> हो। भिडियो निर्माता, विज्ञापन टोली र <span class="latin" lang="en">storytelling</span> का लागि दृश्य तयार गर्ने व्यक्तिले यसबाट सहयोग लिन सक्छन्।</p><p class="example"><strong>उदाहरण:</strong> जलवायु परिवर्तनबारे व्याख्यात्मक भिडियोमा प्रयोग गर्न काल्पनिक दृश्य तयार गर्न सकिन्छ।</p><p>त्यस्तो दृश्यलाई वास्तविक घटनास्थलको <span class="latin" lang="en">footage</span> भनेर प्रस्तुत नगरी <span class="latin" lang="en">AI-generated illustration</span> भनेर छुट्याउनुपर्छ।</p><p class="official-link"><strong>आधिकारिक लिंक:</strong> <a href="https://runway.com/" rel="noopener noreferrer" target="_blank"><span class="latin" lang="en">Runway</span> ↗</a></p></section><section aria-labelledby="tool-22" class="tool-entry"><h3 id="tool-22"><span class="tool-number"><span class="latin" lang="en">22</span></span> <span class="latin" lang="en">ElevenLabs</span> <span class="tool-subtitle"><span class="latin" lang="en">Voiceover, Dubbing</span> र <span class="latin" lang="en">Speech-to-Text</span></span></h3><p><span class="latin" lang="en">ElevenLabs</span> मा <span class="latin" lang="en">text-to-speech, speech-to-text, dubbing</span> र अन्य <span class="latin" lang="en">audio</span> सुविधाहरू छन्। <span class="latin" lang="en">Vlogger, narrator</span>, प्रशिक्षक र <span class="latin" lang="en">audio</span> सामग्री निर्माताका लागि उपयोगी हुन्छ।</p><p class="example"><strong>उदाहरण:</strong> आफ्नै लेखको <span class="latin" lang="en">script</span> बाट <span class="latin" lang="en">narration</span> तयार गरी भिडियोमा प्रयोग गर्न सकिन्छ। नेपाली स्थान, व्यक्तिको नाम र प्राविधिक शब्दको उच्चारण पहिले छोटो नमुनामा जाँच्नुपर्छ।</p><p><span class="latin" lang="en">Voice cloning</span> गर्दा सम्बन्धित व्यक्तिको स्पष्ट अनुमति आवश्यक हुन्छ।</p><p class="official-link"><strong>आधिकारिक लिंक:</strong> <a href="https://elevenlabs.io/" rel="noopener noreferrer" target="_blank"><span class="latin" lang="en">ElevenLabs</span> ↗</a></p></section><section aria-labelledby="tool-23" class="tool-entry"><h3 id="tool-23"><span class="tool-number"><span class="latin" lang="en">23</span></span> <span class="latin" lang="en">Descript</span> <span class="tool-subtitle"><span class="latin" lang="en">Text</span> सम्पादन गरेजस्तै <span class="latin" lang="en">Audio/Video</span> सम्पादन</span></h3><p><span class="latin" lang="en">Descript</span> मा <span class="latin" lang="en">transcript</span> का आधारमा <span class="latin" lang="en">audio/video</span> सम्पादन, <span class="latin" lang="en">transcription</span> र <span class="latin" lang="en">captions</span> जस्ता सुविधा छन्। <span class="latin" lang="en">Podcast, interview</span> र <span class="latin" lang="en">tutorial</span> बनाउने व्यक्तिका लागि उपयोगी हुन्छ।</p><p class="example"><strong>उदाहरण:</strong> लामो <span class="latin" lang="en">interview</span> को <span class="latin" lang="en">transcript</span> हेरेर दोहोरिएका अंश हटाउन सकिन्छ।</p><p>काटिएको अंशले वक्ताको अर्थ नबदलिएको सुनिश्चित गर्न अन्तिम भिडियो सुन्न र हेर्नुपर्छ।</p><p class="official-link"><strong>आधिकारिक लिंक:</strong> <a href="https://www.descript.com/" rel="noopener noreferrer" target="_blank"><span class="latin" lang="en">Descript</span> ↗</a></p></section><section aria-labelledby="tool-24" class="tool-entry"><h3 id="tool-24"><span class="tool-number"><span class="latin" lang="en">24</span></span> <span class="latin" lang="en">OpusClip</span> <span class="tool-subtitle">लामो <span class="latin" lang="en">Video</span> बाट छोटा <span class="latin" lang="en">Clips</span></span></h3><p><span class="latin" lang="en">OpusClip</span> ले लामो <span class="latin" lang="en">footage</span> बाट छोटा <span class="latin" lang="en">clips</span> बनाउने तथा सामाजिक सञ्जालअनुसार सामग्री अनुकूल गर्ने काममा सहयोग गर्छ। <span class="latin" lang="en">Podcast</span> निर्माता, प्रशिक्षक र <span class="latin" lang="en">Reels/Shorts</span> बनाउने व्यक्तिका लागि उपयोगी छ।</p><p class="example"><strong>उदाहरण:</strong> बीस मिनेटको शैक्षिक अन्तर्वार्ताबाट एउटा प्रश्न र स्पष्ट उत्तर भएको छोटो <span class="latin" lang="en">clip</span> तयार गर्न सकिन्छ।</p><p><span class="latin" lang="en">AI</span> ले छानेको <span class="latin" lang="en">clip</span> को सन्दर्भ, <span class="latin" lang="en">subtitle</span> र अर्थ जाँचेर मात्र प्रकाशन गर्नुपर्छ।</p><p class="official-link"><strong>आधिकारिक लिंक:</strong> <a href="https://www.opus.pro/" rel="noopener noreferrer" target="_blank"><span class="latin" lang="en">OpusClip</span> ↗</a></p></section></section><section aria-labelledby="office"><h2 id="office">कार्यालय, संस्था र जागिरको तयारी</h2><section aria-labelledby="tool-25" class="tool-entry"><h3 id="tool-25"><span class="tool-number"><span class="latin" lang="en">25</span></span> <span class="latin" lang="en">Notion AI</span> <span class="tool-subtitle">संस्थागत जानकारी र कामको सन्दर्भ</span></h3><p><span class="latin" lang="en">Notion AI</span> ले <span class="latin" lang="en">workspace</span> को जानकारी खोज्ने र सम्बन्धित काममा सहयोग गर्ने सुविधा दिन्छ। <span class="latin" lang="en">Project team</span>, व्यवस्थापक र संस्थागत ज्ञान व्यवस्थित गर्न चाहने टोलीका लागि उपयोगी छ।</p><p class="example"><strong>उदाहरण:</strong> टोलीका <span class="latin" lang="en">SOP, project notes</span> र बैठकका निर्णय व्यवस्थित राखेपछि “नयाँ कर्मचारीको <span class="latin" lang="en">onboarding</span> मा पूरा गर्नुपर्ने काम के-के छन्?” भनेर सम्बन्धित जानकारी खोज्न सकिन्छ।</p><p>यसको उपयोगिता <span class="latin" lang="en">workspace</span> मा राखिएको सामग्रीको स्पष्टता र अद्यावधिक अवस्थामा पनि निर्भर हुन्छ।</p><p class="official-link"><strong>आधिकारिक लिंक:</strong> <a href="https://www.notion.com/product/ai" rel="noopener noreferrer" target="_blank"><span class="latin" lang="en">Notion AI</span> ↗</a></p></section><section aria-labelledby="tool-26" class="tool-entry"><h3 id="tool-26"><span class="tool-number"><span class="latin" lang="en">26</span></span> <span class="latin" lang="en">Fireflies.ai</span> <span class="tool-subtitle">बैठकका <span class="latin" lang="en">Notes</span>, निर्णय र <span class="latin" lang="en">Action Items</span></span></h3><p><span class="latin" lang="en">Fireflies.ai</span> ले बैठक <span class="latin" lang="en">record, transcribe</span> र <span class="latin" lang="en">summarize</span> गरेर <span class="latin" lang="en">notes</span> तथा <span class="latin" lang="en">action items</span> तयार गर्न सहयोग गर्छ। धेरै बैठक गर्ने कार्यालय, परियोजना टोली र व्यवस्थापकका लागि उपयोगी हुन्छ।</p><p class="example"><strong>उदाहरण:</strong> साप्ताहिक बैठकपछि “कसले कुन काम कहिलेसम्म गर्ने?” भन्ने सूची तयार गर्न सकिन्छ।</p><p>अन्तिम <span class="latin" lang="en">minutes</span> स्वीकृत गर्नुअघि व्यक्तिको नाम, संख्या, निर्णय र समयसीमा जाँच्नुपर्छ। <span class="latin" lang="en">Recording</span> सुरु गर्नुअघि सहभागीलाई जानकारी दिनुपर्छ।</p><p class="official-link"><strong>आधिकारिक लिंक:</strong> <a href="https://fireflies.ai/" rel="noopener noreferrer" target="_blank"><span class="latin" lang="en">Fireflies.ai</span> ↗</a></p></section><section aria-labelledby="tool-27" class="tool-entry"><h3 id="tool-27"><span class="tool-number"><span class="latin" lang="en">27</span></span> <span class="latin" lang="en">Teal</span> <span class="tool-subtitle"><span class="latin" lang="en">CV</span> र <span class="latin" lang="en">Job Application</span> व्यवस्थित गर्न</span></h3><p><span class="latin" lang="en">Teal</span> मा <span class="latin" lang="en">AI resume builder, job-description matching</span> र <span class="latin" lang="en">application tracking</span> जस्ता सुविधाहरू छन्। जागिर खोज्ने तथा धेरै ठाउँमा आवेदन दिइरहेका व्यक्तिका लागि उपयोगी हुन्छ।</p><p class="example"><strong>उदाहरण:</strong> <span class="latin" lang="en">Academic Coordinator</span> पदको <span class="latin" lang="en">job description</span> सँग आफ्नो <span class="latin" lang="en">CV</span> तुलना गरेर अनुभवका कुन पक्ष स्पष्ट पार्नुपर्छ भन्ने पहिचान गर्न सकिन्छ। आवेदन दिएको संस्था, मिति र <span class="latin" lang="en">interview status</span> पनि ट्र्याक गर्न सकिन्छ।</p><p>आफूले नगरेको काम, नपाएको <span class="latin" lang="en">qualification</span> वा बनावटी उपलब्धि थप्नु हुँदैन।</p><p class="official-link"><strong>आधिकारिक लिंक:</strong> <a href="https://www.tealhq.com/" rel="noopener noreferrer" target="_blank"><span class="latin" lang="en">Teal</span> ↗</a></p></section></section><section aria-labelledby="automation"><h2 id="automation">व्यवसाय र दोहोरिने कामको <span class="latin" lang="en">Automation</span></h2><p><span class="latin" lang="en">AI</span> ले सामग्रीको अर्थ बुझ्ने, लेख्ने वा वर्गीकरण गर्ने काममा सहयोग गर्छ। <span class="latin" lang="en">Automation</span> ले निर्धारित घटना भएपछि अर्को काम चलाउँछ। दुवैलाई जोड्न सकिन्छ, तर हरेक <span class="latin" lang="en">automation</span> मा <span class="latin" lang="en">AI</span> आवश्यक हुँदैन।</p><section aria-labelledby="tool-28" class="tool-entry"><h3 id="tool-28"><span class="tool-number"><span class="latin" lang="en">28</span></span> <span class="latin" lang="en">Zapier</span> <span class="tool-subtitle">विभिन्न <span class="latin" lang="en">Apps</span> जोडेर काम स्वचालित गर्न</span></h3><p><span class="latin" lang="en">Zapier</span> ले <span class="latin" lang="en">applications</span> बीच <span class="latin" lang="en">workflows</span> बनाउन र <span class="latin" lang="en">AI</span> सम्बन्धी चरणहरू जोड्न सहयोग गर्छ। साना व्यवसायी, प्रशासनिक कर्मचारी र दोहोरिने डिजिटल काम कम गर्न चाहने व्यक्तिका लागि उपयोगी छ।</p><p class="example"><strong>उदाहरण:</strong> वेबसाइटमा <span class="latin" lang="en">inquiry</span> आएपछि विवरण <span class="latin" lang="en">record</span> गर्ने, <span class="latin" lang="en">AI</span> बाट विषय छुट्याउने र सम्बन्धित कर्मचारीलाई सूचना पठाउने <span class="latin" lang="en">workflow</span> बनाउन सकिन्छ।</p><p>यसका लागि सम्बन्धित <span class="latin" lang="en">apps</span> जोड्ने, <span class="latin" lang="en">permissions</span> दिने र परीक्षण गर्ने काम गर्नुपर्छ।</p><p class="official-link"><strong>आधिकारिक लिंक:</strong> <a href="https://zapier.com/" rel="noopener noreferrer" target="_blank"><span class="latin" lang="en">Zapier</span> ↗</a></p></section><section aria-labelledby="tool-29" class="tool-entry"><h3 id="tool-29"><span class="tool-number"><span class="latin" lang="en">29</span></span> <span class="latin" lang="en">Make</span> <span class="tool-subtitle">धेरै चरण भएका <span class="latin" lang="en">Visual Workflows</span></span></h3><p><span class="latin" lang="en">Make</span> मा <span class="latin" lang="en">apps, data sources</span> र <span class="latin" lang="en">AI models</span> जोडेर <span class="latin" lang="en">visual workflow</span> बनाउन सकिन्छ। <span class="latin" lang="en">Operations team</span>, व्यवसाय व्यवस्थापक र धेरै चरणका काम व्यवस्थित गर्न चाहने व्यक्तिका लागि उपयोगी हुन्छ।</p><p class="example"><strong>उदाहरण:</strong> <span class="latin" lang="en">Online order</span> आएपछि विवरण <span class="latin" lang="en">database</span> मा राख्ने, आवश्यक जानकारी छुटेको छ कि छैन जाँच्ने र सम्बन्धित टोलीलाई सूचना पठाउने <span class="latin" lang="en">workflow</span> बनाउन सकिन्छ।</p><p>गलत वा दोहोरिएको <span class="latin" lang="en">data</span> आएमा के गर्ने भन्ने व्यवस्था पनि <span class="latin" lang="en">workflow</span> मै राख्नुपर्छ।</p><p class="official-link"><strong>आधिकारिक लिंक:</strong> <a href="https://www.make.com/" rel="noopener noreferrer" target="_blank"><span class="latin" lang="en">Make</span> ↗</a></p></section><section aria-labelledby="tool-30" class="tool-entry"><h3 id="tool-30"><span class="tool-number"><span class="latin" lang="en">30</span></span> <span class="latin" lang="en">n8n</span> <span class="tool-subtitle">अनुकूलित <span class="latin" lang="en">AI Agents</span> र <span class="latin" lang="en">Workflows</span></span></h3><p><span class="latin" lang="en">n8n agents</span> र <span class="latin" lang="en">workflows</span> बनाउन प्रयोग हुने <span class="latin" lang="en">platform</span> हो। <span class="latin" lang="en">IT team, developer</span> र प्रक्रियाका प्रत्येक चरणमा नियन्त्रण चाहने व्यक्तिका लागि उपयोगी हुन्छ।</p><p class="example"><strong>उदाहरण:</strong> छानिएका स्रोतबाट समाचार संकलन गर्ने, <span class="latin" lang="en">duplicate</span> हटाउने, <span class="latin" lang="en">AI</span> बाट सारांश बनाउने र सम्पादकको समीक्षा सूचीमा राख्ने <span class="latin" lang="en">workflow</span> बनाउन सकिन्छ।</p><p>प्रकाशन वा ग्राहकलाई सन्देश पठाउनेजस्ता चरणमा आवश्यकताअनुसार मानव समीक्षा राख्न सकिन्छ। <span class="latin" lang="en">Hosting, integrations</span> र <span class="latin" lang="en">AI/API</span> प्रयोगको छुट्टाछुट्टै लागत हुन सक्छ।</p><p class="official-link"><strong>आधिकारिक लिंक:</strong> <a href="https://n8n.io/" rel="noopener noreferrer" target="_blank"><span class="latin" lang="en">n8n</span> ↗</a></p></section><section aria-labelledby="tool-31" class="tool-entry"><h3 id="tool-31"><span class="tool-number"><span class="latin" lang="en">31</span></span> <span class="latin" lang="en">Baserow</span> <span class="tool-subtitle">व्यवस्थित <span class="latin" lang="en">Database</span> र <span class="latin" lang="en">Application</span></span></h3><p><span class="latin" lang="en">Baserow database, applications</span> र <span class="latin" lang="en">automation</span> बनाउन प्रयोग गर्न सकिने <span class="latin" lang="en">platform</span> हो। विद्यालय प्रशासन, साना व्यवसायी र विभिन्न <span class="latin" lang="en">records</span> व्यवस्थित गर्नुपर्ने टोलीका लागि उपयोगी छ।</p><p class="example"><strong>उदाहरण:</strong> विद्यालयमा आएका <span class="latin" lang="en">inquiries</span> का लागि नाम, सम्पर्क, रुचि भएको कार्यक्रम, <span class="latin" lang="en">follow-up</span> मिति र <span class="latin" lang="en">status</span> सहित <span class="latin" lang="en">database</span> बनाउन सकिन्छ। आवश्यक <span class="latin" lang="en">integration</span> तयार गरेपछि नयाँ <span class="latin" lang="en">inquiry</span> को सूचना पठाउने काम पनि जोड्न सकिन्छ।</p><p><span class="latin" lang="en">Database</span> बनाउने र <span class="latin" lang="en">AI</span> बाट विश्लेषण गराउने काम अलग चरण हुन्; <span class="latin" lang="en">database</span> तयार हुँदैमा सबै <span class="latin" lang="en">workflow</span> स्वतः चल्दैनन्।</p><p class="official-link"><strong>आधिकारिक लिंक:</strong> <a href="https://baserow.io/" rel="noopener noreferrer" target="_blank"><span class="latin" lang="en">Baserow</span> ↗</a></p></section></section><section aria-labelledby="coding"><h2 id="coding"><span class="latin" lang="en">Coding, Website</span> र <span class="latin" lang="en">App</span> निर्माण</h2><section aria-labelledby="tool-32" class="tool-entry"><h3 id="tool-32"><span class="tool-number"><span class="latin" lang="en">32</span></span> <span class="latin" lang="en">Cursor</span> <span class="tool-subtitle"><span class="latin" lang="en">Coding</span> मा <span class="latin" lang="en">AI</span> सहयोग</span></h3><p><span class="latin" lang="en">Cursor coding agent</span> तथा <span class="latin" lang="en">development tool</span> हो। <span class="latin" lang="en">Developer</span> र <span class="latin" lang="en">coding</span> सिक्ने विद्यार्थीले <span class="latin" lang="en">code</span> बुझ्न, लेख्न र सुधार गर्न यसको सहायता लिन सक्छन्।</p><p class="example"><strong>उदाहरण:</strong> वेबसाइटको <span class="latin" lang="en">form submit</span> गर्दा <span class="latin" lang="en">error</span> आएको छ भने सम्बन्धित <span class="latin" lang="en">code</span> दिएर कारण पत्ता लगाउन र सुधारको प्रस्ताव लिन सकिन्छ।</p><p>परिवर्तनपछि <span class="latin" lang="en">form, validation</span> र <span class="latin" lang="en">data saving</span> काम गर्छ कि गर्दैन भनेर परीक्षण गर्नुपर्छ।</p><p class="official-link"><strong>आधिकारिक लिंक:</strong> <a href="https://cursor.com/" rel="noopener noreferrer" target="_blank"><span class="latin" lang="en">Cursor</span> ↗</a></p></section><section aria-labelledby="tool-33" class="tool-entry"><h3 id="tool-33"><span class="tool-number"><span class="latin" lang="en">33</span></span> <span class="latin" lang="en">Replit</span> <span class="tool-subtitle">विचारबाट <span class="latin" lang="en">App</span> वा <span class="latin" lang="en">Website</span> को प्रारम्भिक संस्करण</span></h3><p><span class="latin" lang="en">Replit</span> मा <span class="latin" lang="en">AI</span> को सहयोगबाट <span class="latin" lang="en">apps</span> र <span class="latin" lang="en">websites</span> निर्माण गर्न सकिन्छ। विद्यार्थी, उद्यमी र आफ्ना विचारको <span class="latin" lang="en">prototype</span> तयार गर्न चाहने व्यक्तिका लागि उपयोगी हुन्छ।</p><p class="example"><strong>उदाहरण:</strong> “कार्यक्रमको <span class="latin" lang="en">registration app</span> बनाऊ, जसमा नाम, <span class="latin" lang="en">email</span>, कार्यक्रम छनोट र <span class="latin" lang="en">confirmation page</span> होस्” भनेर सुरुवात गर्न सकिन्छ।</p><p>वास्तविक प्रयोगकर्तालाई उपलब्ध गराउनुअघि <span class="latin" lang="en">login, access permissions, data privacy</span> र <span class="latin" lang="en">error handling</span> जाँच्नुपर्छ। <span class="latin" lang="en">Prototype</span> बनेको र भरपर्दो सेवा सञ्चालनमा आएको अवस्था फरक हुन्छ।</p><p class="official-link"><strong>आधिकारिक लिंक:</strong> <a href="https://replit.com/" rel="noopener noreferrer" target="_blank"><span class="latin" lang="en">Replit</span> ↗</a></p></section></section><section aria-labelledby="simple"><h2 id="simple"><span class="latin" lang="en">AI</span> नचाहिने सरल <span class="latin" lang="en">Automation</span></h2><section aria-labelledby="tool-34" class="tool-entry"><h3 id="tool-34"><span class="tool-number"><span class="latin" lang="en">34</span></span> <span class="latin" lang="en">Google Sheets Notifications</span> <span class="tool-subtitle">परिवर्तन र <span class="latin" lang="en">Form Submission</span> को सूचना</span></h3><p><span class="latin" lang="en">Google Sheets</span> का साधारण <span class="latin" lang="en">edit notifications</span> बाट अरूले <span class="latin" lang="en">spreadsheet</span> परिवर्तन गर्दा वा जोडिएको <span class="latin" lang="en">form submit</span> हुँदा आफ्नो <span class="latin" lang="en">email</span> मा सूचना लिन सकिन्छ। यो <span class="latin" lang="en">AI</span> सुविधा होइन; नियमित <span class="latin" lang="en">updates</span> थाहा पाउन उपयोगी <span class="latin" lang="en">automation</span> हो। शिक्षक, कार्यालय कर्मचारी, <span class="latin" lang="en">form responses</span> हेर्ने व्यक्ति र साना व्यवसायीका लागि उपयोगी छ।</p><p class="example"><strong>उदाहरण:</strong> विद्यार्थीले <span class="latin" lang="en">project submission form</span> भरेपछि शिक्षकले <span class="latin" lang="en">email notification</span> पाउन सक्छन्।</p><p><strong><span class="latin" lang="en">Computer</span> मा सुरु गर्ने तरिका:</strong></p><ol><li>सम्बन्धित <span class="latin" lang="en">Google Sheet</span> खोल्नुहोस्।</li><li><span class="latin" lang="en">Tools</span> → <span class="latin" lang="en">Notification settings</span> → <span class="latin" lang="en">Edit notifications</span> मा जानुहोस्।</li><li><span class="latin" lang="en">Any changes are made</span> वा <span class="latin" lang="en">A user submits a form</span> छान्नुहोस्।</li><li><span class="latin" lang="en">Email – right away</span> वा <span class="latin" lang="en">Email – daily digest</span> छान्नुहोस्।</li><li><span class="latin" lang="en">Save</span> गर्नुहोस्।</li></ol><p>यी साधारण <span class="latin" lang="en">notifications</span> आफ्नै लागि सेट गरिन्छन्। आफूले गरेको परिवर्तनको सूचना आउँदैन। विशेष <span class="latin" lang="en">cell</span>, शर्त वा अरू व्यक्तिलाई <span class="latin" lang="en">custom message</span> पठाउने कामका लागि थप सुविधा वा <span class="latin" lang="en">Apps Script</span> आवश्यक पर्न सक्छ।</p><p class="official-link"><strong>आधिकारिक लिंक:</strong> <a href="https://support.google.com/docs/answer/91588?hl=en" rel="noopener noreferrer" target="_blank"><span class="latin" lang="en">Google Sheets Notifications</span> ↗</a></p></section></section><h2 id="start">आफ्नो कामका लागि सुरुवात कहाँबाट गर्ने?</h2><p>सबै <span class="latin" lang="en">tools</span> एकैपटक सिक्न आवश्यक छैन। आफ्नो मुख्य कामसँग सम्बन्धित एक वा दुई विकल्पबाट सुरु गर्न सकिन्छ। तलका संयोजनहरू यस लेखमा वर्णित उपयोगका आधारमा छानिएका प्रारम्भिक सुझाव हुन्।</p><div aria-label="कामअनुसार AI tools" class="table-scroll" role="region" tabindex="0"><table><thead><tr><th>तपाईंको मुख्य काम</th><th>सुरु गर्न सकिने विकल्प</th><th>पहिलो सानो अभ्यास</th></tr></thead><tbody><tr><td>पाठ बुझ्ने र परीक्षा तयारी</td><td><span class="latin" lang="en">Gemini Notebook + ChatGPT</span></td><td>एउटा अध्याय बुझ्ने र अभ्यास प्रश्न बनाउने</td></tr><tr><td><span class="latin" lang="en">Lesson plan</span> र सामग्री अनुकूलन</td><td><span class="latin" lang="en">MagicSchool + Diffit</span></td><td>एउटै पाठ फरक सिकाइ स्तरमा तयार गर्ने</td></tr><tr><td><span class="latin" lang="en">Thesis</span> वा <span class="latin" lang="en">literature review</span></td><td><span class="latin" lang="en">Elicit + Consensus</span></td><td>एउटा अनुसन्धान प्रश्नका सम्बन्धित <span class="latin" lang="en">papers</span> खोज्ने</td></tr><tr><td><span class="latin" lang="en">Blog</span> र सार्वजनिक लेखन</td><td><span class="latin" lang="en">Perplexity + Claude</span> वा <span class="latin" lang="en">ChatGPT</span></td><td>स्रोत खोज्ने, <span class="latin" lang="en">outline</span> बनाउने र आफ्नै विश्लेषण थप्ने</td></tr><tr><td><span class="latin" lang="en">Poster</span> र <span class="latin" lang="en">presentation</span></td><td><span class="latin" lang="en">Canva AI + Gamma</span></td><td>एउटा कार्यक्रमको <span class="latin" lang="en">poster</span> र छोटो प्रस्तुति बनाउने</td></tr><tr><td><span class="latin" lang="en">Video</span> तथा <span class="latin" lang="en">audio</span> सामग्री</td><td><span class="latin" lang="en">ElevenLabs + Descript</span></td><td>छोटो <span class="latin" lang="en">narration</span> तयार गर्ने र सम्पादन गर्ने</td></tr><tr><td>लामो भिडियोबाट छोटा सामग्री</td><td><span class="latin" lang="en">OpusClip</span></td><td>सन्दर्भ नबिग्रिने एउटा <span class="latin" lang="en">clip</span> तयार गर्ने</td></tr><tr><td>कार्यालयका बैठक र <span class="latin" lang="en">records</span></td><td><span class="latin" lang="en">Fireflies.ai + Notion AI</span></td><td>एउटा बैठकको निर्णय सूची व्यवस्थित गर्ने</td></tr><tr><td><span class="latin" lang="en">Job application</span></td><td><span class="latin" lang="en">Teal + Grammarly</span></td><td>एउटा पदअनुसार वास्तविक अनुभव स्पष्ट पार्ने</td></tr><tr><td>व्यवसायको <span class="latin" lang="en">inquiry</span> व्यवस्थापन</td><td><span class="latin" lang="en">Baserow + Make</span> वा <span class="latin" lang="en">Zapier</span></td><td>एउटा <span class="latin" lang="en">form-to-record workflow</span> परीक्षण गर्ने</td></tr><tr><td><span class="latin" lang="en">App</span> वा <span class="latin" lang="en">website prototype</span></td><td><span class="latin" lang="en">Replit</span> वा <span class="latin" lang="en">Cursor</span></td><td>एउटा सानो काम गर्ने प्रारम्भिक संस्करण बनाउने</td></tr></tbody></table></div><h2 id="prompt">राम्रो नतिजाका लागि स्पष्ट निर्देशन</h2>
+<p>“एउटा <span class="latin" lang="en">presentation</span> बनाऊ” भन्दा निम्न निर्देशन बढी उपयोगी हुन्छ:</p>
+<blockquote>कक्षा १० का विद्यार्थीका लागि <span class="latin" lang="en">Cyber Safety</span> विषयमा आठ मिनेटको <span class="latin" lang="en">presentation</span> तयार गर। सात <span class="latin" lang="en">slides</span> राख। भाषा सरल नेपाली होस्। प्रत्येक <span class="latin" lang="en">slide</span> मा एउटा मुख्य सन्देश, एउटा उदाहरण र <span class="latin" lang="en">visual suggestion</span> देऊ। पुष्टि नभएको तथ्य नथप।</blockquote>
+<p><span class="latin" lang="en">AI</span> लाई निर्देशन दिँदा पाँच कुरा स्पष्ट गर्नुहोस्:</p>
+<ul><li><strong>काम:</strong> के तयार गर्नुपर्ने हो?</li><li><strong>श्रोता वा प्रयोगकर्ता:</strong> कसका लागि हो?</li><li><strong>सन्दर्भ:</strong> कुन परिस्थिति वा सामग्रीमा आधारित हो?</li><li><strong>ढाँचा:</strong> <span class="latin" lang="en">paragraph, table, slides, checklist</span> वा <span class="latin" lang="en">script</span>?</li><li><strong>सीमा:</strong> कति लामो, कुन भाषा र कुन तथ्य थप्न नहुने?</li></ul>
+<h2 id="nepali">नेपाली प्रयोगकर्ताले के जाँच्ने?</h2>
+<p>नेपाली <span class="latin" lang="en">text, mixed Nepali–English, audio</span> र <span class="latin" lang="en">captions</span> सबै <span class="latin" lang="en">tools</span> मा समान गुणस्तरका हुँदैनन्। व्यक्ति र स्थानको नाम, देवनागरी <span class="latin" lang="en">spelling</span>, स्थानीय सन्दर्भ र उच्चारणको छोटो नमुना जाँच्नु उपयोगी हुन्छ।</p>
+<p>शिक्षण सामग्रीमा नेपालको पाठ्यक्रम र विद्यार्थीको स्तर आफैँ उल्लेख गर्नुहोस्। व्यवसायका सामग्रीमा मूल्य, सम्पर्क, <span class="latin" lang="en">delivery</span> र उत्पादनका वास्तविक विशेषता स्पष्ट दिनुहोस्। यी विवरण <span class="latin" lang="en">tool</span> ले अनुमान गरेर भर्ने अवस्था कम गर्नुपर्छ।</p>
+<p><span class="latin" lang="en">Free account</span> उपलब्ध भए पनि आफूलाई चाहिएको <span class="latin" lang="en">AI feature, export format</span> वा <span class="latin" lang="en">commercial-use</span> अधिकार त्यही <span class="latin" lang="en">plan</span> मा छ भन्ने निश्चित हुँदैन। <span class="latin" lang="en">Subscription</span> लिनुअघि आफ्नो एउटा वास्तविक काम परीक्षण गर्नु राम्रो हुन्छ।</p>
+<h2 id="responsible">जिम्मेवार प्रयोगले मात्र <span class="latin" lang="en">AI</span> उपयोगी बन्छ</h2>
+<p><span class="latin" lang="en">AI</span> बाट तयार भएको तथ्य, संख्या, <span class="latin" lang="en">reference</span>, अनुवाद वा निष्कर्ष जाँच्ने बानी बसाल्नुहोस्। अनुसन्धानमा मूल <span class="latin" lang="en">paper</span>, समाचारमा मूल स्रोत र संस्थागत काममा आधिकारिक <span class="latin" lang="en">record</span> लाई आधार मान्नुहोस्।</p>
+<p>विद्यार्थीको व्यक्तिगत विवरण, स्वास्थ्यसम्बन्धी <span class="latin" lang="en">record</span> वा संस्थाको गोप्य जानकारी <span class="latin" lang="en">upload</span> गर्नुअघि उपयुक्त अनुमति र <span class="latin" lang="en">data policy</span> हेर्नुहोस्। अभ्यास गर्दा नाम हटाइएको वा नमुना <span class="latin" lang="en">data</span> प्रयोग गर्न सकिन्छ।</p>
+<p><span class="latin" lang="en">AI</span> लाई सिकाइमा सहयोगी बनाउनुहोस्। शिक्षकका लागि यसले तयारीमा सहयोग गर्न सक्छ; विद्यार्थीको परिस्थिति बुझ्ने र अन्तिम मूल्यांकन गर्ने जिम्मेवारी शिक्षककै रहन्छ। विद्यार्थीका लागि यसले विषय बुझाउन सक्छ; आफ्नो <span class="latin" lang="en">assignment</span> का नियम पालना गर्ने जिम्मेवारी विद्यार्थीको हुन्छ।</p>
+<p><span class="latin" lang="en">AI</span> को मूल्य कति <span class="latin" lang="en">tools</span> थाहा छन् भन्नेमा मापन हुँदैन। <strong>आफ्नो कामका लागि उचित <span class="latin" lang="en">tool</span> छान्ने, स्पष्ट निर्देशन दिने र नतिजा जाँचेर प्रयोग गर्ने क्षमतामा यसको वास्तविक उपयोग देखिन्छ।</strong></p>
+<blockquote>तपाईंको पढाइ, शिक्षण, कार्यालय वा व्यवसायमा बारम्बार दोहोरिने कुन काम छ—जसबाट <span class="latin" lang="en">AI</span> को प्रयोग सुरु गर्न सक्नुहुन्छ?</blockquote></div>
+<div class="article-actions"><a class="button button-primary" href="/?view=all#posts">View all articles →</a><button class="button" id="copy-link" type="button">Copy article link</button><button class="button" id="print-article" type="button">Print article</button></div><p class="copy-status" id="copy-status" role="status"></p>
+<aside class="related"><h2>सम्बन्धित लेख</h2><a href="/ai-learning-new-era">हातमा <span class="latin" lang="en">AI</span>, पहुँचमा ज्ञानको संसार: के हामी सिकाइको नयाँ युगका लागि तयार छौँ?</a><a href="/273-million-out-of-school" lang="en">273 Million Children and Young People Are Out of School</a></aside>
+</article></main><footer>
+    <div class="container footer-inner">
+      <span>© <span id="year">2026</span> Madhav Bhujel.</span>
+      <div class="footer-links">
+        <a href="./">Blog home</a>
+        <a href="/?view=all#posts">All posts</a>
+        <a href="https://madhavbhujel.com.np/">Portfolio</a>
+        <a href="mailto:bhujelm0123@gmail.com">Contact</a>
+      </div>
+    </div>
+  </footer>
+<script>
+const themeButton=document.getElementById('theme-button');
+function syncTheme(){const dark=document.documentElement.dataset.theme==='dark';themeButton.setAttribute('aria-pressed',String(dark));themeButton.setAttribute('aria-label',dark?'Switch to light theme':'Switch to dark theme');themeButton.textContent=dark?'☀':'☾';}
+themeButton.addEventListener('click',()=>{const dark=document.documentElement.dataset.theme!=='dark';document.documentElement.dataset.theme=dark?'dark':'light';try{localStorage.setItem('mb-blog-theme',dark?'dark':'light')}catch(e){}syncTheme();});syncTheme();
+const menuButton=document.getElementById('menu-button'),navigation=document.getElementById('navigation');
+function closeMenu(){navigation.classList.remove('open');menuButton.setAttribute('aria-expanded','false');menuButton.setAttribute('aria-label','Open navigation');menuButton.textContent='☰';}
+menuButton.addEventListener('click',()=>{const open=menuButton.getAttribute('aria-expanded')!=='true';navigation.classList.toggle('open',open);menuButton.setAttribute('aria-expanded',String(open));menuButton.setAttribute('aria-label',open?'Close navigation':'Open navigation');menuButton.textContent=open?'×':'☰';});
+navigation.querySelectorAll('a').forEach(a=>a.addEventListener('click',closeMenu));document.addEventListener('keydown',e=>{if(e.key==='Escape')closeMenu();});document.addEventListener('click',e=>{if(!navigation.contains(e.target)&&!menuButton.contains(e.target))closeMenu();});
+document.getElementById('copy-link').addEventListener('click',async()=>{const url=document.querySelector('link[rel="canonical"]').href;try{await navigator.clipboard.writeText(url);document.getElementById('copy-status').textContent='Article link copied.';}catch(e){document.getElementById('copy-status').textContent='Copy this link: '+url;}});
+document.getElementById('print-article').addEventListener('click',()=>window.print());
+</script></body></html>
